@@ -1,0 +1,3 @@
+[submodule "themes/landingpage-flex-hugo-for-noobs"]
+	path = themes/landingpage-flex-hugo-for-noobs
+	url = https://github.com/dkebler/landingpage-flex-hugo-for-noobs.git
