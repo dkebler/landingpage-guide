@@ -1,14 +1,14 @@
 # for gh-pages
-baseurl = "landing-page-guide"
+baseurl = "/landing-page-guide"
 languageCode = "en-us"
 title = "Landing Page User Guide"
 canonifyUrls = "true"
 staticDir ="assets"
-publishDir = "dist"
+publishDir = "docs"
 theme = "landingpage-flex-hugo-for-noobs"
 
 [params]
-custom_css = ["css/custom.css"]  # can add other files in array and file in assets/css/
+custom_css = ["/css/custom.css"]  # can add other files in array and file in assets/css/
 # font = "Acme"  # a valid google font name, default Roboto, sets for entire site, can be specifically overridden
 
 [params.navbar]

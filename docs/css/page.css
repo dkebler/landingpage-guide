@@ -1,0 +1,130 @@
+/* sections */
+
+.section-headline {
+  text-align: center;
+}
+
+.section__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 80%;
+  padding-top: 0.3em;
+  padding-bottom: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.section__content li {
+  padding-bottom: 0.7em;
+}
+
+.section__content li::before {
+  font-family: FontAwesome;
+  content: "\f18e";
+  padding-right: 0.5em;
+  padding-left: 0;
+}
+
+.section__content ul li {
+  text-indent: -1.2rem;
+}
+
+.section--even {
+  color: white;
+  background-color: black;
+}
+
+.section--even .btn {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.section--footer {
+  color: white;
+  background-color: darkgrey;
+  min-height: 4000px;
+}
+
+/* ----------------
+ 	Hero Section
+---------------- */
+#hero {
+  background-image: url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .text {
+  text-align: center;
+  color: white;
+}
+
+/* ----------------
+ 	Components/Shortcodes Styling
+---------------- */
+
+/* box creates a flexbox wrapper */
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.box--column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.box--image {
+  max-width: 450px;
+}
+
+.box--headline {
+}
+
+.box--text {
+}
+
+.box--btn {
+  padding: 1rem;
+}
+
+.box__embed {
+  /*height: 100vh;*/
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*turn off default bullets*/
+.box--gallery {
+  list-style: none;
+}
+
+.box--gallery li,
+.box--gallery__item {
+  padding: 0.2em;
+}
+
+/*turn off fontawesome bullets*/
+.box--gallery li::before,
+.box--gallery__item li::before {
+  display: none;
+}
