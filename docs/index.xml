@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>/index.xml</link>
+    <link>/landingpage-guide/index.xml</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting Started</title>
-      <link>/gettingstarted/</link>
+      <link>/landingpage-guide/gettingstarted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gettingstarted/</guid>
+      <guid>/landingpage-guide/gettingstarted/</guid>
       <description>&lt;p&gt;Just a start on the guide (march 29) come back in few days&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Quick Start for the Experienced</title>
-      <link>/tldr/</link>
+      <link>/landingpage-guide/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tldr/</guid>
+      <guid>/landingpage-guide/tldr/</guid>
       <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone this guide&amp;rsquo;s repo or the starter repo.  Edit the markdown files in the /content directory and settings in config.toml.&lt;/p&gt;
 
 &lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder
@@ -47,10 +47,10 @@
     
     <item>
       <title></title>
-      <link>/footer/</link>
+      <link>/landingpage-guide/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/footer/</guid>
+      <guid>/landingpage-guide/footer/</guid>
       <description>&lt;div class=&#34;box box--footer&#34;&gt;
 &lt;p&gt;This is a footer&lt;/p&gt;
 

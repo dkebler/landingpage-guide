@@ -1,5 +1,5 @@
 # for gh-pages
-# baseurl = "/landing-page-guide"
+baseurl = "/landingpage-guide"
 languageCode = "en-us"
 title = "Landing Page User Guide"
 canonifyUrls = "true"
