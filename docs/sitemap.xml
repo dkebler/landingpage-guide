@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>/landing-page-guide/gettingstarted/</loc>
+    <loc>/gettingstarted/</loc>
   </url>
   
   <url>
-    <loc>/landing-page-guide/footer/</loc>
+    <loc>/tldr/</loc>
   </url>
   
   <url>
-    <loc>/landing-page-guide/</loc>
+    <loc>/footer/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   

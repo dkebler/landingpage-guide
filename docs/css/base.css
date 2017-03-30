@@ -10,6 +10,7 @@
 }
 
 /* regions */
+
 body {
   display: flex;
   color: black;
@@ -30,6 +31,7 @@ body {
 }
 
 /* mobile first column */
+
 .section__container {
   display: flex;
   width: 95%;
@@ -42,6 +44,7 @@ body {
 }
 
 /* Typography */
+
 body {
   font-size: 12px;
 }
@@ -86,6 +89,7 @@ p {
   text-align: left;
   font-size: 1em;
   line-height: 1.2;
+  margin-bottom: 1em;
 }
 
 li {
@@ -93,12 +97,14 @@ li {
 }
 
 /* elements */
+
 nav,
 ul {
   list-style: none;
 }
 
-a {
+a,
+.clickable {
   color: inherit;
   opacity: 0.8;
   outline: 0;
@@ -106,7 +112,8 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+a:hover,
+.clickable:hover {
   opacity: 1;
 }
 
@@ -139,6 +146,7 @@ figcaption {
 }
 
 /* divider */
+
 hr {
   width: 50%;
   height: 0;
@@ -167,4 +175,8 @@ hr {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+
+.hide {
+  visibility: hidden;
 }

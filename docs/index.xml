@@ -2,28 +2,56 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>/landing-page-guide/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/landing-page-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Getting Started</title>
-      <link>/landing-page-guide/gettingstarted/</link>
+      <link>/gettingstarted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landing-page-guide/gettingstarted/</guid>
-      <description></description>
+      <guid>/gettingstarted/</guid>
+      <description>&lt;p&gt;Just a start on the guide (march 29) come back in few days&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick Start for the Experienced</title>
+      <link>/tldr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tldr/</guid>
+      <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone this guide&amp;rsquo;s repo or the starter repo.  Edit the markdown files in the /content directory and settings in config.toml.&lt;/p&gt;
+
+&lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder
+&lt;div class=&#34;box box--&#34;&gt;
+&lt;div class =&#34;box box--btn&#34;&gt;
+&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-starter.git&#34;&gt;starter repo&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class =&#34;box box--btn&#34;&gt;
+&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-guide.git&#34;&gt;guide repo&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class =&#34;box box--btn&#34;&gt;
+&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-flex-hugo-theme.git&#34;&gt;theme repo&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title></title>
-      <link>/landing-page-guide/footer/</link>
+      <link>/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landing-page-guide/footer/</guid>
-      <description>&lt;div class=&#34;box box-footer&#34;&gt;
+      <guid>/footer/</guid>
+      <description>&lt;div class=&#34;box box--footer&#34;&gt;
 &lt;p&gt;This is a footer&lt;/p&gt;
 
 &lt;/div&gt;
