@@ -1,11 +1,12 @@
 # for gh-pages
-baseurl = "/landingpage-guide"
+# baseurl = "https://dkebler.github.io/landingpage-guide/"
 languageCode = "en-us"
 title = "Landing Page User Guide"
 canonifyUrls = "true"
 staticDir ="assets"
 publishDir = "docs"
 theme = "landingpage-flex-hugo-theme"
+disqusShortname = "landingpage-guide"
 
 [params]
 custom_css = ["/css/custom.css"]  # can add other files in array and file in assets/css/
@@ -33,16 +34,15 @@ custom_css = ["/css/custom.css"]  # can add other files in array and file in ass
   headline = "Landing Page Generator"
   headline_color = "firebrick"
   #headline_size = "4"
-  subheadline = "Guide and Usage"
+  subheadline = "Users Guide"
   # subheadline_color = "pink"
   # subheadline_size = "1"
   subsubheadline = "Hugo Powered!"
-  # subsubheadline_color = "brown"
+  subsubheadline_color = "brown"
   # subsubheadline_size = "1"
-  lines = ["Customizable","Add Your Sections", "Insert Your Content","Super Noob Friendly"]
-  lines_color = "bisque"
-  lines_size = ".75"
-
+  lines = ["Customizable, Add Your Sections", "Insert Your Content, Add a Comments Section","Super Noob Friendly"]
+  lines_color = "ivory"
+  lines_size = ".65"
   divider = true
   # divider_color = "seagreen"
   # divider_thickness = "3"
@@ -59,8 +59,11 @@ custom_css = ["/css/custom.css"]  # can add other files in array and file in ass
     color = "bisque"
     bg_color = "firebrick"
     [params.sections.footer]
-    color = "ivory"
-    bg_color = "darksalmon"
+    # color = "ivory"
+    # bg_color = "darksalmon"
+    [params.sections.comments]
+    color = "black"
+    bg_color = "ivory"
 
 # these will overide the default which is even section button scheme comes from odd section scheme and vice versa
 # default hover is simply

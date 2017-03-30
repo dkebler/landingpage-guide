@@ -2,28 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>/landingpage-guide/index.xml</link>
+    <link>https://dkebler.github.io/landingpage-guide/index.xml</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dkebler.github.io/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What to Install</title>
+      <link>https://dkebler.github.io/landingpage-guide/install/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/install/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Getting Started</title>
-      <link>/landingpage-guide/gettingstarted/</link>
+      <link>https://dkebler.github.io/landingpage-guide/gettingstarted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landingpage-guide/gettingstarted/</guid>
-      <description>&lt;p&gt;Just a start on the guide (march 29) come back in few days&lt;/p&gt;
+      <guid>https://dkebler.github.io/landingpage-guide/gettingstarted/</guid>
+      <description>&lt;p&gt;Just a start on the guide (march 30) come back in few days&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Quick Start for the Experienced</title>
-      <link>/landingpage-guide/tldr/</link>
+      <link>https://dkebler.github.io/landingpage-guide/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landingpage-guide/tldr/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/tldr/</guid>
       <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone this guide&amp;rsquo;s repo or the starter repo.  Edit the markdown files in the /content directory and settings in config.toml.&lt;/p&gt;
 
 &lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder
@@ -47,14 +56,53 @@
     
     <item>
       <title></title>
-      <link>/landingpage-guide/footer/</link>
+      <link>https://dkebler.github.io/landingpage-guide/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/landingpage-guide/footer/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/footer/</guid>
       <description>&lt;div class=&#34;box box--footer&#34;&gt;
 &lt;p&gt;This is a footer&lt;/p&gt;
 
 &lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dkebler.github.io/landingpage-guide/comments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/comments/</guid>
+      <description>&lt;div class=&#34;box box--disqus&#34;&gt;
+    &lt;div id=&#34;disqus_thread&#34; class=&#34;box__embed box__embed--disqus&#34;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script type=&#34;text/javascript&#34;&gt;
+
+(function() {
+    
+    
+    
+    
+
+    var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
+    var disqus_shortname = &#39;landingpage-guide&#39;;
+    dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&#34;http://disqus.com/?ref_noscript&#34;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+&lt;a href=&#34;http://disqus.com/&#34; class=&#34;dsq-brlink&#34;&gt;comments powered by &lt;span class=&#34;logo-disqus&#34;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+
+
+
+
+
+
 
 </description>
     </item>

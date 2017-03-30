@@ -1,5 +1,5 @@
 +++
-weight = 20
+weight = 30
 draft = false
 title = "Quick Start for the Experienced"
 link_text = "TL;DR"
