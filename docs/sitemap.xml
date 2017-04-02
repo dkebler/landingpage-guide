@@ -2,27 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/install/</loc>
+    <loc>/install/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/gettingstarted/</loc>
+    <loc>/gettingstarted/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/tldr/</loc>
+    <loc>/plugins/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/footer/</loc>
+    <loc>/tldr/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/comments/</loc>
+    <loc>/footer/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/</loc>
+    <loc>/comments/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <priority>0</priority>
   </url>
   

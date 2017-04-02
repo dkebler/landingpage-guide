@@ -1,0 +1,28 @@
+{
+  "name": "landingpage-guide",
+  "version": "0.1.0",
+  "description": "Guide to Using the Hugo Landing Page Theme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkebler/landingpage-guide.git"
+  },
+  "keywords": [
+    "hugo",
+    "landingpage",
+    "static",
+    "generator"
+  ],
+  "author": "David Kebler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkebler/landingpage-guide/issues"
+  },
+  "homepage": "https://github.com/dkebler/landingpage-guide#readme"
+}

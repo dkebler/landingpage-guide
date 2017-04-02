@@ -92,14 +92,10 @@ p {
   margin-bottom: 1em;
 }
 
-li {
-  font-size: 1em;
-}
-
-/* elements */
-
+/* using ::before for list numbers and icons */
 nav,
-ul {
+ul,
+ol {
   list-style: none;
 }
 
@@ -110,6 +106,7 @@ a,
   outline: 0;
   text-decoration: none;
   cursor: pointer;
+  font-weight: bold;
 }
 
 a:hover,
@@ -179,4 +176,16 @@ hr {
 
 .hide {
   visibility: hidden;
+}
+
+.text-center p {
+  text-align: center;
+}
+
+.text-left p {
+  text-align: left;
+}
+
+.text-right p {
+  text-align: right;
 }

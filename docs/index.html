@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <base href="https://dkebler.github.io/landingpage-guide/">
+    <base href="">
 
     
 <link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
 
 
@@ -32,28 +32,27 @@
 
 
 
-        
-    
-    <link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lg-transitions.min.css" rel="stylesheet">
-
-    
-    <link href="https://dkebler.github.io/landingpage-guide/css/base.css" rel="stylesheet">
-
-    
-    <link href="https://dkebler.github.io/landingpage-guide/css/page.css" rel="stylesheet">
-
-    
-    <link href="https://dkebler.github.io/landingpage-guide/css/navbar.css" rel="stylesheet">
-
-    
     
 
-    
-    <link href="https://dkebler.github.io/landingpage-guide/css/responsive.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lg-transitions.min.css" rel="stylesheet">
 
-    
-    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.css" type="text/css" media="screen" />
+
+
+<link href="/css/base.css" rel="stylesheet">
+
+
+<link href="/css/page.css" rel="stylesheet">
+
+
+<link href="/css/navbar.css" rel="stylesheet">
+
+
+<link href="/css/responsive.css" rel="stylesheet">
+
+
+
  <style>
 
 
@@ -83,7 +82,7 @@
  }
 
  .nav-bar__logo::after {
-   content: "Guide";
+   content: "Landing Page Guide";
    text-indent: 0;
    display: block;
    line-height: initial;  
@@ -157,6 +156,11 @@
     
 
     
+    .section__content ul > li::before {
+      content: "";
+      }
+
+    
 
     
     .section--odd, .section--even .btn {
@@ -197,10 +201,9 @@
  </style>
 
 
-    
-    
-        <link rel="stylesheet" href="https://dkebler.github.io/landingpage-guide/css/custom.css">
-    
+
+
+<link rel="stylesheet" href="/css/custom.css"> 
 
 </head>
 
@@ -216,6 +219,12 @@
             <ul class="nav-bar__menu hide-menu">
                 
                 
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#install">
+                      Install
+                    </a>
+                </li>
                  
                 
                 
@@ -223,6 +232,15 @@
                 <li class="nav-bar__menu-item">
                       <a href="#gettingstarted">
                       Start
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#plugins">
+                      Plugins
                     </a>
                 </li>
                  
@@ -268,6 +286,153 @@
 
  
 
+<section id="install" class="section section--install section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--install">
+			<h1>What to Install</h1>
+		</div>
+		<div class="section__content section-content--install"  style="align-items: left;" >
+			<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#tldr">quick start</a>.</p>
+
+<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of the starter respository. The absolute minimum tools you&rsquo;ll need to install are</p>
+
+<p>
+
+
+
+    
+  
+
+
+<a
+target="_blank"
+
+
+href="https://gohugo.io/overview/introduction/"
+>
+
+
+Hugo
+
+</a>
+  - a static site Generator</p>
+
+<div class="box box--btn-bar">
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Windows-64bit.zip"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo for Windows</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_macOS-64bit.zip"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo For Mac</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/spf13/hugo/releases/', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo for Linux</div>
+
+</a>
+
+
+</div>
+
+
+<p>and</p>
+
+<p>
+
+
+
+    
+  
+
+
+<a
+target="_blank"
+
+
+href="https://atom.io"
+>
+
+
+Atom
+
+</a>
+ a text based editor and the Atom is highly recommended.</p>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Atom</div>
+
+</a>
+
+
+<p>Possbilty the hardest part of building your custom landing page is getting these two tools installed.</p>
+
+		</div>
+	</div>
+</section>
+
 
 
 <section id="gettingstarted" class="section section--gettingstarted section--even">
@@ -275,7 +440,7 @@
 		<div class="section__headline section__headline--gettingstarted">
 			<h1>Getting Started</h1>
 		</div>
-		<div class="section__content section-content--gettingstarted">
+		<div class="section__content section-content--gettingstarted"  >
 			<p>Just a start on the guide (march 30) come back in few days</p>
 
 		</div>
@@ -284,30 +449,129 @@
 
 
 
-<section id="tldr" class="section section--tldr section--odd">
+<section id="plugins" class="section section--plugins section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--plugins">
+			<h1>Plugins (i.e Shortcodes) for Content</h1>
+		</div>
+		<div class="section__content section-content--plugins"  >
+			<div id="photos" class="box box--gallery">
+       <li data-src="images/photos/large/100.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/100.jpg">
+         <a href="images/photos/large/100.jpg">
+           <img src="images/photos/thumbs/100.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/101.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/101.jpg">
+         <a href="images/photos/large/101.jpg">
+           <img src="images/photos/thumbs/101.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/105.png"
+           data-sub-html=""
+           data-download-url="images/photos/large/105.png">
+         <a href="images/photos/large/105.png">
+           <img src="images/photos/thumbs/105.png"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/106.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/106.jpg">
+         <a href="images/photos/large/106.jpg">
+           <img src="images/photos/thumbs/106.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/115.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/115.jpg">
+         <a href="images/photos/large/115.jpg">
+           <img src="images/photos/thumbs/115.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+      </li>
+</div>
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="tldr" class="section section--tldr section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--tldr">
 			<h1>Quick Start for the Experienced</h1>
 		</div>
-		<div class="section__content section-content--tldr">
-			<p>For those who are Hugo experienced and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone this guide&rsquo;s repo or the starter repo.  Edit the markdown files in the /content directory and settings in config.toml.</p>
+		<div class="section__content section-content--tldr"  >
+			<p>For those who are Hugo experienced and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the starter repo.  Edit the markdown files in the /sections directory and settings in config.toml.</p>
 
-<p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&rsquo;s themes folder
-<div class="box box--">
-<div class ="box box--btn">
-<a class="btn" href="https://github.com/dkebler/landingpage-starter.git">starter repo</a>
+<p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&rsquo;s themes folder</p>
+
+<div class="box box--btn-bar">
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/dkebler/landingpage-starter.git', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+
+<div class="btn__text">starter repo</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-hugo-theme.git', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+
+<div class="btn__text">theme repo</div>
+
+</a>
+
+
 </div>
 
-<div class ="box box--btn">
-<a class="btn" href="https://github.com/dkebler/landingpage-guide.git">guide repo</a>
-</div>
-
-<div class ="box box--btn">
-<a class="btn" href="https://github.com/dkebler/landingpage-flex-hugo-theme.git">theme repo</a>
-</div>
-
-</div>
-</p>
 
 		</div>
 	</div>
@@ -324,24 +588,42 @@
 
 <script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
 
-
 <script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.js"></script>
 
 
 
 
-<script src="https://dkebler.github.io/landingpage-guide/js/fitToParent.js"></script>
-<script src="https://dkebler.github.io/landingpage-guide/js/flowType.js"></script>
 
-<script src="https://dkebler.github.io/landingpage-guide/js/lorem.js"></script>
+<script src="/js/fitToParent.js"></script>
+<script src="/js/flowType.js"></script>
 
-
-
-<script src="https://dkebler.github.io/landingpage-guide/js/page.js"></script>
+<script src="/js/lorem.js"></script>
 
 
-<script src="https://dkebler.github.io/landingpage-guide/js/docready.js"></script>
+
+<script src="/js/page.js"></script>
+
+
+<script src="/js/docready.js"></script>
+
+
+
+   <script src="/js/custom.js"></script>
+
+   <script src="/js/custom-docready.js"></script>
+
+
+
+
+<script>
+$(document).ready(function () {
+  
+  lightgallery('#photos')
+});
+</script>
+
 
 </body>
 </html>

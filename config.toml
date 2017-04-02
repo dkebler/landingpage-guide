@@ -5,16 +5,22 @@ title = "Landing Page User Guide"
 canonifyUrls = "true"
 staticDir ="assets"
 publishDir = "docs"
+contentDir = "sections"
+layoutDir = "plugins"
 theme = "landingpage-flex-hugo-theme"
-disqusShortname = "landingpage-guide"
+# disqusShortname = "landingpage-guide"
 
 [params]
-custom_css = ["/css/custom.css"]  # can add other files in array and file in assets/css/
+custom_css = ["custom.css"]  # can add other files in array and make corresponding file in assets/css/
+custom_js = ["custom.js","custom-docready.js"]  # can add other files in array and make corresponding file in assets/css/
+galleries = ["photos"] # array of galleries names created
+# imagespath = "https://mybuckettld/afolder/"  # full url must end with /
+lightbox = "lightgallery" # must match the lightbox function name
 # font = "Acme"  # a valid google font name, default Roboto, sets for entire site, can be specifically overridden
 
 [params.navbar]
   #logo_text = "Will override site title"  # default is to use the site title
-  logo_text_short = "Guide" # helps to fit on small screens without wrapping
+  logo_text_short = "Landing Page Guide" # helps to fit on small screens without wrapping
   # logo_text_size="1" # unit is em, 2em is default for small
   # font = "Ranga"
   #  For List of html colors see either
@@ -49,7 +55,7 @@ custom_css = ["/css/custom.css"]  # can add other files in array and file in ass
 
 [params.sections]
     #font = "Acme"
-    # bullet_icon = "\uF069"   # the font awesome 4 digit unicode number, CAPS for letters, preface with \u
+    bullet_icon = "\uF069"   # font awesome unicode value
     # headline_font = "Lato"
     # headline_size = "3"
     [params.sections.odd]

@@ -2,64 +2,295 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>https://dkebler.github.io/landingpage-guide/index.xml</link>
+    <link>/index.xml</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://dkebler.github.io/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What to Install</title>
-      <link>https://dkebler.github.io/landingpage-guide/install/</link>
+      <link>/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/install/</guid>
-      <description></description>
+      <guid>/install/</guid>
+      <description>&lt;p&gt;This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the &lt;a href=&#34;#tldr&#34;&gt;quick start&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To be able to make your own cusomtized landing pages quickly and easily you&amp;rsquo;ll need to install minimum of two tools and then grab a copy of the starter respository. The absolute minimum tools you&amp;rsquo;ll need to install are&lt;/p&gt;
+
+&lt;p&gt;
+
+
+
+    
+  
+
+
+&lt;a
+target=&#34;_blank&#34;
+
+
+href=&#34;https://gohugo.io/overview/introduction/&#34;
+&gt;
+
+
+Hugo
+
+&lt;/a&gt;
+  - a static site Generator&lt;/p&gt;
+
+&lt;div class=&#34;box box--btn-bar&#34;&gt;
+
+
+
+
+
+    
+  
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Windows-64bit.zip&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-download&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;Hugo for Windows&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+
+
+
+    
+  
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_macOS-64bit.zip&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-download&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;Hugo For Mac&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+
+
+
+    
+  
+
+
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;javascript:void( window.open(&#39;https://github.com/spf13/hugo/releases/&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-download&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;Hugo for Linux&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;p&gt;
+
+
+
+    
+  
+
+
+&lt;a
+target=&#34;_blank&#34;
+
+
+href=&#34;https://atom.io&#34;
+&gt;
+
+
+Atom
+
+&lt;/a&gt;
+ a text based editor and the Atom is highly recommended.&lt;/p&gt;
+
+
+
+
+
+    
+  
+
+
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-download&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;Atom&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+&lt;p&gt;Possbilty the hardest part of building your custom landing page is getting these two tools installed.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>https://dkebler.github.io/landingpage-guide/gettingstarted/</link>
+      <link>/gettingstarted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/gettingstarted/</guid>
+      <guid>/gettingstarted/</guid>
       <description>&lt;p&gt;Just a start on the guide (march 30) come back in few days&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Quick Start for the Experienced</title>
-      <link>https://dkebler.github.io/landingpage-guide/tldr/</link>
+      <title>Plugins (i.e Shortcodes) for Content</title>
+      <link>/plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/tldr/</guid>
-      <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone this guide&amp;rsquo;s repo or the starter repo.  Edit the markdown files in the /content directory and settings in config.toml.&lt;/p&gt;
-
-&lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder
-&lt;div class=&#34;box box--&#34;&gt;
-&lt;div class =&#34;box box--btn&#34;&gt;
-&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-starter.git&#34;&gt;starter repo&lt;/a&gt;
+      <guid>/plugins/</guid>
+      <description>&lt;div id=&#34;photos&#34; class=&#34;box box--gallery&#34;&gt;
+       &lt;li data-src=&#34;images/photos/large/100.jpg&#34;
+           data-sub-html=&#34;&#34;
+           data-download-url=&#34;images/photos/large/100.jpg&#34;&gt;
+         &lt;a href=&#34;images/photos/large/100.jpg&#34;&gt;
+           &lt;img src=&#34;images/photos/thumbs/100.jpg&#34;
+                width=&#34;120&#34;
+                height=&#34;120&#34;
+                alt=&#34;&#34; /&gt;
+         &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li data-src=&#34;images/photos/large/101.jpg&#34;
+           data-sub-html=&#34;&#34;
+           data-download-url=&#34;images/photos/large/101.jpg&#34;&gt;
+         &lt;a href=&#34;images/photos/large/101.jpg&#34;&gt;
+           &lt;img src=&#34;images/photos/thumbs/101.jpg&#34;
+                width=&#34;120&#34;
+                height=&#34;120&#34;
+                alt=&#34;&#34; /&gt;
+         &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li data-src=&#34;images/photos/large/105.png&#34;
+           data-sub-html=&#34;&#34;
+           data-download-url=&#34;images/photos/large/105.png&#34;&gt;
+         &lt;a href=&#34;images/photos/large/105.png&#34;&gt;
+           &lt;img src=&#34;images/photos/thumbs/105.png&#34;
+                width=&#34;120&#34;
+                height=&#34;120&#34;
+                alt=&#34;&#34; /&gt;
+         &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li data-src=&#34;images/photos/large/106.jpg&#34;
+           data-sub-html=&#34;&#34;
+           data-download-url=&#34;images/photos/large/106.jpg&#34;&gt;
+         &lt;a href=&#34;images/photos/large/106.jpg&#34;&gt;
+           &lt;img src=&#34;images/photos/thumbs/106.jpg&#34;
+                width=&#34;120&#34;
+                height=&#34;120&#34;
+                alt=&#34;&#34; /&gt;
+         &lt;/a&gt;
+       &lt;/li&gt;
+       &lt;li data-src=&#34;images/photos/large/115.jpg&#34;
+           data-sub-html=&#34;&#34;
+           data-download-url=&#34;images/photos/large/115.jpg&#34;&gt;
+         &lt;a href=&#34;images/photos/large/115.jpg&#34;&gt;
+           &lt;img src=&#34;images/photos/thumbs/115.jpg&#34;
+                width=&#34;120&#34;
+                height=&#34;120&#34;
+                alt=&#34;&#34; /&gt;
+         &lt;/a&gt;
+      &lt;/li&gt;
 &lt;/div&gt;
 
-&lt;div class =&#34;box box--btn&#34;&gt;
-&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-guide.git&#34;&gt;guide repo&lt;/a&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Quick Start for the Experienced</title>
+      <link>/tldr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tldr/</guid>
+      <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone the starter repo.  Edit the markdown files in the /sections directory and settings in config.toml.&lt;/p&gt;
+
+&lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder&lt;/p&gt;
+
+&lt;div class=&#34;box box--btn-bar&#34;&gt;
+
+
+
+
+
+    
+  
+
+
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpage-starter.git&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
+&gt;
+
+&lt;div class=&#34;btn__text&#34;&gt;starter repo&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+
+
+
+    
+  
+
+
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpage-flex-hugo-theme.git&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
+&gt;
+
+&lt;div class=&#34;btn__text&#34;&gt;theme repo&lt;/div&gt;
+
+&lt;/a&gt;
+
+
 &lt;/div&gt;
 
-&lt;div class =&#34;box box--btn&#34;&gt;
-&lt;a class=&#34;btn&#34; href=&#34;https://github.com/dkebler/landingpage-flex-hugo-theme.git&#34;&gt;theme repo&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://dkebler.github.io/landingpage-guide/footer/</link>
+      <link>/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/footer/</guid>
+      <guid>/footer/</guid>
       <description>&lt;div class=&#34;box box--footer&#34;&gt;
 &lt;p&gt;This is a footer&lt;/p&gt;
 
@@ -70,10 +301,10 @@
     
     <item>
       <title></title>
-      <link>https://dkebler.github.io/landingpage-guide/comments/</link>
+      <link>/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/comments/</guid>
+      <guid>/comments/</guid>
       <description>&lt;div class=&#34;box box--disqus&#34;&gt;
     &lt;div id=&#34;disqus_thread&#34; class=&#34;box__embed box__embed--disqus&#34;&gt;
     &lt;/div&gt;
