@@ -1,5 +1,5 @@
 # for gh-pages
-# baseurl = "https://dkebler.github.io/landingpage-guide/"
+baseurl = "https://dkebler.github.io/landingpage-guide/"
 languageCode = "en-us"
 title = "Landing Page User Guide"
 canonifyUrls = "true"

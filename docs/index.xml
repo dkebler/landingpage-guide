@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>/index.xml</link>
+    <link>https://dkebler.github.io/landingpage-guide/index.xml</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://dkebler.github.io/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>What to Install</title>
-      <link>/install/</link>
+      <link>https://dkebler.github.io/landingpage-guide/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/install/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/install/</guid>
       <description>&lt;p&gt;This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the &lt;a href=&#34;#tldr&#34;&gt;quick start&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;To be able to make your own cusomtized landing pages quickly and easily you&amp;rsquo;ll need to install minimum of two tools and then grab a copy of the starter respository. The absolute minimum tools you&amp;rsquo;ll need to install are&lt;/p&gt;
@@ -155,20 +155,20 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
     
     <item>
       <title>Getting Started</title>
-      <link>/gettingstarted/</link>
+      <link>https://dkebler.github.io/landingpage-guide/gettingstarted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gettingstarted/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/gettingstarted/</guid>
       <description>&lt;p&gt;Just a start on the guide (march 30) come back in few days&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Plugins (i.e Shortcodes) for Content</title>
-      <link>/plugins/</link>
+      <link>https://dkebler.github.io/landingpage-guide/plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/plugins/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/plugins/</guid>
       <description>&lt;div id=&#34;photos&#34; class=&#34;box box--gallery&#34;&gt;
        &lt;li data-src=&#34;images/photos/large/100.jpg&#34;
            data-sub-html=&#34;&#34;
@@ -227,10 +227,10 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
     
     <item>
       <title>Quick Start for the Experienced</title>
-      <link>/tldr/</link>
+      <link>https://dkebler.github.io/landingpage-guide/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tldr/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/tldr/</guid>
       <description>&lt;p&gt;For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone the starter repo.  Edit the markdown files in the /sections directory and settings in config.toml.&lt;/p&gt;
 
 &lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&amp;rsquo;s themes folder&lt;/p&gt;
@@ -287,10 +287,10 @@ href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpa
     
     <item>
       <title></title>
-      <link>/footer/</link>
+      <link>https://dkebler.github.io/landingpage-guide/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/footer/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/footer/</guid>
       <description>&lt;div class=&#34;box box--footer&#34;&gt;
 &lt;p&gt;This is a footer&lt;/p&gt;
 
@@ -301,10 +301,10 @@ href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpa
     
     <item>
       <title></title>
-      <link>/comments/</link>
+      <link>https://dkebler.github.io/landingpage-guide/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/comments/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/comments/</guid>
       <description>&lt;div class=&#34;box box--disqus&#34;&gt;
     &lt;div id=&#34;disqus_thread&#34; class=&#34;box__embed box__embed--disqus&#34;&gt;
     &lt;/div&gt;
