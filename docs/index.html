@@ -15,9 +15,14 @@
 
 
 <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+ 
+<link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
 
 
 
+
+  
+  <link href="//fonts.googleapis.com/css?family=Open%20Sans" rel="stylesheet" type="text/css">
   
 
   
@@ -39,6 +44,8 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.css" type="text/css" media="screen" />
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+
 
 <link href="https://dkebler.github.io/landingpage-guide/css/base.css" rel="stylesheet">
 
@@ -55,6 +62,8 @@
 
  <style>
 
+  body { font-family:Open Sans,Helvetica,Arial,sans-serif; }
+ 
 
  
 
@@ -221,7 +230,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#install">
+                      <a href="#nav-install">
                       Install
                     </a>
                 </li>
@@ -230,8 +239,8 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#edit">
-                      Edit
+                      <a href="#nav-startup">
+                      Startup
                     </a>
                 </li>
                  
@@ -239,7 +248,25 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#plugins">
+                      <a href="#nav-configure">
+                      Configure
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#nav-sections">
+                      Sections
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#nav-plugins">
                       Plugins
                     </a>
                 </li>
@@ -248,7 +275,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#deloy">
+                      <a href="#nav-deloy">
                       Deploy
                     </a>
                 </li>
@@ -257,7 +284,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#tldr">
+                      <a href="#nav-tldr">
                       TL;DR
                     </a>
                 </li>
@@ -297,15 +324,19 @@
 
  
 
-<section id="install" class="section section--install section--odd">
+<section id="nav-install" class="section section--install section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--install">
 			<h1>What to Install</h1>
 		</div>
-		<div class="section__content section-content--install"  style="align-items: left;" >
-			<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#tldr">quick start</a>.</p>
+		<div class="section__content section-content--install"  >
+			
 
-<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of the this guide respository to use as a starter. The absolute minimum tools you&rsquo;ll need to install are</p>
+<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#tldr">quick start</a>.</p>
+
+<h3 id="the-tools">The Tools</h3>
+
+<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of this guide&rsquo;s source respository to use as a starter. The absolute minimum tools you&rsquo;ll need to install are</p>
 
 <p>
 
@@ -327,6 +358,19 @@ Hugo
 
 </a>
   - a static site Generator</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sXoklQRTKSc" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
 
 <div class="box box--btn-bar">
 
@@ -393,24 +437,7 @@ href="javascript:void( window.open('https://github.com/spf13/hugo/releases/', 'b
 </div>
 
 
-
-
-<div class="box box--youtube">
-    
-    <div class="box__title">Install Hugo on Windows</div>
-    
-    <div class="box__embed box__embed--youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sXoklQRTKSc" frameborder="0" allowfullscreen></iframe>
-
-    </div>
-    
-    <div class="box__caption">Placing in C:/Windows</div>
-    
-</div>
-
-
-
-<p>and</p>
+<p><strong>&ndash;AND&ndash;</strong></p>
 
 <p>
 
@@ -431,7 +458,9 @@ href="https://atom.io"
 Atom
 
 </a>
- a text/IDE editor .</p>
+ a text/IDE editor</p>
+
+<p>The following button will take you to the Atom website and offer a download button for Atom for your operating system.</p>
 
 
 
@@ -455,28 +484,11 @@ href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, 
 </a>
 
 
-<p>Once the Atom editor is installed you&rsquo;ll need to install an Atom package <em>terminal-panel</em> to be able to lanuch Hugo from within the editor.</p>
-
-
-
-<div class="box box--youtube">
-    
-    <div class="box__title">Install Atom on Windows</div>
-    
-    <div class="box__embed box__embed--youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WWgXubewuu8" frameborder="0" allowfullscreen></iframe>
-
-    </div>
-    
-    <div class="box__caption">Install terminal-panel in Atom</div>
-    
-</div>
-
-
-
 <p>Possibly the hardest part of building your custom landing page is getting these two tools installed!</p>
 
-<p>Once you have Hugo and Atom installed you are ready to download a copy of this landing page guide&rsquo;s source respository to use as a starter.  First decide on a directory in which to put it on you machine.  Then download the zip archive file.  Then extract it into that directory.  Then open that folder in Atom and you&rsquo;ll be ready to start editing your own landing page.</p>
+<h3 id="the-starter-site-code">The Starter Site Code</h3>
+
+<p>Once you have Hugo and Atom installed you are ready to get a copy of the starter site.  Since this webpage you are reading was generated by Hugo with the same code/theme what better resource to use to get started than this guide itself!  So first decide on a directory in which to put it on your machine.  Then download the zip archive file using the button below.  Then extract it into that directory.  Then open that folder in Atom and you&rsquo;ll be ready to start editing your own landing page.  See the <a href="#edit-video">video</a> in the Getting Started section below.</p>
 
 
 
@@ -490,10 +502,10 @@ href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, 
 
 
 class="box box--btn btn btn--regular"
-href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
+href="https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/landingpage-guide.zip"
 >
 <i class="btn__icon fa fa-download"></i>
-<div class="btn__text">This Guide as a Landing Page Starter</div>
+<div class="btn__text">Landing Page Starter</div>
 
 </a>
 
@@ -504,12 +516,12 @@ href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
 
 
 
-<section id="edit" class="section section--edit section--even">
+<section id="nav-startup" class="section section--startup section--even">
 	<div class="section__container">
-		<div class="section__headline section__headline--edit">
-			<h1>Edit</h1>
+		<div class="section__headline section__headline--startup">
+			<h1>Getting Started</h1>
 		</div>
-		<div class="section__content section-content--edit"  >
+		<div class="section__content section-content--startup"  >
 			
 
 <p><strong>YEA!</strong> If you completed successfully the installation section you are finally ready to start editing <strong>YOUR</strong> own landing page.  You&rsquo;ll going find easy to edit an existing landing page than to start your own from scratch.  That&rsquo;s why you&rsquo;ll be using this guide&rsquo;s source files.</p>
@@ -518,17 +530,103 @@ href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
 
 <p>In the folder you just made containing this guide&rsquo;s source files you need to concentrate on just three places.  The first is the <code>config.toml</code> file in the root of the folder.  The second is the <code>sections/</code> subfolder and the .md files inside.  md is short for Markdown the textual editing format you&rsquo;ll be using.  The third is the <code>assets/images/</code> folder. That&rsquo;s the only places you&rsquo;ll need to put your attention to create your own personalized landing page.  The rest of the directory&rsquo;s folders can be safely ignored until you are ready for more advanced topics like tweaking the styling.</p>
 
-<h3 id="hugo-renders-your-landing-page">Hugo Renders Your Landing Page</h3>
+<h3 id="make-hugo-render-your-landing-page">Make Hugo Render Your Landing Page</h3>
 
-<p>To begin you need to bring up Atom with your working folder open.  Then click on the + sign at the bottom for the terminal-panel and in that panel type <code>hugo server</code>.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type <code>localhost:1313</code> into the address line and you be viewing the landing page that Hugo just rendered. But&hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&rsquo;ll see those changes immediately in the browser.</p>
+<p>To begin you need to bring up Atom with your working folder open.  Then click on the + sign at the bottom for the terminal-panel and in that panel type <code>hugo server</code>.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type <code>localhost:1313</code> into the address line and you be viewing the landing page that Hugo just rendered. But&hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&rsquo;ll see those changes immediately in the browser</p>
 
-<h3 id="the-configuration-file">The Configuration File</h3>
 
-<p>So start the editing of the &ldquo;your&rdquo; site by bringing up the config.toml file in Atom.  What you&rsquo;ll probably want to do first is personalize the colors and fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  It&rsquo;s pretty simple each line in the config file is a setting.  You can turn the setting &ldquo;off&rdquo;  by simply putting a hashtag before it. If you take it away the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is currently no documentation for all the settings in <code>config.toml</code> but here is some helpful comments in the file itself.  Watch this video to get your feet wet editing <code>config.toml</code>.  If you make a copy of the file before you start then you can always go revert back to the original.  If you do something small like forget a quote Hugo won&rsquo;t render your page, bit Hugo will when you correct your mistake.</p>
 
-<h3 id="the-sections-writing-in-markdown">The Sections - Writing in Markdown</h3>
 
-<p>Adding a section to the landing page is as easy as adding a md file in the <code>sections</code> directory and then</p>
+
+<span name="edit-video" class="invisible">browser</span>
+
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="nav-configure" class="section section--configure section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--configure">
+			<h1>The Configuration File</h1>
+		</div>
+		<div class="section__content section-content--configure"  >
+			
+
+<p>The heart and soul of your landing page is the configuration file <code>config.toml</code>.  So start the editing of the &ldquo;your&rdquo; site by bringing up the config.toml file in Atom.  You&rsquo;ll find it in the root of your starter directory.</p>
+
+<h3 id="the-layout">The Layout</h3>
+
+<p>It&rsquo;s pretty simple.  Eeach line in the config file is a setting.  You can turn the setting &ldquo;off&rdquo;  by simply putting a hashtag(#) before it. If you remove the hashtag the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is currently no documentation for all the settings in <code>config.toml</code> but there is some helpful comments in the file itself (they have double hashtag in front).  Take a bit of time to read them all.  At the end of this section you can see a bit of the config.toml file copied here.</p>
+
+<h3 id="what-to-edit-first">What to Edit First</h3>
+
+<p>Before you get started editing <code>config.toml</code> notice that there is a copy of the file <code>config.toml.bak</code>.  It you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  <strong>Watch the video below to get your feet wet editing</strong> <code>config.toml</code>.   For now don&rsquo;t worry about the sections and navbar menu items that is covered in the next section.  Note that if you do something small like forget a quote Hugo won&rsquo;t render your page, but Hugo will when you correct your mistake.  It&rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&rsquo;s an advanced topic.  So for now just make your own .bak copy of <code>config.toml</code> from after you make major changes to it.</p>
+
+<pre><code class="language-md">## Double Hashtag indicates a comment
+## Use a Single Proceeding hashtag to turn a setting &quot;off&quot; rather than deleting it
+## Therefore never delete any line of this file
+## [ ] indicates a setting section never turn those off
+##
+## set a baseurl before rendering for deloyment otherwise leave it turned off
+# baseurl = &quot;https://dkebler.github.io/landingpage-guide/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Landing Page User Guide&quot; ## required used for tab title and navbar
+canonifyUrls = &quot;true&quot; ## don't change this
+staticDir =&quot;assets&quot; ## don't change this
+publishDir = &quot;docs&quot;
+contentDir = &quot;sections&quot; ## don't change this
+layoutDir = &quot;plugins&quot; ## don't change this
+theme = &quot;landingpage-flex-hugo-theme&quot; ## don't change this
+# disqusShortname = &quot;landingpage-guide&quot;
+
+[params]
+custom_css = [&quot;custom.css&quot;]  ## can add other files in array, make corresponding file in assets/css/
+custom_js = [&quot;custom.js&quot;,&quot;custom-docready.js&quot;]  ## can add other files in array, make corresponding file in assets/css/
+galleries = [&quot;photos&quot;] ## array of galleries names created
+## You can redirect your images location to another place like an s3 bucket. default is assets/images =&gt; /images
+# imagespath = &quot;https://mybuckettld/afolder/&quot;  ## full url must end with /
+lightbox = &quot;lightgallery&quot; ## must match the lightbox function name
+## Possible font setting choices in this config file must be a google font name
+## see  https://fonts.google.com/
+## This applies to all font= settings in this file
+font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be specifically overridden below
+
+[params.navbar]
+  #logo_text = &quot;Will override site title&quot;  ## default is to use the site Title above
+  logo_text_short = &quot;Landing Page Guide&quot; ## helps to fit on small screens without wrapping
+</code></pre>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="nav-sections" class="section section--sections section--even">
+	<div class="section__container">
+		<div class="section__headline section__headline--sections">
+			<h1>Sections</h1>
+		</div>
+		<div class="section__content section-content--sections"  >
+			
+
+<h3 id="about">About</h3>
+
+<p>Adding a section to the landing page is as easy as adding a md file in the <code>sections/</code> directory.  Each md file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.</p>
+
+<pre><code class="language-md">+++
+weight = 1010 # weight determines the order of
+# Title = &quot;Comments&quot;
+navbar = false
+hidden = true
++++
+</code></pre>
+
+<p>The easy way to create a new section is simply to copy an existing one existing one from the guide you are using as a starter.  Then change the frontmatter settings as you wish and then either edit or delete and start fresh with the markdown content that follows the frontmatter.</p>
 
 
 
@@ -554,7 +652,7 @@ href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
 
 
 
-<section id="plugins" class="section section--plugins section--odd">
+<section id="nav-plugins" class="section section--plugins section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--plugins">
 			<h1>Plugins (i.e Shortcodes) for Content</h1>
@@ -620,7 +718,7 @@ href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
 
 
 
-<section id="deloy" class="section section--deloy section--even">
+<section id="nav-deloy" class="section section--deloy section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--deloy">
 			<h1>Deploy</h1>
@@ -633,7 +731,7 @@ href="https://github.com/dkebler/landingpage-guide/archive/master.zip"
 
 
 
-<section id="tldr" class="section section--tldr section--odd">
+<section id="nav-tldr" class="section section--tldr section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--tldr">
 			<h1>Quick Start for the Experienced</h1>
@@ -709,6 +807,8 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 <script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.8.0/jquery.modal.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
 
 
 
