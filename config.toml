@@ -26,8 +26,8 @@ lightbox = "lightgallery" # must match the lightbox function name
   #  For List of html colors see either
   # http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
   # https://www.colorcodehex.com/html-color-names.html
-  color = "bisque"
-  bg_color = "firebrick"
+  color = "ivory"
+  bg_color = "coral"
 
 [params.hero]
   # img = "../images/myhero.jpg"  # default is images/hero.jpg, must provide the full path or url
@@ -46,7 +46,7 @@ lightbox = "lightgallery" # must match the lightbox function name
   subsubheadline = "Hugo Powered!"
   subsubheadline_color = "brown"
   # subsubheadline_size = "1"
-  lines = ["Customizable, Add Your Sections", "Insert Your Content, Add a Comments Section","Super Noob Friendly"]
+  lines = ["Customizable", "Add Your Sections", "Insert Your Content","Super Noob Friendly"]
   lines_color = "ivory"
   lines_size = ".65"
   divider = true

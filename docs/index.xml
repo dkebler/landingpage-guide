@@ -16,7 +16,7 @@
       <guid>https://dkebler.github.io/landingpage-guide/install/</guid>
       <description>&lt;p&gt;This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the &lt;a href=&#34;#tldr&#34;&gt;quick start&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;To be able to make your own cusomtized landing pages quickly and easily you&amp;rsquo;ll need to install minimum of two tools and then grab a copy of the starter respository. The absolute minimum tools you&amp;rsquo;ll need to install are&lt;/p&gt;
+&lt;p&gt;To be able to make your own cusomtized landing pages quickly and easily you&amp;rsquo;ll need to install minimum of two tools and then grab a copy of the this guide respository to use as a starter. The absolute minimum tools you&amp;rsquo;ll need to install are&lt;/p&gt;
 
 &lt;p&gt;
 
@@ -104,6 +104,23 @@ href=&#34;javascript:void( window.open(&#39;https://github.com/spf13/hugo/releas
 &lt;/div&gt;
 
 
+
+
+&lt;div class=&#34;box box--youtube&#34;&gt;
+    
+    &lt;div class=&#34;box__title&#34;&gt;Install Hugo on Windows&lt;/div&gt;
+    
+    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
+        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/sXoklQRTKSc&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;box__caption&#34;&gt;Placing in C:/Windows&lt;/div&gt;
+    
+&lt;/div&gt;
+
+
+
 &lt;p&gt;and&lt;/p&gt;
 
 &lt;p&gt;
@@ -125,7 +142,7 @@ href=&#34;https://atom.io&#34;
 Atom
 
 &lt;/a&gt;
- a text based editor and the Atom is highly recommended.&lt;/p&gt;
+ a text/IDE editor .&lt;/p&gt;
 
 
 
@@ -149,17 +166,94 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
 &lt;/a&gt;
 
 
-&lt;p&gt;Possbilty the hardest part of building your custom landing page is getting these two tools installed.&lt;/p&gt;
+&lt;p&gt;Once the Atom editor is installed you&amp;rsquo;ll need to install an Atom package &lt;em&gt;terminal-panel&lt;/em&gt; to be able to lanuch Hugo from within the editor.&lt;/p&gt;
+
+
+
+&lt;div class=&#34;box box--youtube&#34;&gt;
+    
+    &lt;div class=&#34;box__title&#34;&gt;Install Atom on Windows&lt;/div&gt;
+    
+    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
+        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/WWgXubewuu8&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+    &lt;/div&gt;
+    
+    &lt;div class=&#34;box__caption&#34;&gt;Install terminal-panel in Atom&lt;/div&gt;
+    
+&lt;/div&gt;
+
+
+
+&lt;p&gt;Possibly the hardest part of building your custom landing page is getting these two tools installed!&lt;/p&gt;
+
+&lt;p&gt;Once you have Hugo and Atom installed you are ready to download a copy of this landing page guide&amp;rsquo;s source respository to use as a starter.  First decide on a directory in which to put it on you machine.  Then download the zip archive file.  Then extract it into that directory.  Then open that folder in Atom and you&amp;rsquo;ll be ready to start editing your own landing page.&lt;/p&gt;
+
+
+
+
+
+    
+  
+
+
+&lt;a
+
+
+class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;https://github.com/dkebler/landingpage-guide/archive/master.zip&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-download&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;This Guide as a Landing Page Starter&lt;/div&gt;
+
+&lt;/a&gt;
+
 </description>
     </item>
     
     <item>
-      <title>Getting Started</title>
-      <link>https://dkebler.github.io/landingpage-guide/gettingstarted/</link>
+      <title>Edit</title>
+      <link>https://dkebler.github.io/landingpage-guide/edit/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-guide/gettingstarted/</guid>
-      <description>&lt;p&gt;Just a start on the guide (march 30) come back in few days&lt;/p&gt;
+      <guid>https://dkebler.github.io/landingpage-guide/edit/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;YEA!&lt;/strong&gt; If you completed successfully the installation section you are finally ready to start editing &lt;strong&gt;YOUR&lt;/strong&gt; own landing page.  You&amp;rsquo;ll going find easy to edit an existing landing page than to start your own from scratch.  That&amp;rsquo;s why you&amp;rsquo;ll be using this guide&amp;rsquo;s source files.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-s-important&#34;&gt;What&amp;rsquo;s Important&lt;/h3&gt;
+
+&lt;p&gt;In the folder you just made containing this guide&amp;rsquo;s source files you need to concentrate on just three places.  The first is the &lt;code&gt;config.toml&lt;/code&gt; file in the root of the folder.  The second is the &lt;code&gt;sections/&lt;/code&gt; subfolder and the .md files inside.  md is short for Markdown the textual editing format you&amp;rsquo;ll be using.  The third is the &lt;code&gt;assets/images/&lt;/code&gt; folder. That&amp;rsquo;s the only places you&amp;rsquo;ll need to put your attention to create your own personalized landing page.  The rest of the directory&amp;rsquo;s folders can be safely ignored until you are ready for more advanced topics like tweaking the styling.&lt;/p&gt;
+
+&lt;h3 id=&#34;hugo-renders-your-landing-page&#34;&gt;Hugo Renders Your Landing Page&lt;/h3&gt;
+
+&lt;p&gt;To begin you need to bring up Atom with your working folder open.  Then click on the + sign at the bottom for the terminal-panel and in that panel type &lt;code&gt;hugo server&lt;/code&gt;.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type &lt;code&gt;localhost:1313&lt;/code&gt; into the address line and you be viewing the landing page that Hugo just rendered. But&amp;hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&amp;rsquo;ll see those changes immediately in the browser.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-configuration-file&#34;&gt;The Configuration File&lt;/h3&gt;
+
+&lt;p&gt;So start the editing of the &amp;ldquo;your&amp;rdquo; site by bringing up the config.toml file in Atom.  What you&amp;rsquo;ll probably want to do first is personalize the colors and fonts, add your own &amp;ldquo;Hero&amp;rdquo; image and change the text in the &amp;ldquo;Hero&amp;rdquo; (top) section.  It&amp;rsquo;s pretty simple each line in the config file is a setting.  You can turn the setting &amp;ldquo;off&amp;rdquo;  by simply putting a hashtag before it. If you take it away the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is currently no documentation for all the settings in &lt;code&gt;config.toml&lt;/code&gt; but here is some helpful comments in the file itself.  Watch this video to get your feet wet editing &lt;code&gt;config.toml&lt;/code&gt;.  If you make a copy of the file before you start then you can always go revert back to the original.  If you do something small like forget a quote Hugo won&amp;rsquo;t render your page, bit Hugo will when you correct your mistake.&lt;/p&gt;
+
+&lt;h3 id=&#34;the-sections-writing-in-markdown&#34;&gt;The Sections - Writing in Markdown&lt;/h3&gt;
+
+&lt;p&gt;Adding a section to the landing page is as easy as adding a md file in the &lt;code&gt;sections&lt;/code&gt; directory and then&lt;/p&gt;
+
+
+
+&lt;div class=&#34;box box--youtube&#34;&gt;
+    
+    &lt;div class=&#34;box__title&#34;&gt;Basics of Markdown&lt;/div&gt;
+    
+    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
+        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/HndN6P9ke6U&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+    &lt;/div&gt;
+    
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;a href=&#34;http://www.markdowntutorial.com/&#34;&gt;markdown&lt;/a&gt;
+&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;cheatsheet&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -226,6 +320,15 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
     </item>
     
     <item>
+      <title>Deploy</title>
+      <link>https://dkebler.github.io/landingpage-guide/deloy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/deloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Quick Start for the Experienced</title>
       <link>https://dkebler.github.io/landingpage-guide/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -251,10 +354,10 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
 
 
 class=&#34;box box--btn btn btn--regular&#34;
-href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpage-starter.git&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
+href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpage-guide.git&#39;, &#39;blank&#39;, &#39;scrollbars=yes, toolbar=no, width=1000 &#39; ))&#34;
 &gt;
 
-&lt;div class=&#34;btn__text&#34;&gt;starter repo&lt;/div&gt;
+&lt;div class=&#34;btn__text&#34;&gt;guide repo&lt;/div&gt;
 
 &lt;/a&gt;
 

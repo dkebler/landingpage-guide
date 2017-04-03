@@ -9,6 +9,6 @@ For those who are Hugo experienced and know what they are doing and are able to 
 If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project's themes folder
 
 {{< box btn-bar >}}
-{{< link type="btn" url="https://github.com/dkebler/landingpage-starter.git" text="starter repo" display="window" >}}
+{{< link type="btn" url="https://github.com/dkebler/landingpage-guide.git" text="guide repo" display="window" >}}
 {{< link type="btn" url="https://github.com/dkebler/landingpage-flex-hugo-theme.git" text="theme repo" display="window" >}}
 {{< /box >}}
