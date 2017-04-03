@@ -1,31 +1,40 @@
-# for gh-pages
+## Double Hashtag indicates a comment
+## Use a Single Proceeding hashtag to turn a setting "off" rather than deleting it
+## Therefore never delete any line of this file
+## [ ] indicates a setting section never turn those off
+##
+## set a baseurl before rendering for deloyment otherwise leave it turned off
 baseurl = "https://dkebler.github.io/landingpage-guide/"
 languageCode = "en-us"
-title = "Landing Page User Guide"
-canonifyUrls = "true"
-staticDir ="assets"
+title = "Landing Page User Guide" ## required used for tab title and navbar
+canonifyUrls = "true" ## don't change this
+staticDir ="assets" ## don't change this
 publishDir = "docs"
-contentDir = "sections"
-layoutDir = "plugins"
-theme = "landingpage-flex-hugo-theme"
+contentDir = "sections" ## don't change this
+layoutDir = "plugins" ## don't change this
+theme = "landingpage-flex-hugo-theme" ## don't change this
 # disqusShortname = "landingpage-guide"
 
 [params]
-custom_css = ["custom.css"]  # can add other files in array and make corresponding file in assets/css/
-custom_js = ["custom.js","custom-docready.js"]  # can add other files in array and make corresponding file in assets/css/
-galleries = ["photos"] # array of galleries names created
-# imagespath = "https://mybuckettld/afolder/"  # full url must end with /
-lightbox = "lightgallery" # must match the lightbox function name
-# font = "Acme"  # a valid google font name, default Roboto, sets for entire site, can be specifically overridden
+custom_css = ["custom.css"]  ## can add other files in array, make corresponding file in assets/css/
+custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
+galleries = ["photos"] ## array of galleries names created
+## You can redirect your images location to another place like an s3 bucket. default is assets/images => /images
+# imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
+lightbox = "lightgallery" ## must match the lightbox function name
+## Possible font setting choices in this config file must be a google font name
+## see  https://fonts.google.com/
+## This applies to all font= settings in this file
+font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
 
 [params.navbar]
-  #logo_text = "Will override site title"  # default is to use the site title
-  logo_text_short = "Landing Page Guide" # helps to fit on small screens without wrapping
-  # logo_text_size="1" # unit is em, 2em is default for small
-  # font = "Ranga"
-  #  For List of html colors see either
-  # http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
-  # https://www.colorcodehex.com/html-color-names.html
+  #logo_text = "Will override site title"  ## default is to use the site Title above
+  logo_text_short = "Landing Page Guide" ## helps to fit on small screens without wrapping
+  # logo_text_size="1" ## unit is em, 2em is default
+  # font = ""
+  ##  For List of html colors see either
+  ## http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
+  ## https://www.colorcodehex.com/html-color-names.html
   color = "ivory"
   bg_color = "coral"
 
