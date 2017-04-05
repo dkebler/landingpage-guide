@@ -4,7 +4,7 @@
 ## [ ] indicates a setting section never turn those off
 ##
 ## set a baseurl before rendering for deloyment otherwise leave it turned off
-# baseurl = "https://dkebler.github.io/landingpage-guide/"
+#baseurl = "https://dkebler.github.io/landingpage-guide/"
 languageCode = "en-us"
 title = "Landing Page User Guide" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
@@ -28,8 +28,9 @@ lightbox = "lightgallery" ## must match the lightbox function name
 font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
 
 [params.navbar]
-  #logo_text = "Will override site title"  ## default is to use the site Title above
-  logo_text_short = "Landing Page Guide" ## helps to fit on small screens without wrapping
+  # hidden = true
+  # logo_text = "Will override site title"  ## default is to use the site Title above
+  logo_text_short = "Landing Page" ## helps to fit on small screens without wrapping
   # logo_text_size="1" ## unit is em, 2em is default
   # font = ""
   ##  For List of html colors see either
@@ -39,25 +40,30 @@ font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically
   bg_color = "coral"
 
 [params.hero]
-  # img = "../images/myhero.jpg"  # default is images/hero.jpg, must provide the full path or url
-  # font = "Acme"  # a valid google font name, default Roboto for all hero text
-  color = "darksalmon"
-  # bg_color = "red"
+  # custom_hero = true  ## All the hero settings below are ignored and hero is just a normal section if wanted
+  img = "hero.jpg"  # default is images/hero.jpg, must provide the full path or url
+  font = "Acme"  # a valid google font name, default Roboto for all hero text
+  color = "ivory"
+  bg_color = ""
   text_outline = "black"
-  text_shadow = "black"
+  # text_shadow = "black"
   # headlines_font = "Gloria Hallelujah"  # a valid google font name, defaults to intro font
+  ## H1
   headline = "Landing Page Generator"
   headline_color = "firebrick"
-  #headline_size = "4"
+  headline_size = "3.5"
+  ## H2
   subheadline = "Users Guide"
-  # subheadline_color = "pink"
-  # subheadline_size = "1"
+  subheadline_color = "pink"
+  subheadline_size = "3"
+  ## H3
   subsubheadline = "Hugo Powered!"
   subsubheadline_color = "brown"
-  # subsubheadline_size = "1"
+  subsubheadline_size = "2"
+  ## H4
   lines = ["Customizable", "Add Your Sections", "Insert Your Content","Super Noob Friendly"]
-  lines_color = "ivory"
-  lines_size = ".65"
+  # lines_color = "ivory"
+  lines_size = "1.5"
   divider = true
   # divider_color = "seagreen"
   # divider_thickness = "3"

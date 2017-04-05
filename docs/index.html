@@ -28,6 +28,8 @@
   
 
   
+  <link href="//fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
+  
 
   
 
@@ -91,7 +93,7 @@
  }
 
  .nav-bar__logo::after {
-   content: "Landing Page Guide";
+   content: "Landing Page";
    text-indent: 0;
    display: block;
    line-height: initial;  
@@ -106,22 +108,36 @@
  
 
   
+  
+  #hero {
+    background-image: url("/images/hero.jpg");
+  }
+  
+
+  
+  #hero > .section__container { font-family:Acme,Helvetica,Arial,sans-serif;}
+  
+
+  
+  #hero { color: ivory; }
+  
 
   
 
   
-  #hero > .text { color: darksalmon; }
-  
 
-  
-  #hero > .text {
-    text-shadow:
-     -2px -2px 0 black,
-      2px -2px 0 black,
-     -2px 2px 0 black,
-      2px 2px 0 black,
-      -7px -3px 0 black;
-   }
+   
+   #hero > .section__container {
+     text-shadow:
+      -2px -2px 0 black,
+       2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    }
+   
+
+   
+
    
 
 
@@ -132,9 +148,15 @@
   
 
   
-
+  #hero h1 { font-size: 3.5em; }
   
 
+  
+  #hero h2 { color: pink; }
+  
+
+  
+  #hero h2 { font-size: 3em; }
   
 
   
@@ -142,13 +164,13 @@
   
 
   
-
-  
-  #hero h4 { color: ivory; }
+  #hero h3 { font-size: 2em; }
   
 
   
-  #hero h4 { font-size: .65em; }
+
+  
+  #hero h4 { font-size: 1.5em; }
   
 
   
@@ -165,7 +187,7 @@
     
 
     
-    .section__content ul > li::before {
+    .section__content :not(.highlight) ul > li::before {
       content: "";
       }
 
@@ -218,6 +240,7 @@
 
 <body>
 
+  
 <div id="nav-bar" class="nav-bar">
     
         <div class="nav-bar__header">
@@ -229,8 +252,10 @@
                 
                 
                 
+                
+                
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-install">
+                      <a href="#install">
                       Install
                     </a>
                 </li>
@@ -239,7 +264,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-startup">
+                      <a href="#startup">
                       Startup
                     </a>
                 </li>
@@ -248,7 +273,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-configure">
+                      <a href="#configure">
                       Configure
                     </a>
                 </li>
@@ -257,7 +282,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-sections">
+                      <a href="#sections">
                       Sections
                     </a>
                 </li>
@@ -266,7 +291,16 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-plugins">
+                      <a href="#markdown">
+                      Markdown
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#plugins">
                       Plugins
                     </a>
                 </li>
@@ -275,7 +309,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-deloy">
+                      <a href="#deloy">
                       Deploy
                     </a>
                 </li>
@@ -284,7 +318,7 @@
                 
                 
                 <li class="nav-bar__menu-item">
-                      <a href="#nav-tldr">
+                      <a href="#tldr">
                       TL;DR
                     </a>
                 </li>
@@ -298,10 +332,14 @@
         
       
 </div>
+<div id="nav-bar-spacer"></div>
+
 
 <main id="page">
-<section id="hero">
-	<div class="text" >
+
+<section id="hero" class="section section--hero">
+	<div class="section__container" >
+			<div class="section__content section__content--hero" >
 				
 					<h1>Landing Page Generator</h1>
 					<h2>Users Guide</h2>
@@ -317,14 +355,14 @@
 					<h4> Super Noob Friendly</h4>
 					
 				
-				</div>
-
+			</div>
+	</div>	
 </section>
 
 
- 
 
-<section id="nav-install" class="section section--install section--odd">
+
+<section id="install" class="section section--install section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--install">
 			<h1>What to Install</h1>
@@ -332,7 +370,7 @@
 		<div class="section__content section-content--install"  >
 			
 
-<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#tldr">quick start</a>.</p>
+<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#quick">quick start - TL;DR </a>.</p>
 
 <h3 id="the-tools">The Tools</h3>
 
@@ -364,7 +402,7 @@ Hugo
 <div class="box box--youtube">
     
     <div class="box__embed box__embed--youtube">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sXoklQRTKSc" frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7G6TcT1liQw" frameborder="0" allowfullscreen></iframe>
 
     </div>
     
@@ -488,7 +526,20 @@ href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, 
 
 <h3 id="the-starter-site-code">The Starter Site Code</h3>
 
-<p>Once you have Hugo and Atom installed you are ready to get a copy of the starter site.  Since this webpage you are reading was generated by Hugo with the same code/theme what better resource to use to get started than this guide itself!  So first decide on a directory in which to put it on your machine.  Then download the zip archive file using the button below.  Then extract it into that directory.  Then open that folder in Atom and you&rsquo;ll be ready to start editing your own landing page.  See the <a href="#edit-video">video</a> in the Getting Started section below.</p>
+<p>Once you have Hugo and Atom installed you are ready to get a copy of the starter site.  Since this webpage you are reading was generated by Hugo with the same code/theme what better resource to use to get started than this guide itself!  So first decide on a directory in which to put it on your machine.  Then download the zip archive file using the button below.  Then extract it into that directory.  Then open that folder in Atom and you&rsquo;ll be ready to start editing your own landing page.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/puNKieFtJ3s" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
 
 
 
@@ -514,9 +565,7 @@ href="https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/landi
 	</div>
 </section>
 
-
-
-<section id="nav-startup" class="section section--startup section--even">
+<section id="startup" class="section section--startup section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--startup">
 			<h1>Getting Started</h1>
@@ -546,9 +595,7 @@ href="https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/landi
 	</div>
 </section>
 
-
-
-<section id="nav-configure" class="section section--configure section--odd">
+<section id="configure" class="section section--configure section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--configure">
 			<h1>The Configuration File</h1>
@@ -565,6 +612,19 @@ href="https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/landi
 <h3 id="what-to-edit-first">What to Edit First</h3>
 
 <p>Before you get started editing <code>config.toml</code> notice that there is a copy of the file <code>config.toml.bak</code>.  It you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  <strong>Watch the video below to get your feet wet editing</strong> <code>config.toml</code>.   For now don&rsquo;t worry about the sections and navbar menu items that is covered in the next section.  Note that if you do something small like forget a quote Hugo won&rsquo;t render your page, but Hugo will when you correct your mistake.  It&rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&rsquo;s an advanced topic.  So for now just make your own .bak copy of <code>config.toml</code> from after you make major changes to it.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gfOs432LW8Y" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
 
 <pre><code class="language-md">## Double Hashtag indicates a comment
 ## Use a Single Proceeding hashtag to turn a setting &quot;off&quot; rather than deleting it
@@ -604,9 +664,7 @@ font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be sp
 	</div>
 </section>
 
-
-
-<section id="nav-sections" class="section section--sections section--even">
+<section id="sections" class="section section--sections section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--sections">
 			<h1>Sections</h1>
@@ -616,23 +674,60 @@ font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be sp
 
 <h3 id="about">About</h3>
 
-<p>Adding a section to the landing page is as easy as adding a md file in the <code>sections/</code> directory.  Each md file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.</p>
+<p>Adding a section to the landing page is as easy as adding a md file in the <code>sections/</code> directory.  Each md file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.  The <em>frontmatter</em> must be proceeded and followed by <code>+++</code></p>
+
+<p>Here is an example <em>frontmatter</em> you can copy into your new md file.  It&rsquo;s easier though to just duplicate existing section md file and then edit instead.</p>
 
 <pre><code class="language-md">+++
-weight = 1010 # weight determines the order of
-# Title = &quot;Comments&quot;
-navbar = false
-hidden = true
+weight = 10 # weight determines the order of sections.  Lower weights are first
+Title = &quot;It's all About Me&quot;  ## the title of the section, used as the navbar link by default
+link_text = &quot;About&quot;  ## will override the Title setting for use as the navbar link text
+# navbar = false  ## create a section that doesn't have a corresponding navbar menu item...like a footer or hero
+# hidden = true  ## hide the section without deleting this file
+# align = &quot;left&quot; ## aligns all elements in the section, center is the default
 +++
 </code></pre>
 
-<p>The easy way to create a new section is simply to copy an existing one existing one from the guide you are using as a starter.  Then change the frontmatter settings as you wish and then either edit or delete and start fresh with the markdown content that follows the frontmatter.</p>
+<h3 id="hero-a-special-section">Hero - a special section</h3>
+
+<p>The very first section of a landing page is traditionally called a &ldquo;Hero&rdquo; and has a covering photo and large headline text.  This template allows you to easily do that in the <code>config.toml</code> file.  Alternatively if you want more control you can turn off the built in Hero section by enabling (removing the hashtage) of the  <code>custom_hero = true</code> setting.  Then you can simply create your own <code>hero.md</code> section file for the Hero or if you want none at all.</p>
 
 
 
 <div class="box box--youtube">
     
-    <div class="box__title">Basics of Markdown</div>
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/apsPpim4XE4" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+<h3 id="create-and-edit">Create and Edit</h3>
+
+<p>The easy way to create a new section is simply to right click in Atom on a .md file and choose &ldquo;duplicate&rdquo; to copy an existing section md file as a new one.  Change the frontmatter settings as you wish and then edit/delete the markdown content that follows the <em>frontmatter</em>.</p>
+
+		</div>
+	</div>
+</section>
+
+<section id="markdown" class="section section--markdown section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--markdown">
+			<h1>Markdown</h1>
+		</div>
+		<div class="section__content section-content--markdown"  >
+			
+
+<h3 id="learn-it">Learn it</h3>
+
+<p>Teaching you the details about writing markdown is beyond the scope of this guide.  He are two links to get you started, a markdown <a href="http://www.markdowntutorial.com/">tutorial</a>, and a markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a>.  If you prefer here is video to get you going.</p>
+
+
+
+<div class="box box--youtube">
     
     <div class="box__embed box__embed--youtube">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/HndN6P9ke6U" frameborder="0" allowfullscreen></iframe>
@@ -643,22 +738,58 @@ hidden = true
 
 
 
-<p><a href="http://www.markdowntutorial.com/">markdown</a>
-<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a></p>
+<p>Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the <code>sections/</code> directory.  It&rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Use Atom now to open the  <code>sections/markdown.md</code> file that is used to make this section you are reading.  In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things</p>
+
+<ol>
+<li>Consistently of styling across a document.<br /></li>
+<li>A simple one line change to a style can change that style for all or part of a page.</li>
+</ol>
+
+<p>This theme was set up for you to easily make a limited number of those styling changes without knowing Hugo/CSS/HTML.  For example you can change the font for the entire site in by simply changing the &ldquo;font=&rdquo; setting in the main <code>[.params]</code> section in <code>config.toml</code> to any valid Google font name. You need not do <em>anything</em> to the individual markdown files to make that happen nor know how to edit cascading style sheets!</p>
+
+<h3 id="what-are-the-and-about">What are the <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code> about</h3>
+
+<p>In the markdown tutorial, video and cheatsheet there was never any mention of these symbols <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code>.  That&rsquo;s because they are <strong>NOT</strong> markdown.  They are special delimiters that Hugo uses to identify plugins called <strong>shortcodes</strong>.  Shortcodes are custom pieces of code that coders like me write for your benefit.  They allow you to extend markdown to do things it could never do, for example <em>plugin</em> a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the <a href="#plugins">plugins/shortcode</a> section below for an explanation of their use and what shortcodes are currently available in this landing page theme.</p>
 
 		</div>
 	</div>
 </section>
 
-
-
-<section id="nav-plugins" class="section section--plugins section--odd">
+<section id="plugins" class="section section--plugins section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--plugins">
 			<h1>Plugins (i.e Shortcodes) for Content</h1>
 		</div>
 		<div class="section__content section-content--plugins"  >
-			<div id="photos" class="box box--gallery">
+			
+
+<h3 id="what-are-they">What are they</h3>
+
+<p>As explained in the <a href="#what-are-the-and-about">markdown section</a> above shortcodes can be <em>plugged</em> into the middle of your markdown files to give them added functionality.  Each shortcode is invoked with either a {{&lt; <em>name</em> &gt;}} or {{% <em>name</em> %}} and possibly a closing {{&lt; /<em>name</em> &gt;}} if they enclose some more content.   It all depends on the nature of the shortcode.</p>
+
+<p>
+
+ <span name="test">This</span> 
+
+ landing page theme currently has 12 shortcodes that you might <em>plugin</em> and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the <em>name</em>.  The shortcodes are listed below with an explanation use case and are linked to a documentation page with details of how to use them.  But many times the easist way is just to see them in action in the markdown and copy, paste and edit to suit.</p>
+
+<ul>
+<li>avatar - creates a large circle icon from an image<br /></li>
+<li>bookmark -  places a bookmark on the page that to be linked to</li>
+<li>box - wraps content in a flex box.  Useful for things like groups of buttons</li>
+<li>contact - takes contact information and makes a contact &ldquo;card&rdquo;</li>
+<li>disqus - places a disqus comments section in the page</li>
+<li>embed - embed content from other sites that use &ldquo;iframes&rdquo; like youtube and google maps</li>
+<li>format - wrap any content in custom classes.  Allows end user custom styling with  the custom css file(s)</li>
+<li>image - places and image on the page with optional title and caption and modal click to enlarge</li>
+<li>jotform - opens up a jotform by form id from jotform.com</li>
+<li>link  - creates custom links beyond simple markdown link including buttons</li>
+<li>lorem -  easily insert dummy lorem text when flessing out a site prototype</li>
+<li>social -  add bar of social icons and links<br /></li>
+</ul>
+
+<p>There is a  way using a user shortcode to make a gallery of photos from a directory of photos but this has not been automated yet and is only shown here in example and will be documented when it&rsquo;s generally available.
+<div id="photos" class="box box--gallery">
        <li data-src="images/photos/large/100.jpg"
            data-sub-html=""
            data-download-url="images/photos/large/100.jpg">
@@ -710,15 +841,13 @@ hidden = true
          </a>
       </li>
 </div>
-
+</p>
 
 		</div>
 	</div>
 </section>
 
-
-
-<section id="nav-deloy" class="section section--deloy section--even">
+<section id="deloy" class="section section--deloy section--odd">
 	<div class="section__container">
 		<div class="section__headline section__headline--deloy">
 			<h1>Deploy</h1>
@@ -729,17 +858,19 @@ hidden = true
 	</div>
 </section>
 
-
-
-<section id="nav-tldr" class="section section--tldr section--odd">
+<section id="tldr" class="section section--tldr section--even">
 	<div class="section__container">
 		<div class="section__headline section__headline--tldr">
 			<h1>Quick Start for the Experienced</h1>
 		</div>
 		<div class="section__content section-content--tldr"  >
-			<p>For those who are Hugo experienced and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the starter repo.  Edit the markdown files in the /sections directory and settings in config.toml.</p>
+			<p>For those who are 
 
-<p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing hugo project&rsquo;s themes folder</p>
+ <span name="quick">Hugo experienced</span> 
+
+ and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the /sections directory and settings in config.toml.</p>
+
+<p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project&rsquo;s themes folder</p>
 
 <div class="box box--btn-bar">
 
@@ -789,14 +920,24 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 </div>
 
 
+<p>Here is the complete playlist of videos on using the theme</p>
+
+<p>
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+</p>
+
 		</div>
 	</div>
 </section>
-
-
-
-
-
 
 
 </main>

@@ -14,6 +14,11 @@ It's pretty simple.  Eeach line in the config file is a setting.  You can turn t
 
 Before you get started editing ```config.toml``` notice that there is a copy of the file ```config.toml.bak```.  It you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you'll probably want to do first is personalize the colors, then maybe the fonts, add your own "Hero" image and change the text in the "Hero" (top) section.  **Watch the video below to get your feet wet editing** ```config.toml```.   For now don't worry about the sections and navbar menu items that is covered in the next section.  Note that if you do something small like forget a quote Hugo won't render your page, but Hugo will when you correct your mistake.  It's a good idea to use a versioning system like Git to save your versions of your work but that's an advanced topic.  So for now just make your own .bak copy of ```config.toml``` from after you make major changes to it.
 
+{{% embed type="youtube" %}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gfOs432LW8Y" frameborder="0" allowfullscreen></iframe>
+{{% /embed  %}}
+
+
 ``` md
 ## Double Hashtag indicates a comment
 ## Use a Single Proceeding hashtag to turn a setting "off" rather than deleting it
