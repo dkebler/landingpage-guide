@@ -1,6 +1,6 @@
 +++
 weight = 40
-title = "Plugins (i.e Shortcodes) for Content"
+title = "Plugins (i.e Shortcodes)"
 link_text = "Plugins"
 # hidden = true
 +++
@@ -11,8 +11,8 @@ As explained in the [markdown section](#what-are-the-and-about) above shortcodes
 
 {{< bookmark "test" "This" >}} landing page theme currently has 12 shortcodes that you might *plugin* and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the *name*.  The shortcodes are listed below with an explanation use case and are linked to a documentation page with details of how to use them.  But many times the easist way is just to see them in action in the markdown and copy, paste and edit to suit.
 
-* avatar - creates a large circle icon from an image  
-* bookmark -  places a bookmark on the page that to be linked to
+* {{< link url="http://test.com/test.html" text="avatar" display="modal" >}}  - creates a large circle icon from an image  
+* {{< link url="#modal-bookmark" text="bookmark" display="modal" >}}  places a bookmark on the page that to be linked to
 * box - wraps content in a flex box.  Useful for things like groups of buttons
 * contact - takes contact information and makes a contact "card"
 * disqus - places a disqus comments section in the page

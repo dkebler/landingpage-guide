@@ -10,16 +10,17 @@ title = "Landing Page User Guide" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
 staticDir ="assets" ## don't change this
 publishDir = "docs"
-contentDir = "sections" ## don't change this
+# contentDir = "sections" ## don't change this
 layoutDir = "plugins" ## don't change this
 theme = "landingpage-flex-hugo-theme" ## don't change this
 # disqusShortname = "landingpage-guide"
+# disableLiveReload = true
 
 [params]
 custom_css = ["custom.css"]  ## can add other files in array, make corresponding file in assets/css/
 custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
 galleries = ["photos"] ## array of galleries names created
-## You can redirect your images location to another place like an s3 bucket. default is assets/images => /images
+## You can redirect your images location to another external place like an s3 bucket. default is assets/images => /images
 # imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
 lightbox = "lightgallery" ## must match the lightbox function name
 ## Possible font setting choices in this config file must be a google font name
@@ -41,7 +42,7 @@ font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically
 
 [params.hero]
   # custom_hero = true  ## All the hero settings below are ignored and hero is just a normal section if wanted
-  img = "hero.jpg"  # default is images/hero.jpg, must provide the full path or url
+  # img = "hero.jpg"  # default is images/hero.jpg, must provide the full path or url
   font = "Acme"  # a valid google font name, default Roboto for all hero text
   color = "ivory"
   bg_color = ""
@@ -85,6 +86,13 @@ font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically
     [params.sections.comments]
     color = "black"
     bg_color = "ivory"
+
+[params.modal]
+    #font = "Acme"
+    color = "ivory"
+    bg_color = "coral"
+    text_size = "1"
+    headline_size = "2"
 
 # these will overide the default which is even section button scheme comes from odd section scheme and vice versa
 # default hover is simply

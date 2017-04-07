@@ -4,7 +4,6 @@ draft = false
 title = "What to Install"
 link_text = "Install"
 # align = "left"
-# hidden = true
 +++
 This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the [quick start - TL;DR ](#quick).
 
