@@ -4,12 +4,12 @@
 ## [ ] indicates a setting section never turn those off
 ##
 ## set a baseurl before rendering for deloyment otherwise leave it turned off
-#baseurl = "https://dkebler.github.io/landingpage-guide/"
+#baseURL = "https://mysite.com/mylandingpage"
 languageCode = "en-us"
 title = "Landing Page User Guide" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
 staticDir ="assets" ## don't change this
-publishDir = "docs"
+# publishDir = "dist"  ## default is public/
 # contentDir = "sections" ## don't change this
 layoutDir = "plugins" ## don't change this
 theme = "landingpage-flex-hugo-theme" ## don't change this
@@ -91,8 +91,8 @@ font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically
     #font = "Acme"
     color = "ivory"
     bg_color = "coral"
-    text_size = "1"
-    headline_size = "2"
+    #text_size = "1.5"
+    # headline_size = "2"
 
 # these will overide the default which is even section button scheme comes from odd section scheme and vice versa
 # default hover is simply

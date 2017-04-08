@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modals on Landing Page User Guide</title>
+    <link>https://dkebler.github.io/landingpage-guide/modal/index.xml</link>
+    <description>Recent content in Modals on Landing Page User Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://dkebler.github.io/landingpage-guide/modal/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Shortcode - Avatar</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/avatar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/avatar/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;creates a large circle icon from an image&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;usage:&lt;/strong&gt; &lt;code&gt;{{&amp;lt; avatar &amp;quot;image-path&amp;quot; &amp;quot;link&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;parameters:&lt;/strong&gt;  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;image-path&lt;/strong&gt;&lt;/em&gt; - image path of the image.  By default it will look for avatar.jpg in the /assets/images. &lt;em&gt;Note:&lt;/em&gt; All images can be servered from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;url&lt;/strong&gt;&lt;/em&gt; - a page the image will link to when clicked&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;examples in markdown:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;{{&amp;lt; avatar  &amp;gt;}}&lt;/code&gt;  loads avatar.jpg that must be in assets/images folder&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{{&amp;lt; avatar &amp;quot;myface.jpg&amp;quot; &amp;quot;http://me.myname.com&amp;quot; &amp;gt;}}&lt;/code&gt;   myface.jpg in assets/images folder&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{{&amp;lt; avatar &amp;quot;personal/myface.jpg&amp;quot; &amp;quot;http://me.myname.com&amp;quot; &amp;gt;}}&lt;/code&gt;   myface.jpg in assets/personal/images folder&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;rendered example:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;box box--avatar&#34;&gt;
+  
+   
+	&lt;img class=&#34;avatar&#34; src=&#34;https://dkebler.github.io/landingpage-guide/images/avatar.jpg&#34;/&gt;
+  
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;for-experienced-hugo-coders&#34;&gt;For Experienced Hugo Coders&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{ $numOfParams := ( len .Params ) }}
+{{ $avatar := &amp;quot;avatar.jpg&amp;quot; }}
+{{ if eq $numOfParams 1 }}{{ $avatar := .Get 1 }}{{ end }}
+&amp;lt;div class=&amp;quot;box box--avatar&amp;quot;&amp;gt;
+  {{ if eq $numOfParams 2 }}&amp;lt;a href=&amp;quot;{{.Get 1 }}&amp;quot;&amp;gt;{{ end }}
+  {{ $path := &amp;quot;/images/&amp;quot; }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+	&amp;lt;img class=&amp;quot;avatar&amp;quot; src=&amp;quot;{{ $path }}{{ $avatar }}&amp;quot;/&amp;gt;
+  {{ if eq $numOfParams 2 }}&amp;lt;/a&amp;gt;{{ end }}
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;/* box creates a flexbox wrapper, row default */
+.box {
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 0.5em;
+}
+
+img.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Bookmark</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/bookmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/bookmark/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Turn any text into a bookmark (id html tag) that then can be linked to&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;usage:&lt;/strong&gt; &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;where:&lt;/strong&gt;  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, becomes #&lt;em&gt;id&lt;/em&gt; for use in a link&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;example in markdown:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;for-experienced-hugo-coders&#34;&gt;For Experienced Hugo Coders&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;{{ $numOfParams := ( len .Params ) }}
+{{ if eq $numOfParams 1 }} &amp;lt;span name=&amp;quot;{{ .Get 0 }}&amp;quot;&amp;gt;{{ .Get 0 }}&amp;lt;/span&amp;gt; {{ end }}
+{{ if eq $numOfParams 2 }} &amp;lt;span name=&amp;quot;{{ .Get 0 }}&amp;quot;&amp;gt;{{ .Get 1 }}&amp;lt;/span&amp;gt; {{ end }}
+{{ if eq $numOfParams 3 }}
+&amp;lt;span name=&amp;quot;{{ .Get 0 }}&amp;quot; {{ if (.Get 2) &amp;quot;hide&amp;quot; }}class=&amp;quot;invisible&amp;quot;{{ end }}&amp;gt;{{ .Get 1 }}&amp;lt;/span&amp;gt;
+{{ end }}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Box</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/box/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Contact</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/contact/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Disqus</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/disqus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/disqus/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Embed</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/embed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/embed/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Format</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/format/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Image</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/image/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - JotForm</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/jotform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/jotform/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Link</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/link/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Lorem</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/lorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/lorem/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Takes an image and&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Social</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/social/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/social/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Creates a bar of Social Icons based on the [Params.Social] settings in config.toml&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;usage: &lt;code&gt;{{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;where:  * = optional&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;&lt;strong&gt;id&lt;/strong&gt;&lt;/em&gt; - the name of the bookmark used in a link, become #&lt;em&gt;id&lt;/em&gt; for use in a link like&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;text&lt;/strong&gt;&lt;/em&gt; - is the text that will appear on the page, if missing &lt;em&gt;id&lt;/em&gt; will be used as the text&lt;/li&gt;
+&lt;li&gt;*&lt;em&gt;&lt;strong&gt;hide&lt;/strong&gt;&lt;/em&gt; - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;example in markdown:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;if I wanted to go to the new about us bookmark I&#39;d click [here](#about)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all 
+
+ &lt;span name=&#34;concerning&#34;&gt;about us&lt;/span&gt; 
+
+ and stuff&lt;/p&gt;
+
+&lt;p&gt;if I wanted to go to the about us bookmark I&amp;rsquo;d click &lt;a href=&#34;#concerning&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

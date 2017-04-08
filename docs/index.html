@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.19" />
+    <title>Landing Page User Guide</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta http-equiv="Cache-Control" content="max-age= 3600" />
+    <base href="https://dkebler.github.io/landingpage-guide/">
+
+    
+<link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+ 
+<link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+
+
+
+
+  
+  <link href="//fonts.googleapis.com/css?family=Open%20Sans" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+  <link href="//fonts.googleapis.com/css?family=Acme" rel="stylesheet" type="text/css">
+  
+
+  
+
+  
+
+  
+
+
+
+    
+
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lg-transitions.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/css/perfect-scrollbar.min.css" type="text/css" media="screen" />
+
+
+
+
+
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css">
+
+
+<link href="https://dkebler.github.io/landingpage-guide/css/base.css" rel="stylesheet">
+
+
+<link href="https://dkebler.github.io/landingpage-guide/css/page.css" rel="stylesheet">
+
+
+<link href="https://dkebler.github.io/landingpage-guide/css/navbar.css" rel="stylesheet">
+
+
+<link href="https://dkebler.github.io/landingpage-guide/css/responsive.css" rel="stylesheet">
+
+
+
+ <style>
+
+
+  body { font-family:Open Sans,Helvetica,Arial,sans-serif; }
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+ .nav-bar__menu-item:hover {color: coral; }
+ .nav-bar, .section--footer { background-color: coral;  }
+ 
+
+ 
+
+ 
+  .nav-bar__logo, .nav-bar__menu, .nav-bar__menu-button, .section--footer { color: ivory;  }
+  .nav-bar__menu-item:hover { background-color: ivory; }
+ 
+
+
+@media only screen and (max-width: 400px) {
+ .nav-bar__logo {
+   text-indent: -9999px;
+   line-height: 0;  
+ }
+
+ .nav-bar__logo::after {
+   content: "Landing Page";
+   text-indent: 0;
+   display: block;
+   line-height: initial;  
+ }
+ }
+ 
+
+    
+
+ 
+
+  
+     
+  
+  #hero {
+    background-image: url("https://dkebler.github.io/landingpage-guide//images/hero.jpg");
+  }
+
+  
+  #hero > .section__container { font-family:Acme,Helvetica,Arial,sans-serif;}
+  
+
+  
+  #hero { color: ivory; }
+  
+
+  
+
+  
+
+   
+   #hero > .section__container {
+     text-shadow:
+      -2px -2px 0 black,
+       2px -2px 0 black,
+       -2px 2px 0 black,
+        2px 2px 0 black;
+    }
+   
+
+   
+
+   
+
+
+  
+
+  
+  #hero h1 { color: firebrick; }
+  
+
+  
+  #hero h1 { font-size: 3.5em; }
+  
+
+  
+  #hero h2 { color: pink; }
+  
+
+  
+  #hero h2 { font-size: 3em; }
+  
+
+  
+  #hero h3 { color: brown; }
+  
+
+  
+  #hero h3 { font-size: 2em; }
+  
+
+  
+
+  
+  #hero h4 { font-size: 1.5em; }
+  
+
+  
+
+  
+
+     
+
+
+  
+
+    
+
+    
+
+    
+    .section__content :not(.highlight) ul > li::before {
+      content: "";
+      }
+
+    
+
+    
+    .section--odd, .section--even .btn {
+      color: firebrick;
+      background-color: bisque;
+    }
+
+    
+
+    
+    .section--even, .section--odd .btn {
+      color: bisque;
+      background-color: firebrick;
+    }
+    
+
+    
+
+    
+    .section--comments {
+      color: black;
+      background-color: ivory;
+    }
+    
+
+     
+
+
+  
+
+  
+
+  
+   .section__container--modal { color: ivory;  }
+  
+
+  
+  .section__container--modal { background-color: coral;  }
+  
+
+  
+
+  
+
+
+
+    
+
+
+  
+
+  
+
+  
+
+    
+
+   
+
+ </style>
+
+
+
+
+<link rel="stylesheet" href="https://dkebler.github.io/landingpage-guide/css/custom.css"> 
+
+</head>
+
+<body>
+
+  
+<div id="nav-bar" class="nav-bar">
+    
+        <div class="nav-bar__header">
+            <a href="#hero" class="nav-bar__logo"> Landing Page User Guide </a>
+            <div class="nav-bar__menu-button"> <i class="fa fa-bars"></i></div>
+        </div>
+        
+            <ul class="nav-bar__menu hide-menu">
+                
+                
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#install">
+                      Install
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#startup">
+                      Startup
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#configure">
+                      Configure
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#sections">
+                      Sections
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#markdown">
+                      Markdown
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#plugins">
+                      Plugins
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#deloy">
+                      Deploy
+                    </a>
+                </li>
+                 
+                
+                
+                
+                <li class="nav-bar__menu-item">
+                      <a href="#tldr">
+                      TL;DR
+                    </a>
+                </li>
+                 
+                
+                
+                
+                
+                
+             </ul>
+        
+      
+</div>
+<div class="nav-bar-spacer"></div>
+
+
+
+<section id="hero" class="section section--hero">
+	<div class="section__container" >
+			<div class="section__content section__content--hero" >
+				
+					<h1>Landing Page Generator</h1>
+					<h2>Users Guide</h2>
+					<h3>Hugo Powered!</h3>
+					<hr>
+					
+					<h4> Customizable</h4>
+					
+					<h4> Add Your Sections</h4>
+					
+					<h4> Insert Your Content</h4>
+					
+					<h4> Super Noob Friendly</h4>
+					
+				
+			</div>
+	</div>	
+</section>
+
+
+<main class="sections">
+
+
+
+
+
+<section id="install" class="section section--install section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--install">
+			<h1>What to Install</h1>
+		</div>
+		<div class="section__content section-content--install"  >
+			
+
+<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#quick">quick start - TL;DR </a>.</p>
+
+<h3 id="the-tools">The Tools</h3>
+
+<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of this guide&rsquo;s source respository to use as a starter. The absolute minimum tools you&rsquo;ll need to install are</p>
+
+<p>
+
+
+
+    
+  
+
+
+<a
+ target="_blank"
+
+
+href="https://gohugo.io/overview/introduction/"
+>
+
+
+Hugo
+
+</a>
+  - a static site Generator</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7G6TcT1liQw" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+<div class="box box--btn-bar">
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Windows-64bit.zip"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo for Windows</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_macOS-64bit.zip"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo For Mac</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/spf13/hugo/releases/', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Hugo for Linux</div>
+
+</a>
+
+
+</div>
+
+
+<p><strong>&ndash;AND&ndash;</strong></p>
+
+<p>
+
+
+
+    
+  
+
+
+<a
+ target="_blank"
+
+
+href="https://atom.io"
+>
+
+
+Atom
+
+</a>
+ a text/IDE editor</p>
+
+<p>The following button will take you to the Atom website and offer a download button for Atom for your operating system.</p>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Atom</div>
+
+</a>
+
+
+<p>Possibly the hardest part of building your custom landing page is getting these two tools installed!</p>
+
+<h3 id="the-starter-site-code">The Starter Site Code</h3>
+
+<p>Once you have Hugo and Atom installed you are ready to get a copy of the starter site.  Since this webpage you are reading was generated by Hugo with the same code/theme what better resource to use to get started than this guide itself!  So first decide on a directory in which to put it on your machine.  Then download the zip archive file using the button below.  Then extract it into that directory.  Then open that folder in Atom and you&rsquo;ll be ready to start editing your own landing page.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/puNKieFtJ3s" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/landingpage-guide.zip"
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Landing Page Starter</div>
+
+</a>
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="startup" class="section section--startup section--even">
+	<div class="section__container">
+		<div class="section__headline section__headline--startup">
+			<h1>Getting Started</h1>
+		</div>
+		<div class="section__content section-content--startup"  >
+			
+
+<p><strong>YEA!</strong> If you completed successfully the installation section you are finally ready to start editing <strong>YOUR</strong> own landing page.  You&rsquo;ll going find easy to edit an existing landing page than to start your own from scratch.  That&rsquo;s why you&rsquo;ll be using this guide&rsquo;s source files.</p>
+
+<h3 id="what-s-important">What&rsquo;s Important</h3>
+
+<p>In the folder you just made containing this guide&rsquo;s source files you need to concentrate on just three places.  The first is the <code>config.toml</code> file in the root of the folder.  The second is the <code>sections/</code> subfolder and the .md files inside.  md is short for Markdown the textual editing format you&rsquo;ll be using.  The third is the <code>assets/images/</code> folder. That&rsquo;s the only places you&rsquo;ll need to put your attention to create your own personalized landing page.  The rest of the directory&rsquo;s folders can be safely ignored until you are ready for more advanced topics like tweaking the styling.</p>
+
+<h3 id="make-hugo-render-your-landing-page">Make Hugo Render Your Landing Page</h3>
+
+<p>To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the <em>Open Terminal Here</em> or <em>Open Terminal at Root</em> at the bottom for the terminal-panel and in that panel type <code>hugo server</code>.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type <code>localhost:1313</code> into the address line and you be viewing the landing page that Hugo just rendered. But&hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&rsquo;ll see those changes immediately in the browser</p>
+
+
+
+
+
+<span name="edit-video" class="invisible">browser</span>
+
+
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="configure" class="section section--configure section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--configure">
+			<h1>The Configuration File</h1>
+		</div>
+		<div class="section__content section-content--configure"  >
+			
+
+<p>The heart and soul of your landing page is the configuration file <code>config.toml</code>.  So start the editing of the &ldquo;your&rdquo; site by bringing up the config.toml file in Atom.  You&rsquo;ll find it in the root of your starter directory.</p>
+
+<h3 id="the-layout">The Layout</h3>
+
+<p>It&rsquo;s pretty simple.  Eeach line in the config file is a setting.  You can turn the setting &ldquo;off&rdquo;  by simply putting a hashtag(#) before it. If you remove the hashtag the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is currently no documentation for all the settings in <code>config.toml</code> but there is some helpful comments in the file itself (they have double hashtag in front).  Take a bit of time to read them all.  At the end of this section you can see a bit of the config.toml file copied here.</p>
+
+<h3 id="what-to-edit-first">What to Edit First</h3>
+
+<p>Before you get started editing <code>config.toml</code> notice that there is a copy of the file <code>config.toml.bak</code>.  It you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  <strong>Watch the video below to get your feet wet editing</strong> <code>config.toml</code>.   For now don&rsquo;t worry about the sections and navbar menu items that is covered in the next section.  Note that if you do something small like forget a quote Hugo won&rsquo;t render your page, but Hugo will when you correct your mistake.  It&rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&rsquo;s an advanced topic.  So for now just make your own .bak copy of <code>config.toml</code> from after you make major changes to it.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gfOs432LW8Y" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+<pre><code class="language-md">## Double Hashtag indicates a comment
+## Use a Single Proceeding hashtag to turn a setting &quot;off&quot; rather than deleting it
+## Therefore never delete any line of this file
+## [ ] indicates a setting section never turn those off
+##
+## set a baseurl before rendering for deloyment otherwise leave it turned off
+# baseurl = &quot;https://dkebler.github.io/landingpage-guide/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;Landing Page User Guide&quot; ## required used for tab title and navbar
+canonifyUrls = &quot;true&quot; ## don't change this
+staticDir =&quot;assets&quot; ## don't change this
+publishDir = &quot;docs&quot;
+contentDir = &quot;sections&quot; ## don't change this
+layoutDir = &quot;plugins&quot; ## don't change this
+theme = &quot;landingpage-flex-hugo-theme&quot; ## don't change this
+# disqusShortname = &quot;landingpage-guide&quot;
+
+[params]
+custom_css = [&quot;custom.css&quot;]  ## can add other files in array, make corresponding file in assets/css/
+custom_js = [&quot;custom.js&quot;,&quot;custom-docready.js&quot;]  ## can add other files in array, make corresponding file in assets/css/
+galleries = [&quot;photos&quot;] ## array of galleries names created
+## You can redirect your images location to another place like an s3 bucket. default is assets/images =&gt; /images
+# imagespath = &quot;https://mybuckettld/afolder/&quot;  ## full url must end with /
+lightbox = &quot;lightgallery&quot; ## must match the lightbox function name
+## Possible font setting choices in this config file must be a google font name
+## see  https://fonts.google.com/
+## This applies to all font= settings in this file
+font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be specifically overridden below
+
+[params.navbar]
+  #logo_text = &quot;Will override site title&quot;  ## default is to use the site Title above
+  logo_text_short = &quot;Landing Page Guide&quot; ## helps to fit on small screens without wrapping
+</code></pre>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="sections" class="section section--sections section--even">
+	<div class="section__container">
+		<div class="section__headline section__headline--sections">
+			<h1>Sections</h1>
+		</div>
+		<div class="section__content section-content--sections"  >
+			
+
+<h3 id="about">About</h3>
+
+<p>Adding a section to the landing page is as easy as adding a md file in the <code>sections/</code> directory.  Each md file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.  The <em>frontmatter</em> must be proceeded and followed by <code>+++</code></p>
+
+<p>Here is an example <em>frontmatter</em> you can copy into your new md file.  It&rsquo;s easier though to just duplicate existing section md file and then edit instead.</p>
+
+<pre><code class="language-md">+++
+weight = 10 # weight determines the order of sections.  Lower weights are first
+Title = &quot;It's all About Me&quot;  ## the title of the section, used as the navbar link by default
+link_text = &quot;About&quot;  ## will override the Title setting for use as the navbar link text
+# navbar = false  ## create a section that doesn't have a corresponding navbar menu item...like a footer or hero
+# hidden = true  ## hide the section without deleting this file
+# align = &quot;left&quot; ## aligns all elements in the section, center is the default
++++
+</code></pre>
+
+<h3 id="hero-a-special-section">Hero - a special section</h3>
+
+<p>The very first section of a landing page is traditionally called a &ldquo;Hero&rdquo; and has a covering photo and large headline text.  This template allows you to easily do that in the <code>config.toml</code> file.  Alternatively if you want more control you can turn off the built in Hero section by enabling (removing the hashtage) of the  <code>custom_hero = true</code> setting.  Then you can simply create your own <code>hero.md</code> section file for the Hero or if you want none at all.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/apsPpim4XE4" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+<h3 id="create-and-edit">Create and Edit</h3>
+
+<p>The easy way to create a new section is simply to right click in Atom on a .md file and choose &ldquo;duplicate&rdquo; to copy an existing section md file as a new one.  Change the frontmatter settings as you wish and then edit/delete the markdown content that follows the <em>frontmatter</em>.</p>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="markdown" class="section section--markdown section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--markdown">
+			<h1>Markdown</h1>
+		</div>
+		<div class="section__content section-content--markdown"  >
+			
+
+<h3 id="learn-it">Learn it</h3>
+
+<p>Teaching you the details about writing markdown is beyond the scope of this guide.  He are two links to get you started, a markdown <a href="http://www.markdowntutorial.com/">tutorial</a>, and a markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a>.  If you prefer here is video to get you going.</p>
+
+
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HndN6P9ke6U" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+
+
+<p>Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the <code>sections/</code> directory.  It&rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Use Atom now to open the  <code>sections/markdown.md</code> file that is used to make this section you are reading.  In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things</p>
+
+<ol>
+<li>Consistently of styling across a document.<br /></li>
+<li>A simple one line change to a style can change that style for all or part of a page.</li>
+</ol>
+
+<p>This theme was set up for you to easily make a limited number of those styling changes without knowing Hugo/CSS/HTML.  For example you can change the font for the entire site in by simply changing the &ldquo;font=&rdquo; setting in the main <code>[.params]</code> section in <code>config.toml</code> to any valid Google font name. You need not do <em>anything</em> to the individual markdown files to make that happen nor know how to edit cascading style sheets!</p>
+
+<h3 id="what-are-the-and-about">What are the <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code> about</h3>
+
+<p>In the markdown tutorial, video and cheatsheet there was never any mention of these symbols <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code>.  That&rsquo;s because they are <strong>NOT</strong> markdown.  They are special delimiters that Hugo uses to identify plugins called <strong>shortcodes</strong>.  Shortcodes are custom pieces of code that coders like me write for your benefit.  They allow you to extend markdown to do things it could never do, for example <em>plugin</em> a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the <a href="#plugins">plugins/shortcode</a> section below for an explanation of their use and what shortcodes are currently available in this landing page theme.</p>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="plugins" class="section section--plugins section--even">
+	<div class="section__container">
+		<div class="section__headline section__headline--plugins">
+			<h1>Plugins (i.e Shortcodes)</h1>
+		</div>
+		<div class="section__content section-content--plugins"  >
+			
+
+<h3 id="what-are-they">What are they</h3>
+
+<p>As explained in the <a href="#what-are-the-and-about">markdown section</a> above shortcodes can be <em>plugged</em> into the middle of your markdown files to give them added functionality.  Each shortcode is invoked with either a {{&lt; <em>name</em> &gt;}} or {{% <em>name</em> %}} and possibly a closing {{&lt; /<em>name</em> &gt;}} if they enclose some more content.   It all depends on the nature of the shortcode.</p>
+
+<p>
+
+ <span name="test">This</span> 
+
+ landing page theme currently has 12 shortcodes that you might <em>plugin</em> and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the <em>name</em>.  The shortcodes are listed below with an explanation use case and are linked to a documentation page with details of how to use them.  But many times the easist way is just to see them in action in the markdown and copy, paste and edit to suit.</p>
+
+<ul>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-avatar"
+>
+
+
+avatar
+
+</a>
+  - creates a large circle icon from an image<br /></li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-bookmark"
+>
+
+
+bookmark
+
+</a>
+  places a bookmark on the page that to be linked to</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-box"
+>
+
+
+box
+
+</a>
+ - wraps content in a flex box.  Useful for things like groups of buttons</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-contact"
+>
+
+
+contact
+
+</a>
+ - takes contact information and makes a contact &ldquo;card&rdquo;</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-disqus"
+>
+
+
+disqus
+
+</a>
+ - places a disqus comments section in the page</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-embed"
+>
+
+
+embed
+
+</a>
+ - embed content from other sites that use &ldquo;iframes&rdquo; like youtube and google maps</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-format"
+>
+
+
+format
+
+</a>
+ - wrap any content in custom classes.  Allows end user custom styling with  the custom css file(s)</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-image"
+>
+
+
+image
+
+</a>
+ - places and image on the page with optional title and caption and modal click to enlarge</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-jotform"
+>
+
+
+jotform
+
+</a>
+ - opens up a jotform by form id from jotform.com</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-link"
+>
+
+
+link
+
+</a>
+ - creates custom links beyond simple markdown link including buttons</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-lorem"
+>
+
+
+lorem
+
+</a>
+lorem -  easily insert dummy lorem text when flessing out a site prototype</li>
+<li>
+
+
+
+    
+  
+
+
+<a
+
+ modal
+
+href="#modal-social"
+>
+
+
+social
+
+</a>
+ -  add bar of social icons and links<br /></li>
+</ul>
+
+<p>There will be a shortcode to make a gallery of photos from a directory of photos but this has not been automated yet and is only shown here in example.  It will be documented when it&rsquo;s available.
+<div id="photos" class="box box--gallery">
+       <li data-src="images/photos/large/100.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/100.jpg">
+         <a href="images/photos/large/100.jpg">
+           <img src="images/photos/thumbs/100.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/101.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/101.jpg">
+         <a href="images/photos/large/101.jpg">
+           <img src="images/photos/thumbs/101.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/105.png"
+           data-sub-html=""
+           data-download-url="images/photos/large/105.png">
+         <a href="images/photos/large/105.png">
+           <img src="images/photos/thumbs/105.png"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/106.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/106.jpg">
+         <a href="images/photos/large/106.jpg">
+           <img src="images/photos/thumbs/106.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+       </li>
+       <li data-src="images/photos/large/115.jpg"
+           data-sub-html=""
+           data-download-url="images/photos/large/115.jpg">
+         <a href="images/photos/large/115.jpg">
+           <img src="images/photos/thumbs/115.jpg"
+                width="120"
+                height="120"
+                alt="" />
+         </a>
+      </li>
+</div>
+</p>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="deloy" class="section section--deloy section--odd">
+	<div class="section__container">
+		<div class="section__headline section__headline--deloy">
+			<h1>Deploy</h1>
+		</div>
+		<div class="section__content section-content--deloy"  >
+			
+
+<p>After all that work getting <strong>your</strong> new landing page site looking the way you want it it&rsquo;s time to &ldquo;Deploy&rdquo; your landing page out somewhere on the Internet where everyone can see it.</p>
+
+<h3 id="generate-the-site-folder">Generate the site folder</h3>
+
+<p>During site development using the <code>hugo server</code> command. Hugo has been generating your site&rsquo;s files and placing them in memory and serving them from there via <code>localhost:1313</code>.</p>
+
+<p>Now you are just going to run just the command <code>hugo</code> and it will generate an actual folder of your site&rsquo;s files that can then be uploaded to a server out on the Internet.  BUT.. Before you run the <code>hugo</code> command you need to look at two different settings in <code>config.toml</code>.  These are <code>baseurl = &quot;&quot;</code> and <code>publishDir = &quot;&quot;</code>.   The <code>baseurl</code> must be set to the url of the folder on the Internet you intend to serve from.  For example from a cloud service that supports static pages it might look like this. <code>baseurl = &quot;https://mycloud.com/username/landingpage&quot;</code>  where <code>/landingpage</code> was a subdirectory you made in you cloud account.  <code>publishDir</code> tells Hugo where to put the files it generates for your site.  <code>publishDir=&quot;dist&quot;</code> would output locally your generated site in the <code>dist</code> subfolder of your landing page project.  Ok with those set now try <code>hugo</code> from a terminal you started in the root (see the video).  With output in your publish directory you are ready to move a copy of that publish directory out to the Internet.  It is possible to write scripts to set these settings at the terminal but that is beyond the scope of this guide.   For now this will work unless you know how to script in your operating system.</p>
+
+<h3 id="where-to-host">Where to host</h3>
+
+<p>Because of the numerous choices you&rsquo;ll have this guide can&rsquo;t cover all the options and how to do the deployments.  The one thing to keep in mind about your options is that your site you <strong>generate</strong> only requires the simpliest of servers. It does <strong>not</strong> require any <em>server-side</em> processing and as such is not &ldquo;hackable&rdquo;.</p>
+
+<p>Some simple options are</p>
+
+<ul>
+<li>An amazon S3 bucket</li>
+<li>A web hosting service (if you already have and account at one use it)</li>
+<li>In a folder from a cloud service such as Dropbox that supports static page serving.</li>
+<li>A Github Account</li>
+</ul>
+
+<p>One good option is an Amazon Web Services (AWS) S3 bucket.  It&rsquo;s way cheap to store your site and images and they can be served right from there with their built in simple &ldquo;static&rdquo; page server.  Unlike A cloud hosting service you can point any domain or subdomain to a bucket so it&rsquo;s easy to use your custom domain.  Further AWS has a free tier for your first year which includes plenty of storage on S3.</p>
+
+<h3 id="how-to-get-it-there">How to get it there</h3>
+
+<p>As you how you move your generated site from your <code>publishDir</code> directory to where it will be served is again beyond the scope of this guide.  But the basic ideas is you just copy this <code>publishDir</code> directory to the folder from will be served. That involves getting them from your local machine out to the location. This could be done manually with some &ldquo;file manager&rdquo; program or could be automated (set your cloud service to sync the <code>publishDir</code> directory).  The following video shows some options.  You can ask in the comments below for help.  In the future the landing page generator will include some automated options for getting your site out on the Internet easier.</p>
+
+		</div>
+	</div>
+</section>
+
+
+
+<section id="tldr" class="section section--tldr section--even">
+	<div class="section__container">
+		<div class="section__headline section__headline--tldr">
+			<h1>Quick Start for the Experienced</h1>
+		</div>
+		<div class="section__content section-content--tldr"  >
+			<p>For those who are 
+
+ <span name="quick">Hugo experienced</span> 
+
+ and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the /sections directory and settings in config.toml.</p>
+
+<p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project&rsquo;s themes folder</p>
+
+<div class="box box--btn-bar">
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/dkebler/landingpage-guide.git', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+
+<div class="btn__text">guide repo</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-hugo-theme.git', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+
+<div class="btn__text">theme repo</div>
+
+</a>
+
+
+</div>
+
+
+<p>Here is the complete playlist of videos on using the theme</p>
+
+<p>
+
+<div class="box box--youtube">
+    
+    <div class="box__embed box__embed--youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" frameborder="0" allowfullscreen></iframe>
+
+    </div>
+    
+</div>
+
+</p>
+
+		</div>
+	</div>
+</section>
+
+
+
+<div id="modal-avatar" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Avatar</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			
+
+<p><strong>creates a large circle icon from an image</strong></p>
+
+<p><strong>usage:</strong> <code>{{&lt; avatar &quot;image-path&quot; &quot;link&quot; &gt;}}</code></p>
+
+<p><strong>parameters:</strong>  * = optional</p>
+
+<ul>
+<li>*<em><strong>image-path</strong></em> - image path of the image.  By default it will look for avatar.jpg in the /assets/images. <em>Note:</em> All images can be servered from an alternative place by setting &ldquo;imagespath&rdquo; setting in config.toml</li>
+<li>*<em><strong>url</strong></em> - a page the image will link to when clicked</li>
+</ul>
+
+<p><strong>examples in markdown:</strong></p>
+
+<ul>
+<li><code>{{&lt; avatar  &gt;}}</code>  loads avatar.jpg that must be in assets/images folder</li>
+<li><code>{{&lt; avatar &quot;myface.jpg&quot; &quot;http://me.myname.com&quot; &gt;}}</code>   myface.jpg in assets/images folder</li>
+<li><code>{{&lt; avatar &quot;personal/myface.jpg&quot; &quot;http://me.myname.com&quot; &gt;}}</code>   myface.jpg in assets/personal/images folder</li>
+</ul>
+
+<p><strong>rendered example:</strong></p>
+
+
+
+
+<div class="box box--avatar">
+  
+   
+	<img class="avatar" src="https://dkebler.github.io/landingpage-guide/images/avatar.jpg"/>
+  
+</div>
+
+
+<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
+
+<pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
+{{ $avatar := &quot;avatar.jpg&quot; }}
+{{ if eq $numOfParams 1 }}{{ $avatar := .Get 1 }}{{ end }}
+&lt;div class=&quot;box box--avatar&quot;&gt;
+  {{ if eq $numOfParams 2 }}&lt;a href=&quot;{{.Get 1 }}&quot;&gt;{{ end }}
+  {{ $path := &quot;/images/&quot; }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+	&lt;img class=&quot;avatar&quot; src=&quot;{{ $path }}{{ $avatar }}&quot;/&gt;
+  {{ if eq $numOfParams 2 }}&lt;/a&gt;{{ end }}
+&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-css">/* box creates a flexbox wrapper, row default */
+.box {
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-bottom: 0.5em;
+}
+
+img.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+}
+</code></pre>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-bookmark" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Bookmark</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			
+
+<p><strong>Turn any text into a bookmark (id html tag) that then can be linked to</strong></p>
+
+<p><strong>usage:</strong> <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p><strong>where:</strong>  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, becomes #<em>id</em> for use in a link</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p><strong>example in markdown:</strong></p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
+
+<pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
+{{ if eq $numOfParams 1 }} &lt;span name=&quot;{{ .Get 0 }}&quot;&gt;{{ .Get 0 }}&lt;/span&gt; {{ end }}
+{{ if eq $numOfParams 2 }} &lt;span name=&quot;{{ .Get 0 }}&quot;&gt;{{ .Get 1 }}&lt;/span&gt; {{ end }}
+{{ if eq $numOfParams 3 }}
+&lt;span name=&quot;{{ .Get 0 }}&quot; {{ if (.Get 2) &quot;hide&quot; }}class=&quot;invisible&quot;{{ end }}&gt;{{ .Get 1 }}&lt;/span&gt;
+{{ end }}
+</code></pre>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-box" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Box</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-contact" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Contact</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-disqus" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Disqus</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-embed" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Embed</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-format" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Format</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-image" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Image</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-jotform" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - JotForm</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-link" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Link</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-lorem" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Lorem</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Takes an image and&hellip;</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+<div id="modal-social" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Shortcode - Social</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p><strong>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml</strong></p>
+
+<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
+<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
+<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+
+<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+
+<p>This is all 
+
+ <span name="concerning">about us</span> 
+
+ and stuff</p>
+
+<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+		</div>
+	</div>
+</div>
+
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/js/perfect-scrollbar.jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
+
+
+
+<script src="https://dkebler.github.io/landingpage-guide/js/fitToParent.js"></script>
+<script src="https://dkebler.github.io/landingpage-guide/js/flowType.js"></script>
+
+<script src="https://dkebler.github.io/landingpage-guide/js/lorem.js"></script>
+
+
+
+<script src="https://dkebler.github.io/landingpage-guide/js/page.js"></script>
+
+
+<script src="https://dkebler.github.io/landingpage-guide/js/docready.js"></script>
+
+
+
+   <script src="https://dkebler.github.io/landingpage-guide/js/custom.js"></script>
+
+   <script src="https://dkebler.github.io/landingpage-guide/js/custom-docready.js"></script>
+
+
+
+
+<script>
+$(document).ready(function () {
+  
+  lightgallery('#photos')
+});
+</script>
+
+
+</body>
+</html>

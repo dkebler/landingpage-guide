@@ -1,0 +1,213 @@
+/* resets */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* regions */
+
+body {
+  display: flex;
+  color: black;
+  background-color: white;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+  /* 14px default before jquery scalling */
+}
+
+.section {
+  display: flex;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+/* mobile first column */
+
+.section__container {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer {
+  min-height: 300px;
+}
+
+/* Typography */
+
+body {
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.45;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+p {
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* using ::before for list numbers and icons */
+nav,
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+.clickable {
+  color: inherit;
+  opacity: 0.8;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a:hover,
+.clickable:hover {
+  opacity: 1;
+}
+
+.btn {
+  padding: 0.3em;
+  color: white;
+  background-color: black;
+  border: 4px solid grey;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  padding: 0.5em;
+}
+
+figure {
+  display: block;
+  padding: 1em;
+}
+
+figcaption {
+  display: block;
+  margin: 1em 0;
+  text-align: center;
+  font-style: italic;
+  orphans: 2;
+}
+
+/* divider */
+
+hr {
+  width: 50%;
+  height: 0;
+  margin: 4px auto;
+  border-top-color: white;
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.flex-col-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-col-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.text-center p {
+  text-align: center;
+}
+
+.text-left p {
+  text-align: left;
+}
+
+.text-right p {
+  text-align: right;
+}
+
+/* keeps in the DOM but moves from the page */
+.invisible {
+  position: absolute;
+  left: -999em;
+}
+
+/*keeps in the same location and maintains it's layout space even though hidden*/
+.hide {
+  visibility: hidden;
+}
+
+/*completely removes from DOM */
+.remove {
+  display: none;
+}

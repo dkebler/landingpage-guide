@@ -7,7 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "gh": "hugo -b https://dkebler.github.io/landingpage-guide/"
+    "gh": "hugo -b https://dkebler.github.io/landingpage-guide -d docs",
+    "s3": "hugo -d s3"
   },
   "repository": {
     "type": "git",
