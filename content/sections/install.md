@@ -27,7 +27,7 @@ To be able to make your own cusomtized landing pages quickly and easily you'll n
 
 {{< link url="https://atom.io" text="Atom" display="tab" >}} a text/IDE editor
 
-The following button will take you to the Atom website and offer a download button for Atom for your operating system.
+The following button will take you to the Atom website and offer a download button for Atom for your operating system.  Install it as you would any application in your operating system
 
 {{< link type="btn" icon="download" url="https://atom.io" text="Atom" display="window" >}}
 

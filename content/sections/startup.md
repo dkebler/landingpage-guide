@@ -12,6 +12,8 @@ In the folder you just made containing this guide's source files you need to con
 
 ### Make Hugo Render Your Landing Page
 
-To begin you need to bring up Atom with your working folder open.  Then click on the + sign at the bottom for the terminal-panel and in that panel type ```hugo server```.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type ```localhost:1313``` into the address line and you be viewing the landing page that Hugo just rendered. But...Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you'll see those changes immediately in the browser
+To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the *Open Terminal Here* or *Open Terminal at Root* from the menu.  In the terminal window that opens type ```hugo server```.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type ```localhost:1313``` into the address line and you be viewing the landing page that Hugo just rendered. But...Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you'll see those changes immediately in the browser.  You can see this process in the video belowxxx
 
-{{< bookmark "edit-video" "browser" "hide" >}}
+{{% embed type="youtube" %}}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/puNKieFtJ3s?start=73" frameborder="0" allowfullscreen></iframe>
+{{% /embed  %}}

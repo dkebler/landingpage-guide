@@ -27,6 +27,7 @@ lightbox = "lightgallery" ## must match the lightbox function name
 ## see  https://fonts.google.com/
 ## This applies to all font= settings in this file
 font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
+cache_timeout = 0
 
 [params.navbar]
   # hidden = true
