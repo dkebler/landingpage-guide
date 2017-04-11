@@ -1,9 +1,18 @@
-## Double Hashtag indicates a comment
-## Use a Single Proceeding hashtag to turn a setting "off" rather than deleting it
-## Therefore never delete any line of this file
-## [ ] indicates a setting section never turn those off
-##
-## set a baseurl before rendering for deloyment otherwise leave it turned off
++++
+Title = "The Settings File"
+# align = "center"
++++
+
+Below is an example of the page settings file named ```config.toml```.  You can find it in the root of the project folder.  By editing the values in this file you can control the style, content or appearance of certain elements of the page.
+
+In the file...
+Double hashtag \#\# indicates a comment. Use a single proceeding hashtag \# to turn a setting "off" rather than deleting it. Therefore never delete any lines of this file
+
+[ ] indicates a settings section never turn those off or delete them
+
+Set ```baseurl``` before rendering for deloyment of your finished page otherwise leave it turned off
+
+```toml
 #baseURL = "https://mysite.com/mylandingpage"
 languageCode = "en-us"
 title = "Landing Page User Guide" ## required used for tab title and navbar
@@ -14,7 +23,7 @@ staticDir ="assets" ## don't change this
 layoutDir = "plugins" ## don't change this
 theme = "landingpage-flex-hugo-theme" ## don't change this
 # disqusShortname = "landingpage-guide"
-#disableLiveReload = true
+# disableLiveReload = true
 
 [params]
 custom_css = ["custom.css"]  ## can add other files in array, make corresponding file in assets/css/
@@ -113,10 +122,4 @@ cache_timeout = 0
     #title = "email"
     #icon = "envelope-o"
     #url = "mailto:4005@kebler.net"
-
-[params.youtube]
-  # maxwidth = "800"  ## default maximum width for all youtubes default is 450
-  #  wpad = "50"  ## padding on both left and right when view width is < maxwidth  default is 5
-  ## on mobile devices autoplay is disabled so having a fast loading thumb image requires two clicks
-  ## to start video.  Disable this only if you have just one or two videos on your page
-  # disable_thumb = "yes" ## display video thumbs and not thumb image
+```

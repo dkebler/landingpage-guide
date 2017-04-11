@@ -59,13 +59,13 @@ Hugo
 
 
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
-    
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/7G6TcT1liQw&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-    &lt;/div&gt;
-    
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;7G6TcT1liQw&#34;
+       
+       
+       &gt;
+      
 &lt;/div&gt;
 
 
@@ -158,7 +158,7 @@ Atom
 &lt;/a&gt;
  a text/IDE editor&lt;/p&gt;
 
-&lt;p&gt;The following button will take you to the Atom website and offer a download button for Atom for your operating system.&lt;/p&gt;
+&lt;p&gt;The following button will take you to the Atom website and offer a download button for Atom for your operating system.  Install it as you would any application in your operating system&lt;/p&gt;
 
 
 
@@ -190,13 +190,13 @@ href=&#34;javascript:void( window.open(&#39;https://atom.io&#39;, &#39;blank&#39
 
 
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
-    
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/puNKieFtJ3s&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-    &lt;/div&gt;
-    
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;puNKieFtJ3s&#34;
+       
+       
+       &gt;
+      
 &lt;/div&gt;
 
 
@@ -239,13 +239,18 @@ href=&#34;https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/l
 
 &lt;h3 id=&#34;make-hugo-render-your-landing-page&#34;&gt;Make Hugo Render Your Landing Page&lt;/h3&gt;
 
-&lt;p&gt;To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the &lt;em&gt;Open Terminal Here&lt;/em&gt; or &lt;em&gt;Open Terminal at Root&lt;/em&gt; at the bottom for the terminal-panel and in that panel type &lt;code&gt;hugo server&lt;/code&gt;.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type &lt;code&gt;localhost:1313&lt;/code&gt; into the address line and you be viewing the landing page that Hugo just rendered. But&amp;hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&amp;rsquo;ll see those changes immediately in the browser&lt;/p&gt;
+&lt;p&gt;To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the &lt;em&gt;Open Terminal Here&lt;/em&gt; or &lt;em&gt;Open Terminal at Root&lt;/em&gt; from the menu.  In the terminal window that opens type &lt;code&gt;hugo server&lt;/code&gt;.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type &lt;code&gt;localhost:1313&lt;/code&gt; into the address line and you be viewing the landing page that Hugo just rendered. But&amp;hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&amp;rsquo;ll see those changes immediately in the browser.  You can see this process in the video below&lt;/p&gt;
 
 
 
 
-
-&lt;span name=&#34;edit-video&#34; class=&#34;invisible&#34;&gt;browser&lt;/span&gt;
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;puNKieFtJ3s&#34;
+        start=&#34;73&#34;
+       
+       &gt;
+      
+&lt;/div&gt;
 
 
 </description>
@@ -267,54 +272,40 @@ href=&#34;https://github.com/dkebler/landingpage-guide/releases/download/0.0.1/l
 
 &lt;h3 id=&#34;what-to-edit-first&#34;&gt;What to Edit First&lt;/h3&gt;
 
-&lt;p&gt;Before you get started editing &lt;code&gt;config.toml&lt;/code&gt; notice that there is a copy of the file &lt;code&gt;config.toml.bak&lt;/code&gt;.  It you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&amp;rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &amp;ldquo;Hero&amp;rdquo; image and change the text in the &amp;ldquo;Hero&amp;rdquo; (top) section.  &lt;strong&gt;Watch the video below to get your feet wet editing&lt;/strong&gt; &lt;code&gt;config.toml&lt;/code&gt;.   For now don&amp;rsquo;t worry about the sections and navbar menu items that is covered in the next section.  Note that if you do something small like forget a quote Hugo won&amp;rsquo;t render your page, but Hugo will when you correct your mistake.  It&amp;rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&amp;rsquo;s an advanced topic.  So for now just make your own .bak copy of &lt;code&gt;config.toml&lt;/code&gt; from after you make major changes to it.&lt;/p&gt;
+&lt;p&gt;Before you get started editing &lt;code&gt;config.toml&lt;/code&gt; notice that there is a copy of the file &lt;code&gt;config.toml.bak&lt;/code&gt;.  If you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&amp;rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &amp;ldquo;Hero&amp;rdquo; image and change the text in the &amp;ldquo;Hero&amp;rdquo; (top) section.  &lt;strong&gt;Watch the video below to get your feet wet editing&lt;/strong&gt; &lt;code&gt;config.toml&lt;/code&gt;.   For now don&amp;rsquo;t worry about the content sections and navbar menu items that is covered below.  Note that if you do something small like forget a quote Hugo won&amp;rsquo;t render your page, but Hugo will when you correct your mistake.  It&amp;rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&amp;rsquo;s an advanced topic.  So for now just make your own .bak copy of &lt;code&gt;config.toml&lt;/code&gt; after you make major changes to it.&lt;/p&gt;
 
 
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
+
+
     
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/gfOs432LW8Y&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+  
 
-    &lt;/div&gt;
-    
+
+&lt;a
+
+ modal
+ class=&#34;box box--btn btn btn--regular&#34;
+href=&#34;#modal-toml&#34;
+&gt;
+&lt;i class=&#34;btn__icon fa fa-eye&#34;&gt;&lt;/i&gt;
+&lt;div class=&#34;btn__text&#34;&gt;View a copy of the settings file config.toml&lt;/div&gt;
+
+&lt;/a&gt;
+
+
+
+
+
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;gfOs432LW8Y&#34;
+       
+       
+       &gt;
+      
 &lt;/div&gt;
 
 
-
-&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;## Double Hashtag indicates a comment
-## Use a Single Proceeding hashtag to turn a setting &amp;quot;off&amp;quot; rather than deleting it
-## Therefore never delete any line of this file
-## [ ] indicates a setting section never turn those off
-##
-## set a baseurl before rendering for deloyment otherwise leave it turned off
-# baseurl = &amp;quot;https://dkebler.github.io/landingpage-guide/&amp;quot;
-languageCode = &amp;quot;en-us&amp;quot;
-title = &amp;quot;Landing Page User Guide&amp;quot; ## required used for tab title and navbar
-canonifyUrls = &amp;quot;true&amp;quot; ## don&#39;t change this
-staticDir =&amp;quot;assets&amp;quot; ## don&#39;t change this
-publishDir = &amp;quot;docs&amp;quot;
-contentDir = &amp;quot;sections&amp;quot; ## don&#39;t change this
-layoutDir = &amp;quot;plugins&amp;quot; ## don&#39;t change this
-theme = &amp;quot;landingpage-flex-hugo-theme&amp;quot; ## don&#39;t change this
-# disqusShortname = &amp;quot;landingpage-guide&amp;quot;
-
-[params]
-custom_css = [&amp;quot;custom.css&amp;quot;]  ## can add other files in array, make corresponding file in assets/css/
-custom_js = [&amp;quot;custom.js&amp;quot;,&amp;quot;custom-docready.js&amp;quot;]  ## can add other files in array, make corresponding file in assets/css/
-galleries = [&amp;quot;photos&amp;quot;] ## array of galleries names created
-## You can redirect your images location to another place like an s3 bucket. default is assets/images =&amp;gt; /images
-# imagespath = &amp;quot;https://mybuckettld/afolder/&amp;quot;  ## full url must end with /
-lightbox = &amp;quot;lightgallery&amp;quot; ## must match the lightbox function name
-## Possible font setting choices in this config file must be a google font name
-## see  https://fonts.google.com/
-## This applies to all font= settings in this file
-font = &amp;quot;Open Sans&amp;quot;  ## default Roboto, sets for entire site, can be specifically overridden below
-
-[params.navbar]
-  #logo_text = &amp;quot;Will override site title&amp;quot;  ## default is to use the site Title above
-  logo_text_short = &amp;quot;Landing Page Guide&amp;quot; ## helps to fit on small screens without wrapping
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
@@ -328,15 +319,15 @@ font = &amp;quot;Open Sans&amp;quot;  ## default Roboto, sets for entire site, c
 
 &lt;h3 id=&#34;about&#34;&gt;About&lt;/h3&gt;
 
-&lt;p&gt;Adding a section to the landing page is as easy as adding a md file in the &lt;code&gt;sections/&lt;/code&gt; directory.  Each md file you create in that directory will need some settings at the top of the page called &lt;em&gt;frontmatter&lt;/em&gt;.  The settings work the same as in &lt;code&gt;config.toml&lt;/code&gt;, use a hashtag in front to turn one off.  The &lt;em&gt;frontmatter&lt;/em&gt; must be proceeded and followed by &lt;code&gt;+++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Adding a section to the landing page is as easy as adding a md file in the &lt;code&gt;content/sections/&lt;/code&gt; directory.  Each md file you create in that directory will need some settings at the top of the page called &lt;em&gt;frontmatter&lt;/em&gt;.  The settings work the same as in &lt;code&gt;config.toml&lt;/code&gt;, use a hashtag in front to turn one off.  The &lt;em&gt;frontmatter&lt;/em&gt; must be proceeded and followed by &lt;code&gt;+++&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Here is an example &lt;em&gt;frontmatter&lt;/em&gt; you can copy into your new md file.  It&amp;rsquo;s easier though to just duplicate existing section md file and then edit instead.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-md&#34;&gt;+++
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;+++
 weight = 10 # weight determines the order of sections.  Lower weights are first
 Title = &amp;quot;It&#39;s all About Me&amp;quot;  ## the title of the section, used as the navbar link by default
 link_text = &amp;quot;About&amp;quot;  ## will override the Title setting for use as the navbar link text
-# navbar = false  ## create a section that doesn&#39;t have a corresponding navbar menu item...like a footer or hero
+# navbar = false  ## create a section that doesn&#39;t have a corresponding navbar menu item...like a footer
 # hidden = true  ## hide the section without deleting this file
 # align = &amp;quot;left&amp;quot; ## aligns all elements in the section, center is the default
 +++
@@ -348,13 +339,13 @@ link_text = &amp;quot;About&amp;quot;  ## will override the Title setting for us
 
 
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
-    
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/apsPpim4XE4&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-    &lt;/div&gt;
-    
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;apsPpim4XE4&#34;
+       
+       
+       &gt;
+      
 &lt;/div&gt;
 
 
@@ -362,6 +353,19 @@ link_text = &amp;quot;About&amp;quot;  ## will override the Title setting for us
 &lt;h3 id=&#34;create-and-edit&#34;&gt;Create and Edit&lt;/h3&gt;
 
 &lt;p&gt;The easy way to create a new section is simply to right click in Atom on a .md file and choose &amp;ldquo;duplicate&amp;rdquo; to copy an existing section md file as a new one.  Change the frontmatter settings as you wish and then edit/delete the markdown content that follows the &lt;em&gt;frontmatter&lt;/em&gt;.&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;DnGJsCBB-eE&#34;
+       
+       
+       &gt;
+      
+&lt;/div&gt;
+
+
 </description>
     </item>
     
@@ -379,21 +383,21 @@ link_text = &amp;quot;About&amp;quot;  ## will override the Title setting for us
 
 
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
-    
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/HndN6P9ke6U&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-    &lt;/div&gt;
-    
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;HndN6P9ke6U&#34;
+       
+       
+       &gt;
+      
 &lt;/div&gt;
 
 
 
-&lt;p&gt;Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the &lt;code&gt;sections/&lt;/code&gt; directory.  It&amp;rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Use Atom now to open the  &lt;code&gt;sections/markdown.md&lt;/code&gt; file that is used to make this section you are reading.  In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things&lt;/p&gt;
+&lt;p&gt;Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the &lt;code&gt;content/sections/&lt;/code&gt; directory.  It&amp;rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Use Atom now to open the  &lt;code&gt;content/sections/markdown.md&lt;/code&gt; file that is used to make this section you are reading.  In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Consistently of styling across a document.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Consistency of styling across a document.&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;A simple one line change to a style can change that style for all or part of a page.&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -401,7 +405,7 @@ link_text = &amp;quot;About&amp;quot;  ## will override the Title setting for us
 
 &lt;h3 id=&#34;what-are-the-and-about&#34;&gt;What are the &lt;code&gt;{{%  %}}&lt;/code&gt; and &lt;code&gt;{{&amp;lt;  &amp;gt;}}&lt;/code&gt; about&lt;/h3&gt;
 
-&lt;p&gt;In the markdown tutorial, video and cheatsheet there was never any mention of these symbols &lt;code&gt;{{%  %}}&lt;/code&gt; and &lt;code&gt;{{&amp;lt;  &amp;gt;}}&lt;/code&gt;.  That&amp;rsquo;s because they are &lt;strong&gt;NOT&lt;/strong&gt; markdown.  They are special delimiters that Hugo uses to identify plugins called &lt;strong&gt;shortcodes&lt;/strong&gt;.  Shortcodes are custom pieces of code that coders like me write for your benefit.  They allow you to extend markdown to do things it could never do, for example &lt;em&gt;plugin&lt;/em&gt; a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the &lt;a href=&#34;#plugins&#34;&gt;plugins/shortcode&lt;/a&gt; section below for an explanation of their use and what shortcodes are currently available in this landing page theme.&lt;/p&gt;
+&lt;p&gt;In the markdown tutorial, video and cheatsheet there was never any mention of these symbols &lt;code&gt;{{%  %}}&lt;/code&gt; and &lt;code&gt;{{&amp;lt;  &amp;gt;}}&lt;/code&gt;.  That&amp;rsquo;s because they are &lt;strong&gt;NOT&lt;/strong&gt; markdown.  They are special delimiters that Hugo uses to identify plugins called &lt;a href=&#34;#plugins&#34;&gt;shortcodes&lt;/a&gt;.  Shortcodes are custom pieces of code that coders write for your benefit.  They allow you to extend markdown to do things it could never do, for example &lt;em&gt;plugin&lt;/em&gt; a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the &lt;a href=&#34;#plugins&#34;&gt;plugins/shortcode&lt;/a&gt; section below for an explanation of their use and what shortcodes are currently available in this landing page generator.&lt;/p&gt;
 </description>
     </item>
     
@@ -731,11 +735,13 @@ social
       <guid>https://dkebler.github.io/landingpage-guide/sections/deloy/</guid>
       <description>
 
+&lt;p&gt;SOME CHANGES&lt;/p&gt;
+
 &lt;p&gt;After all that work getting &lt;strong&gt;your&lt;/strong&gt; new landing page site looking the way you want it it&amp;rsquo;s time to &amp;ldquo;Deploy&amp;rdquo; your landing page out somewhere on the Internet where everyone can see it.&lt;/p&gt;
 
 &lt;h3 id=&#34;generate-the-site-folder&#34;&gt;Generate the site folder&lt;/h3&gt;
 
-&lt;p&gt;During site development using the &lt;code&gt;hugo server&lt;/code&gt; command. Hugo has been generating your site&amp;rsquo;s files and placing them in memory and serving them from there via &lt;code&gt;localhost:1313&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;During page development using the &lt;code&gt;hugo server&lt;/code&gt; command Hugo has been generating your site&amp;rsquo;s files and placing them in memory and serving them from there via &lt;code&gt;localhost:1313&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Now you are just going to run just the command &lt;code&gt;hugo&lt;/code&gt; and it will generate an actual folder of your site&amp;rsquo;s files that can then be uploaded to a server out on the Internet.  BUT.. Before you run the &lt;code&gt;hugo&lt;/code&gt; command you need to look at two different settings in &lt;code&gt;config.toml&lt;/code&gt;.  These are &lt;code&gt;baseurl = &amp;quot;&amp;quot;&lt;/code&gt; and &lt;code&gt;publishDir = &amp;quot;&amp;quot;&lt;/code&gt;.   The &lt;code&gt;baseurl&lt;/code&gt; must be set to the url of the folder on the Internet you intend to serve from.  For example from a cloud service that supports static pages it might look like this. &lt;code&gt;baseurl = &amp;quot;https://mycloud.com/username/landingpage&amp;quot;&lt;/code&gt;  where &lt;code&gt;/landingpage&lt;/code&gt; was a subdirectory you made in you cloud account.  &lt;code&gt;publishDir&lt;/code&gt; tells Hugo where to put the files it generates for your site.  &lt;code&gt;publishDir=&amp;quot;dist&amp;quot;&lt;/code&gt; would output locally your generated site in the &lt;code&gt;dist&lt;/code&gt; subfolder of your landing page project.  Ok with those set now try &lt;code&gt;hugo&lt;/code&gt; from a terminal you started in the root (see the video).  With output in your publish directory you are ready to move a copy of that publish directory out to the Internet.  It is possible to write scripts to set these settings at the terminal but that is beyond the scope of this guide.   For now this will work unless you know how to script in your operating system.&lt;/p&gt;
 
@@ -757,6 +763,19 @@ social
 &lt;h3 id=&#34;how-to-get-it-there&#34;&gt;How to get it there&lt;/h3&gt;
 
 &lt;p&gt;As you how you move your generated site from your &lt;code&gt;publishDir&lt;/code&gt; directory to where it will be served is again beyond the scope of this guide.  But the basic ideas is you just copy this &lt;code&gt;publishDir&lt;/code&gt; directory to the folder from will be served. That involves getting them from your local machine out to the location. This could be done manually with some &amp;ldquo;file manager&amp;rdquo; program or could be automated (set your cloud service to sync the &lt;code&gt;publishDir&lt;/code&gt; directory).  The following video shows some options.  You can ask in the comments below for help.  In the future the landing page generator will include some automated options for getting your site out on the Internet easier.&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;2xd_fdx5IyI&#34;
+       
+       
+       &gt;
+      
+&lt;/div&gt;
+
+
 </description>
     </item>
     
@@ -770,7 +789,7 @@ social
 
  &lt;span name=&#34;quick&#34;&gt;Hugo experienced&lt;/span&gt; 
 
- and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the /sections directory and settings in config.toml.&lt;/p&gt;
+ and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the conent/sections directory and settings in config.toml.&lt;/p&gt;
 
 &lt;p&gt;If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project&amp;rsquo;s themes folder&lt;/p&gt;
 
@@ -822,15 +841,26 @@ href=&#34;javascript:void( window.open(&#39;https://github.com/dkebler/landingpa
 &lt;/div&gt;
 
 
-&lt;p&gt;Here is the complete playlist of videos on using the theme&lt;/p&gt;
-
 &lt;p&gt;
 
-&lt;div class=&#34;box box--youtube&#34;&gt;
-    
-    &lt;div class=&#34;box__embed box__embed--youtube&#34;&gt;
-        &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/videoseries?list=PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
+
+
+
+
+&lt;div class=&#34;box box--column&#34;&gt;
+    
+    &lt;div class=&#34;box__title&#34;&gt;All Above Videos as a Playlist&lt;/div&gt;
+    
+    &lt;div class=&#34;box box--embed box--youtube&#34;
+       youtube_id=&#34;7G6TcT1liQw&#34;
+       
+        list=&#34;PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb&#34;
+       
+       
+        nothumb=&#34;yes&#34; 
+       &gt;
+  
     &lt;/div&gt;
     
 &lt;/div&gt;

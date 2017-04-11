@@ -48,7 +48,7 @@ function heroResize(bfr = 30) {
     //console.log('fr after', fr)
 
   $('#hero').css({
-    width: w+15,
+    width: w + 15,
     height: h / w > 1.5 ? w * 1.5 : h,
   });
 
@@ -59,21 +59,6 @@ function heroResize(bfr = 30) {
     minFont: mf,
     fontRatio: fr
   });
-}
-
-// child item resize based on parent container (i.e. flexbox)
-// Especially good for iframes
-function itemResize(item, maxWidth = 450, widthPadding = 30) {
-  let windowWidth = $(window).width()
-  let width = (windowWidth > maxWidth) ? maxWidth : windowWidth - widthPadding
-    // console.log(`passed width ${width}`)
-  jQuery(item).fitToParent({
-    heightOffset: 0, // (int) Put some space around the element
-    // widthOffset: 5, // (int) Put some space around the element
-    // boxHeight: , // (int) Will look for .size-parent, or fallback to parent size
-    boxWidth: width // (int) Will look for .size-parent, or fallback to parent size
-      // callback: function (newWidth, newHeight) {}
-  })
 }
 
 function typeResize(fr = 20) {
@@ -174,6 +159,3 @@ function lightgallery(id) {
 }(jQuery));
 
 // end modal
-l
-l
-l

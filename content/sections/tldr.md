@@ -5,7 +5,7 @@ title = "Quick Start for the Experienced"
 link_text = "TL;DR"
 +++
 
-For those who are {{< bookmark "quick" "Hugo experienced" >}} and know what they are doing and are able to "figure out" the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the /sections directory and settings in config.toml.
+For those who are {{< bookmark "quick" "Hugo experienced" >}} and know what they are doing and are able to "figure out" the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the conent/sections directory and settings in config.toml.
 
 If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project's themes folder
 
@@ -14,8 +14,4 @@ If you really know what you are doing and prefer to start from scratch by all me
 {{< link type="btn" url="https://github.com/dkebler/landingpage-flex-hugo-theme.git" text="theme repo" display="window" >}}
 {{< /box >}}
 
-Here is the complete playlist of videos on using the theme
-
-{{% embed type="youtube" %}}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" frameborder="0" allowfullscreen></iframe>
-{{% /embed  %}}
+{{< youtube id="7G6TcT1liQw" nothumb="yes" plist="PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" title="All Above Videos as a Playlist">}}

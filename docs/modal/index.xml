@@ -459,5 +459,133 @@ img.avatar {
 </description>
     </item>
     
+    <item>
+      <title>The Settings File</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/toml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/toml/</guid>
+      <description>&lt;p&gt;Below is an example of the page settings file named &lt;code&gt;config.toml&lt;/code&gt;.  You can find it in the root of the project folder.  By editing the values in this file you can control the style, content or appearance of certain elements of the page.&lt;/p&gt;
+
+&lt;p&gt;In the file&amp;hellip;
+Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &amp;ldquo;off&amp;rdquo; rather than deleting it. Therefore never delete any lines of this file&lt;/p&gt;
+
+&lt;p&gt;[ ] indicates a settings section never turn those off or delete them&lt;/p&gt;
+
+&lt;p&gt;Set &lt;code&gt;baseurl&lt;/code&gt; before rendering for deloyment of your finished page otherwise leave it turned off&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;#baseURL = &amp;quot;https://mysite.com/mylandingpage&amp;quot;
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Landing Page User Guide&amp;quot; ## required used for tab title and navbar
+canonifyUrls = &amp;quot;true&amp;quot; ## don&#39;t change this
+staticDir =&amp;quot;assets&amp;quot; ## don&#39;t change this
+# publishDir = &amp;quot;dist&amp;quot;  ## default is public/
+# contentDir = &amp;quot;sections&amp;quot; ## don&#39;t change this
+layoutDir = &amp;quot;plugins&amp;quot; ## don&#39;t change this
+theme = &amp;quot;landingpage-flex-hugo-theme&amp;quot; ## don&#39;t change this
+# disqusShortname = &amp;quot;landingpage-guide&amp;quot;
+# disableLiveReload = true
+
+[params]
+custom_css = [&amp;quot;custom.css&amp;quot;]  ## can add other files in array, make corresponding file in assets/css/
+custom_js = [&amp;quot;custom.js&amp;quot;,&amp;quot;custom-docready.js&amp;quot;]  ## can add other files in array, make corresponding file in assets/css/
+galleries = [&amp;quot;photos&amp;quot;] ## array of galleries names created
+## You can redirect your images location to another external place like an s3 bucket. default is assets/images =&amp;gt; /images
+# imagespath = &amp;quot;https://mybuckettld/afolder/&amp;quot;  ## full url must end with /
+lightbox = &amp;quot;lightgallery&amp;quot; ## must match the lightbox function name
+## Possible font setting choices in this config file must be a google font name
+## see  https://fonts.google.com/
+## This applies to all font= settings in this file
+font = &amp;quot;Open Sans&amp;quot;  ## default Roboto, sets for entire site, can be specifically overridden below
+cache_timeout = 0
+
+[params.navbar]
+  # hidden = true
+  # logo_text = &amp;quot;Will override site title&amp;quot;  ## default is to use the site Title above
+  logo_text_short = &amp;quot;Landing Page&amp;quot; ## helps to fit on small screens without wrapping
+  # logo_text_size=&amp;quot;1&amp;quot; ## unit is em, 2em is default
+  # font = &amp;quot;&amp;quot;
+  ##  For List of html colors see either
+  ## http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
+  ## https://www.colorcodehex.com/html-color-names.html
+  color = &amp;quot;ivory&amp;quot;
+  bg_color = &amp;quot;coral&amp;quot;
+
+[params.hero]
+  # custom_hero = true  ## All the hero settings below are ignored and hero is just a normal section if wanted
+  # img = &amp;quot;hero.jpg&amp;quot;  # default is images/hero.jpg, must provide the full path or url
+  font = &amp;quot;Acme&amp;quot;  # a valid google font name, default Roboto for all hero text
+  color = &amp;quot;ivory&amp;quot;
+  bg_color = &amp;quot;&amp;quot;
+  text_outline = &amp;quot;black&amp;quot;
+  # text_shadow = &amp;quot;black&amp;quot;
+  # headlines_font = &amp;quot;Gloria Hallelujah&amp;quot;  # a valid google font name, defaults to intro font
+  ## H1
+  headline = &amp;quot;Landing Page Generator&amp;quot;
+  headline_color = &amp;quot;firebrick&amp;quot;
+  headline_size = &amp;quot;3.5&amp;quot;
+  ## H2
+  subheadline = &amp;quot;Users Guide&amp;quot;
+  subheadline_color = &amp;quot;pink&amp;quot;
+  subheadline_size = &amp;quot;3&amp;quot;
+  ## H3
+  subsubheadline = &amp;quot;Hugo Powered!&amp;quot;
+  subsubheadline_color = &amp;quot;brown&amp;quot;
+  subsubheadline_size = &amp;quot;2&amp;quot;
+  ## H4
+  lines = [&amp;quot;Customizable&amp;quot;, &amp;quot;Add Your Sections&amp;quot;, &amp;quot;Insert Your Content&amp;quot;,&amp;quot;Super Noob Friendly&amp;quot;]
+  # lines_color = &amp;quot;ivory&amp;quot;
+  lines_size = &amp;quot;1.5&amp;quot;
+  divider = true
+  # divider_color = &amp;quot;seagreen&amp;quot;
+  # divider_thickness = &amp;quot;3&amp;quot;
+
+[params.sections]
+    #font = &amp;quot;Acme&amp;quot;
+    bullet_icon = &amp;quot;\uF069&amp;quot;   # font awesome unicode value
+    # headline_font = &amp;quot;Lato&amp;quot;
+    # headline_size = &amp;quot;3&amp;quot;
+    [params.sections.odd]
+    bg_color = &amp;quot;bisque&amp;quot;
+    color = &amp;quot;firebrick&amp;quot;
+    [params.sections.even]
+    color = &amp;quot;bisque&amp;quot;
+    bg_color = &amp;quot;firebrick&amp;quot;
+    [params.sections.footer]
+    # color = &amp;quot;ivory&amp;quot;
+    # bg_color = &amp;quot;darksalmon&amp;quot;
+    [params.sections.comments]
+    color = &amp;quot;black&amp;quot;
+    bg_color = &amp;quot;ivory&amp;quot;
+
+[params.modal]
+    #font = &amp;quot;Acme&amp;quot;
+    color = &amp;quot;ivory&amp;quot;
+    bg_color = &amp;quot;coral&amp;quot;
+    #text_size = &amp;quot;1.5&amp;quot;
+    # headline_size = &amp;quot;2&amp;quot;
+
+# these will overide the default which is even section button scheme comes from odd section scheme and vice versa
+# default hover is simply
+[params.buttons.even]
+  # color = &amp;quot;blue&amp;quot;
+  # bg_color = &amp;quot;red&amp;quot;
+  # hover_color =&amp;quot;white&amp;quot;
+  # hover_bg_color =&amp;quot;purple&amp;quot;
+[params.buttons.odd]
+  # color = &amp;quot;red&amp;quot;
+  # bg_color = &amp;quot;blue&amp;quot;
+  # hover_color =&amp;quot;purple&amp;quot;
+  # hover_bg_color =&amp;quot;white&amp;quot;
+
+# TODO enable via shortcode
+[[params.social]]
+    #title = &amp;quot;email&amp;quot;
+    #icon = &amp;quot;envelope-o&amp;quot;
+    #url = &amp;quot;mailto:4005@kebler.net&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
