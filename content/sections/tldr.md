@@ -14,4 +14,4 @@ If you really know what you are doing and prefer to start from scratch by all me
 {{< link type="btn" url="https://github.com/dkebler/landingpage-flex-hugo-theme.git" text="theme repo" display="window" >}}
 {{< /box >}}
 
-{{< youtube id="7G6TcT1liQw" nothumb="yes" plist="PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" title="All Above Videos as a Playlist">}}
+{{< youtube id="7G6TcT1liQw" maxwidth="600" plist="PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb" title="All Above Videos as a Playlist">}}

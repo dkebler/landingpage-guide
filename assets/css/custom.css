@@ -1,1 +1,11 @@
+.box--demo {
+  justify-content: space-around;
+  width:100%;
+}
 
+.box--demo > p  {
+  color:red;
+  width: 30%;
+  background-color: blue;
+  padding: 1em;
+}

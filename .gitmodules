@@ -1,3 +1,6 @@
 [submodule "themes/landingpage-flex-hugo-theme"]
 	path = themes/landingpage-flex-hugo-theme
 	url = https://github.com/dkebler/landingpage-flex-hugo-theme.git
+[submodule "themes/hugo-easy-gallery"]
+	path = themes/hugo-easy-gallery
+	url = https://github.com/dkebler/hugo-easy-gallery.git

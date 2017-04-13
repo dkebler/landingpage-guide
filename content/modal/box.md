@@ -3,20 +3,42 @@ Title = "Shortcode - Box"
 +++
 **Takes an image and...**
 
-usage: ```{{</* bookmark "id" "text" "hide" */>}}```
+usage: ```{{</* box "list of css classes" */>}}```
 
 where:  \* = optional
 
-* _**id**_ - the name of the bookmark used in a link, become #*id* for use in a link like
-* \*_**text**_ - is the text that will appear on the page, if missing *id* will be used as the text
-* \*_**hide**_ - if "hide" appears the anchor will be made invisible on the page.
+* \*_**classes**_ - A space delimited set of css classes for custom styling
 
-example in markdown:  
+examples in markdown:  
 
-```This is all {{</* bookmark "about" "about us" */>}}```
+## Example 1 - Including Markdown
 
-```if I wanted to go to the new about us bookmark I'd click [here](#about)```
+```html
+{{%/* box  demo */%}}
+A paragraph I wrote blah...blah blah blah blah  blah blah blah blah
 
-This is all {{< bookmark "concerning" "about us" >}} and stuff
+Another paragraph
+{{%/* /box */%}}
+```
 
-if I wanted to go to the about us bookmark I'd click [here](#concerning)
+rendered
+{{% box demo %}}
+A paragraph I wrote blah blah blah blah  blah blah blah blah
+
+Another paragraph
+{{% /box %}}
+
+with this css in /assests/css/custom.css
+
+```css
+.box--demo {
+  justify-content: space-around;
+  width:100%;
+}
+
+.box--demo > p  {
+  color:red;
+  background-color: blue;
+  padding: 1em;
+}
+```

@@ -1,7 +1,7 @@
 +++
 Title = "Shortcode - Embed"
 +++
-**Takes an image and...**
+****
 
 usage: ```{{</* bookmark "id" "text" "hide" */>}}```
 
