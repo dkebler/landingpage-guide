@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modals on Landing Page User Guide</title>
+    <link>https://dkebler.github.io/landingpage-guide/modal/</link>
+    <description>Recent content in Modals on Landing Page User Guide</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://dkebler.github.io/landingpage-guide/modal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shortcode - Avatar</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/avatar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/avatar/</guid>
+      <description>creates a large circle icon from an image
+usage: {{&amp;lt; avatar &amp;quot;image-path&amp;quot; &amp;quot;link&amp;quot; &amp;gt;}}
+parameters: * = optional
+ *image-path - image path of the image. By default it will look for avatar.jpg in the /assets/images. Note: All images can be servered from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *url - a page the image will link to when clicked  examples in markdown:
+ {{&amp;lt; avatar &amp;gt;}} loads avatar.</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Bookmark</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/bookmark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/bookmark/</guid>
+      <description>Turn any text into a bookmark (id html tag) that then can be linked to
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, becomes #id for use in a link *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Box</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/box/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; box &amp;quot;list of css classes&amp;quot; &amp;gt;}}
+where: * = optional
+ *classes - A space delimited set of css classes for custom styling  examples in markdown:
+Example 1 - Including Markdown {{% box demo %}} A paragraph I wrote blah...blah blah blah blah blah blah blah blah Another paragraph {{% /box %}}  rendered A paragraph I wrote blah blah blah blah blah blah blah blah</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Contact</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/contact/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Disqus</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/disqus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/disqus/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Embed</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/embed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/embed/</guid>
+      <description>usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:
+This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Format</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/format/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/format/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Image</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/image/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - JotForm</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/jotform/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/jotform/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Link</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/link/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/link/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Lorem</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/lorem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/lorem/</guid>
+      <description>Takes an image and&amp;hellip;
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Social</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/social/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/social/</guid>
+      <description>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml
+usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.</description>
+    </item>
+    
+    <item>
+      <title>Shortcode - Youtube</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/youtube/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/youtube/</guid>
+      <description>Unamed Parameters usage: {{&amp;lt; youtube &amp;quot;id&amp;quot; &amp;quot;start&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the youtube id *start - for start time other than the beginning in seconds  example in markdown:
+{{&amp;lt; youtube 7G6TcT1liQw 60 &amp;gt;}} start one minute into video with id of 7G6TcT1liQw
+rendered:
+ Named Parameters usage: {{&amp;lt; youtube id=&amp;quot;&amp;quot; start=&amp;quot;&amp;quot; plist=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; caption=&amp;quot;&amp;quot; nothumb=&amp;quot;&amp;quot; maxwidth=&amp;quot;&amp;quot; wpad=&amp;quot;&amp;quot; &amp;gt;}}
+where: * = optional
+ id - the youtube id *start - for start time other than the beginning in seconds *plist - youtube playlist id (for id must choose an id of from one of the videos therein ) *title - Title on top of video *caption - caption below video *maxwidth - for larger devices it limits the width of the video, default is 450px.</description>
+    </item>
+    
+    <item>
+      <title>The Settings File</title>
+      <link>https://dkebler.github.io/landingpage-guide/modal/toml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modal/toml/</guid>
+      <description>Below is an example of the page settings file named config.toml. You can find it in the root of the project folder. By editing the values in this file you can control the style, content or appearance of certain elements of the page.
+In the file&amp;hellip; Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &amp;ldquo;off&amp;rdquo; rather than deleting it. Therefore never delete any lines of this file</description>
+    </item>
+    
+  </channel>
+</rss>
