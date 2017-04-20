@@ -152,8 +152,8 @@ function lightgallery(id) {
       var target = this.hash;
       modalShow(target);
     } else {
-      console.log("path and host", location.pathname, this.pathname, location.hostname, this.hostname)
-      alert(`modal display of off page content not supported`);
+      alert("path and host modal", location.pathname, this.pathname, location.hostname, this.hostname)
+        // alert(`modal display of off page content not supported`);
     }
     return false;
   });
