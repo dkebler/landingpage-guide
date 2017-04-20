@@ -148,12 +148,12 @@ function lightgallery(id) {
 
   // Register click event for all modal links on page
   $("a[modal]").click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    alert("path and host modal", location.pathname, this.pathname, location.hostname, this.hostname)
+    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
       var target = this.hash;
       modalShow(target);
     } else {
-      alert("path and host modal", location.pathname, this.pathname, location.hostname, this.hostname)
-        // alert(`modal display of off page content not supported`);
+      // alert(`modal display of off page content not supported`);
     }
     return false;
   });
