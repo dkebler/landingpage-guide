@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Landing Page User Guide</title>
-    <link>https://dkebler.github.io/landingpage-guide/tags/</link>
+    <link>https://dkebler.github.io/landingpage-starter/tags/</link>
     <description>Recent content in Tags on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://dkebler.github.io/landingpage-guide/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dkebler.github.io/landingpage-starter/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

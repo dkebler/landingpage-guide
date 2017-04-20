@@ -2,128 +2,128 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/hero/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/hero/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/install/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/install/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/startup/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/startup/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/configure/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/configure/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/sections/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/sections/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/markdown/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/markdown/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/plugins/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/plugins/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/deloy/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/deloy/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/tldr/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/tldr/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/footer/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/footer/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/comments/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/comments/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/categories/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/sections/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/sections/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/avatar/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/avatar/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/bookmark/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/bookmark/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/box/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/box/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/contact/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/contact/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/disqus/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/disqus/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/embed/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/embed/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/format/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/format/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/image/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/image/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/jotform/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/jotform/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/link/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/link/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/lorem/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/lorem/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/social/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/social/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/youtube/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/youtube/</loc>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/tags/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://dkebler.github.io/landingpage-guide/modal/toml/</loc>
+    <loc>https://dkebler.github.io/landingpage-starter/modals/toml/</loc>
   </url>
   
 </urlset>
