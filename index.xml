@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Landing Page User Guide</title>
-    <link>https://dkebler.github.io/landingpage-starter/</link>
+    <link>https://dkebler.github.io/landingpage-guide/</link>
     <description>Recent content on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://dkebler.github.io/landingpage-starter/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dkebler.github.io/landingpage-guide/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/hero/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/hero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/hero/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/hero/</guid>
       <description>Custom Hero you can put in whatever you want here in a hero.md file</description>
     </item>
     
     <item>
       <title>What to Install</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/install/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/install/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/install/</guid>
       <description>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML). If you are experienced then go to the quick start - TL;DR .
 The Tools To be able to make your own cusomtized landing pages quickly and easily you&amp;rsquo;ll need to install minimum of two tools and then grab a copy of this guide&amp;rsquo;s source respository to use as a starter. The absolute minimum tools you&amp;rsquo;ll need to install are</description>
     </item>
     
     <item>
       <title>Getting Started</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/startup/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/startup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/startup/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/startup/</guid>
       <description>YEA! If you completed successfully the installation section you are finally ready to start editing YOUR own landing page. You&amp;rsquo;ll going find easy to edit an existing landing page than to start your own from scratch. That&amp;rsquo;s why you&amp;rsquo;ll be using this guide&amp;rsquo;s source files.
 What&amp;rsquo;s Important In the folder you just made containing this guide&amp;rsquo;s source files you need to concentrate on just three places. The first is the config.</description>
     </item>
     
     <item>
       <title>The Configuration File</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/configure/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/configure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/configure/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/configure/</guid>
       <description>The heart and soul of your landing page is the configuration file config.toml. So start the editing of the &amp;ldquo;your&amp;rdquo; site by bringing up the config.toml file in Atom. You&amp;rsquo;ll find it in the root of your starter directory.
 The Layout It&amp;rsquo;s pretty simple. Eeach line in the config file is a setting. You can turn the setting &amp;ldquo;off&amp;rdquo; by simply putting a hashtag(#) before it. If you remove the hashtag the value for that setting will be used.</description>
     </item>
     
     <item>
       <title>Sections</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/sections/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/sections/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/sections/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/sections/</guid>
       <description>About Adding a section to the landing page is as easy as adding a md file in the content/sections/ directory. Each md file you create in that directory will need some settings at the top of the page called frontmatter. The settings work the same as in config.toml, use a hashtag in front to turn one off. The frontmatter must be proceeded and followed by +++
 Here is an example frontmatter you can copy into your new md file.</description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/markdown/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/markdown/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/markdown/</guid>
       <description>Learn it Teaching you the details about writing markdown is beyond the scope of this guide. He are two links to get you started, a markdown tutorial, and a markdown cheatsheet. If you prefer here is video to get you going.
  Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the content/sections/ directory.</description>
     </item>
     
     <item>
       <title>Plugins (i.e Shortcodes)</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/plugins/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/plugins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/plugins/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/plugins/</guid>
       <description>What are they As explained in the markdown section above shortcodes can be plugged into the middle of your markdown files to give them added functionality. Each shortcode is invoked with either a {{&amp;lt; name &amp;gt;}} or {{% name %}} and possibly a closing {{&amp;lt; /name &amp;gt;}} if they enclose some more content. It all depends on the nature of the shortcode.
  This landing page theme currently has 12 shortcodes that you might plugin and will likely have more in the future (make your requests).</description>
     </item>
     
     <item>
       <title>Deploy</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/deloy/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/deloy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/deloy/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/deloy/</guid>
       <description>SOME CHANGES
 After all that work getting your new landing page site looking the way you want it it&amp;rsquo;s time to &amp;ldquo;Deploy&amp;rdquo; your landing page out somewhere on the Internet where everyone can see it.
 Generate the site folder During page development using the hugo server command Hugo has been generating your site&amp;rsquo;s files and placing them in memory and serving them from there via localhost:1313.
@@ -93,39 +93,39 @@ Now you are just going to run just the command hugo and it will generate an actu
     
     <item>
       <title>Quick Start for the Experienced</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/tldr/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/tldr/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/tldr/</guid>
       <description>For those who are Hugo experienced and know what they are doing and are able to &amp;ldquo;figure out&amp;rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the conent/sections directory and settings in config.toml.
 If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project&amp;rsquo;s themes folder</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/footer/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/footer/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/footer/</guid>
       <description> This is a footer
  </description>
     </item>
     
     <item>
       <title>Comments</title>
-      <link>https://dkebler.github.io/landingpage-starter/sections/comments/</link>
+      <link>https://dkebler.github.io/landingpage-guide/sections/comments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/sections/comments/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/sections/comments/</guid>
       <description>  (function() { var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true; var disqus_shortname = &#39;landingpage-guide&#39;; dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;; (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq); })();  Please enable JavaScript to view the comments powered by Disqus. comments powered by Disqus </description>
     </item>
     
     <item>
       <title>Shortcode - Avatar</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/avatar/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/avatar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/avatar/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/avatar/</guid>
       <description>creates a large circle icon from an image
 usage: {{&amp;lt; avatar &amp;quot;image-path&amp;quot; &amp;quot;link&amp;quot; &amp;gt;}}
 parameters: * = optional
@@ -135,10 +135,10 @@ parameters: * = optional
     
     <item>
       <title>Shortcode - Bookmark</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/bookmark/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/bookmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/bookmark/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/bookmark/</guid>
       <description>Turn any text into a bookmark (id html tag) that then can be linked to
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -147,10 +147,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Box</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/box/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/box/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/box/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; box &amp;quot;list of css classes&amp;quot; &amp;gt;}}
 where: * = optional
@@ -160,10 +160,10 @@ Example 1 - Including Markdown {{% box demo %}} A paragraph I wrote blah...blah 
     
     <item>
       <title>Shortcode - Contact</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/contact/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/contact/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/contact/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -172,10 +172,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Disqus</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/disqus/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/disqus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/disqus/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/disqus/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -184,10 +184,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Embed</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/embed/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/embed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/embed/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/embed/</guid>
       <description>usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
  id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:
@@ -196,10 +196,10 @@ This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp
     
     <item>
       <title>Shortcode - Format</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/format/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/format/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/format/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -208,10 +208,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Image</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/image/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/image/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/image/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -220,10 +220,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - JotForm</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/jotform/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/jotform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/jotform/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/jotform/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -232,10 +232,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Link</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/link/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/link/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/link/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -244,10 +244,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Lorem</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/lorem/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/lorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/lorem/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/lorem/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -256,10 +256,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Social</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/social/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/social/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/social/</guid>
       <description>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -268,10 +268,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Youtube</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/youtube/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/youtube/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/youtube/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/youtube/</guid>
       <description>Unamed Parameters usage: {{&amp;lt; youtube &amp;quot;id&amp;quot; &amp;quot;start&amp;quot; &amp;gt;}}
 where: * = optional
  id - the youtube id *start - for start time other than the beginning in seconds  example in markdown:
@@ -284,10 +284,10 @@ where: * = optional
     
     <item>
       <title>The Settings File</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/toml/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/toml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/toml/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/toml/</guid>
       <description>Below is an example of the page settings file named config.toml. You can find it in the root of the project folder. By editing the values in this file you can control the style, content or appearance of certain elements of the page.
 In the file&amp;hellip; Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &amp;ldquo;off&amp;rdquo; rather than deleting it. Therefore never delete any lines of this file</description>
     </item>

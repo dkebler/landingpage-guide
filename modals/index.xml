@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modals on Landing Page User Guide</title>
-    <link>https://dkebler.github.io/landingpage-starter/modals/</link>
+    <link>https://dkebler.github.io/landingpage-guide/modals/</link>
     <description>Recent content in Modals on Landing Page User Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://dkebler.github.io/landingpage-starter/modals/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://dkebler.github.io/landingpage-guide/modals/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Shortcode - Avatar</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/avatar/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/avatar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/avatar/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/avatar/</guid>
       <description>creates a large circle icon from an image
 usage: {{&amp;lt; avatar &amp;quot;image-path&amp;quot; &amp;quot;link&amp;quot; &amp;gt;}}
 parameters: * = optional
@@ -25,10 +25,10 @@ parameters: * = optional
     
     <item>
       <title>Shortcode - Bookmark</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/bookmark/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/bookmark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/bookmark/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/bookmark/</guid>
       <description>Turn any text into a bookmark (id html tag) that then can be linked to
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -37,10 +37,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Box</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/box/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/box/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/box/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/box/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; box &amp;quot;list of css classes&amp;quot; &amp;gt;}}
 where: * = optional
@@ -50,10 +50,10 @@ Example 1 - Including Markdown {{% box demo %}} A paragraph I wrote blah...blah 
     
     <item>
       <title>Shortcode - Contact</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/contact/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/contact/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/contact/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -62,10 +62,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Disqus</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/disqus/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/disqus/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/disqus/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/disqus/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -74,10 +74,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Embed</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/embed/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/embed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/embed/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/embed/</guid>
       <description>usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
  id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:
@@ -86,10 +86,10 @@ This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp
     
     <item>
       <title>Shortcode - Format</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/format/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/format/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/format/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -98,10 +98,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Image</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/image/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/image/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/image/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -110,10 +110,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - JotForm</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/jotform/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/jotform/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/jotform/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/jotform/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -122,10 +122,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Link</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/link/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/link/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/link/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/link/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -134,10 +134,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Lorem</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/lorem/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/lorem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/lorem/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/lorem/</guid>
       <description>Takes an image and&amp;hellip;
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -146,10 +146,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Social</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/social/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/social/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/social/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/social/</guid>
       <description>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml
 usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
 where: * = optional
@@ -158,10 +158,10 @@ where: * = optional
     
     <item>
       <title>Shortcode - Youtube</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/youtube/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/youtube/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/youtube/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/youtube/</guid>
       <description>Unamed Parameters usage: {{&amp;lt; youtube &amp;quot;id&amp;quot; &amp;quot;start&amp;quot; &amp;gt;}}
 where: * = optional
  id - the youtube id *start - for start time other than the beginning in seconds  example in markdown:
@@ -174,10 +174,10 @@ where: * = optional
     
     <item>
       <title>The Settings File</title>
-      <link>https://dkebler.github.io/landingpage-starter/modals/toml/</link>
+      <link>https://dkebler.github.io/landingpage-guide/modals/toml/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://dkebler.github.io/landingpage-starter/modals/toml/</guid>
+      <guid>https://dkebler.github.io/landingpage-guide/modals/toml/</guid>
       <description>Below is an example of the page settings file named config.toml. You can find it in the root of the project folder. By editing the values in this file you can control the style, content or appearance of certain elements of the page.
 In the file&amp;hellip; Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &amp;ldquo;off&amp;rdquo; rather than deleting it. Therefore never delete any lines of this file</description>
     </item>
