@@ -147,7 +147,7 @@ function lightgallery(id) {
 
   // Register click event for all modal links on page
   $("a[modal]").click(function () {
-    console.log("paths and hosts", location.pathname.replace(/^\//, ''), this.pathname.replace(/^\//, ''), location.hostname, this.hostname)
+    console.log("paths and hosts", location.pathname, this.pathname, location.hostname, this.hostname)
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = this.hash;
       modalShow(target);
