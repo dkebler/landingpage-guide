@@ -25,5 +25,6 @@ As explained in the [markdown section](#what-are-the-and-about) above shortcodes
 * {{< link url="#modal-social" text="social" display="modal" >}} -  add bar of social icons and links  
 * {{< link url="#modal-youtube" text="youtube" display="modal" >}} - embed youtube videos with many options.  For generic embedding use the embed shortcode
 
-There will be a shortcode to make a gallery of photos from a directory of photos but this has not been automated yet and is only shown here in example.  It will be documented when it's available.
-{{< gallery-photos >}}
+Soon there will be a plugin/shortcode to make a gallery of photos from a directory of photos and a nice lightbox when you click on one but this has not been automated yet.  You can see an example of how it will work when it's ready.
+
+{{< link type="btn" icon="eye" url="http://4005.kebler.net" text="Generated Site using photo gallery plugin" display="window" width="800" height="600">}}

@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "description": "Guide to Using the Hugo Landing Page Theme",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
-    "gh": "hugo -b https://dkebler.github.io/landingpage-guide -d docs",
-    "s3": "hugo -d s3"
+    "gh": "hugo -b https://dkebler.github.io/landingpage-guide -d gh && node ghpages && rm -rf gh",
+    "s3": "hugo -d ../../deploy/landingpage/s3",
+    "fb": "./node_modules/.bin/firebase",
+    "fbd": "hugo -b https://landingpage-guide.firebaseapp.com -d firebase && ./node_modules/.bin/firebase deploy&& rm -rf firebase "
   },
   "repository": {
     "type": "git",
@@ -25,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/dkebler/landingpage-guide/issues"
   },
-  "homepage": "https://github.com/dkebler/landingpage-guide#readme"
+  "homepage": "https://github.com/dkebler/landingpage-guide#readme",
+  "devDependencies": {
+    "firebase-tools": "^3.6.1",
+    "gh-pages": "^0.12.0",
+    "merge-dirs": "^0.2.1",
+    "watch": "^1.0.2"
+  }
 }

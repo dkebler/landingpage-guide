@@ -9,25 +9,23 @@ languageCode = "en-us"
 title = "Landing Page User Guide" ## required used for tab title and navbar
 canonifyUrls = "true" ## don't change this
 staticDir ="assets" ## don't change this
-# publishDir = "dist"  ## default is public/
-# contentDir = "sections" ## don't change this
+publishDir = "dist"  ## default is public/
 layoutDir = "plugins" ## don't change this
 theme = "landingpage-flex-hugo-theme" ## don't change this
-# disqusShortname = "landingpage-guide"
-#disableLiveReload = true
+# disqusShortname = ""
 
 [params]
-custom_css = ["custom.css"]  ## can add other files in array, make corresponding file in assets/css/
-custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
-galleries = ["photos"] ## array of galleries names created
-## You can redirect your images location to another external place like an s3 bucket. default is assets/images => /images
-# imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
-lightbox = "lightgallery" ## must match the lightbox function name
-## Possible font setting choices in this config file must be a google font name
+## Possible font setting choices throughout this config file must be a google font name
 ## see  https://fonts.google.com/
 ## This applies to all font= settings in this file
 font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
-cache_timeout = 0
+# custom_css = ["custom.css", "custom-responsive.css"]   ## can add other files in array, make corresponding file in assets/css/
+# custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
+galleries = ["photos"] ## array of galleries names created
+## You can store your images in an external place like an s3 bucket. default is within at assets/images => /images
+# imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
+lightbox = "lightgallery" ## must match a lightbox function that has been loaded currently only lightgallery available
+# cache_timeout = 0  ## don't change this
 
 [params.navbar]
   # hidden = true
@@ -63,7 +61,7 @@ cache_timeout = 0
   subsubheadline_color = "brown"
   subsubheadline_size = "2"
   ## H4
-  lines = ["Customizable", "Add Your Sections", "Insert Your Content","Super Noob Friendly"]
+  lines = ["Customizable", "Add Your Sections", "Insert Your Content","Super Noob Friendly","Mobile Ready"]
   # lines_color = "ivory"
   lines_size = "1.5"
   divider = true
@@ -108,6 +106,16 @@ cache_timeout = 0
   # hover_color ="purple"
   # hover_bg_color ="white"
 
+  [params.contact]
+    name = "Mr. Richard Feynman"
+    email = "rfeynman@caltech.edu"
+    # address = ""
+    # cell = "xxx-xxx-xxxx"
+    # cell_image = "cell.jpg"
+    # phone = ""
+    # phone_image = ""
+    # avatar = ""
+
 # TODO enable via shortcode
 [[params.social]]
     #title = "email"
@@ -115,8 +123,9 @@ cache_timeout = 0
     #url = "mailto:4005@kebler.net"
 
 [params.youtube]
-  # maxwidth = "800"  ## default maximum width for all youtubes default is 450
-  #  wpad = "50"  ## padding on both left and right when view width is < maxwidth  default is 5
+  # maxwidth = "400"  ## default maximum width for all youtubes default is 450
+  # wpad = "50"  ## padding on both left and right when view width is < maxwidth  default is 5
   ## on mobile devices autoplay is disabled so having a fast loading thumb image requires two clicks
   ## to start video.  Disable this only if you have just one or two videos on your page
   # disable_thumb = "yes" ## display video thumbs and not thumb image
+  # apikey = "" # TODO grab the title for thumb title display

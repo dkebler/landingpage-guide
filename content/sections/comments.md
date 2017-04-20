@@ -3,6 +3,6 @@
 weight = 2000
 Title = "Comments"
 navbar = false
-hidden = true
+# hidden = true
 +++
 {{< disqus "landingpage-guide" >}}
