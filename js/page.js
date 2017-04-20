@@ -1,18 +1,17 @@
 // Smooth Scroll Init - Register click handler for ID anchors
 $('a[href*="#"]:not(a[modal])').click(function () {
-  // if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  console.log("path and host", location.pathname, this.pathname, location.hostname, this.hostname)
-  var target = $(this.hash);
-  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  if (target.length) {
-    var targetOffset = target.offset().top - $(".nav-bar__header").outerHeight(true);
-    // console.log(targetOffset, target.offset().top, $(".nav-bar__header").outerHeight())
-    $('html, body').animate({
-      scrollTop: targetOffset
-    }, 1000);
-    return false;
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      var targetOffset = target.offset().top - $(".nav-bar__header").outerHeight(true);
+      // console.log(targetOffset, target.offset().top, $(".nav-bar__header").outerHeight())
+      $('html, body').animate({
+        scrollTop: targetOffset
+      }, 1000);
+      return false;
+    }
   }
-  // }
 });
 
 // navbar mobile toggle - preload
@@ -148,12 +147,11 @@ function lightgallery(id) {
 
   // Register click event for all modal links on page
   $("a[modal]").click(function () {
-    alert("path and host modal", location.pathname, this.pathname, location.hostname, this.hostname)
-    if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = this.hash;
       modalShow(target);
     } else {
-      // alert(`modal display of off page content not supported`);
+      alert(`modal display of off page content not supported`);
     }
     return false;
   });
