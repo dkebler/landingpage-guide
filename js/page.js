@@ -1,7 +1,7 @@
 // Smooth Scroll Init - Register click handler for ID anchors
 $('a[href*="#"]:not(a[modal])').click(function () {
   // if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  console.log(location.pathname, this.pathname, location.hostname, this.hostname)
+  console.log("path and host", location.pathname, this.pathname, location.hostname, this.hostname)
   var target = $(this.hash);
   target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
   if (target.length) {
