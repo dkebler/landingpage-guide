@@ -1,22 +1,38 @@
 +++
 Title = "Shortcode - Format"
 +++
-**Takes an image and...**
+**Wrap some content so it can be custom styled**
 
-usage: ```{{</* bookmark "id" "text" "hide" */>}}```
+usage:
+```
+{{%/* format "list of css classes" */%}}
+Stuff to Wrap
+{{%/* /box */%}}
+```
 
 where:  \* = optional
 
-* _**id**_ - the name of the bookmark used in a link, become #*id* for use in a link like
-* \*_**text**_ - is the text that will appear on the page, if missing *id* will be used as the text
-* \*_**hide**_ - if "hide" appears the anchor will be made invisible on the page.
+* \*_**classes**_ - A space delimited set of css classes for custom styling
 
-example in markdown:  
+examples in markdown:  
 
-```This is all {{</* bookmark "about" "about us" */>}}```
+## Example Markdown
 
-```if I wanted to go to the new about us bookmark I'd click [here](#about)```
+```html
+Here is some normally formatted text. {{%/* format  red */%}}Here I need a sentence to be in red{{%/* /format */%}}.  This sentence is normal again.  
+```
+Here is some normally formatted text. {{% format  red %}}Here I need a sentence to be in red{{% /format %}}. This sentence is normal again.  
 
-This is all {{< bookmark "concerning" "about us" >}} and stuff
+with this css in `css/custom.css` and the setting in `config.toml` accordingly
+```css
+.red {
+  color: red;
+}
+```
 
-if I wanted to go to the about us bookmark I'd click [here](#concerning)
+### the shortcode for Hugo experienced
+```html
+<span class="{{ range .Params }}{{ . }} {{ end }}">
+{{ .Inner }}
+</span>
+```

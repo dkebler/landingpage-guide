@@ -19,8 +19,8 @@ theme = "landingpage-flex-hugo-theme" ## don't change this
 ## see  https://fonts.google.com/
 ## This applies to all font= settings in this file
 font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
-# custom_css = ["custom.css", "custom-responsive.css"]   ## can add other files in array, make corresponding file in assets/css/
-# custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
+custom_css = ["custom.css", "custom-responsive.css"]   ## can add other files in array, make corresponding file in assets/css/
+custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
 galleries = ["photos"] ## array of galleries names created
 ## You can store your images in an external place like an s3 bucket. default is within at assets/images => /images
 # imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
@@ -109,8 +109,8 @@ lightbox = "lightgallery" ## must match a lightbox function that has been loaded
   [params.contact]
     name = "Mr. Richard Feynman"
     email = "rfeynman@caltech.edu"
-    # address = ""
-    # cell = "xxx-xxx-xxxx"
+    address = "Pasadena CA"
+    cell = "xxx-xxx-xxxx"
     # cell_image = "cell.jpg"
     # phone = ""
     # phone_image = ""

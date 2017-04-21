@@ -4,49 +4,53 @@ Title = "Shortcode - Avatar"
 +++
 **creates a large circle icon from an image**
 
-**usage:** ```{{</* avatar "image-path" "link" */>}}```
+**usage:** ```{{</* avatar "image" */>}}```
+          ```{{</* avatar img="image" url="link" */>}}```
 
 **parameters:**  \* = optional
 
-* \*_**image-path**_ - image path of the image.  By default it will look for avatar.jpg in the /assets/images. *Note:* All images can be servered from an alternative place by setting "imagespath" setting in config.toml
-* \*_**url**_ - a page the image will link to when clicked
+* \*_**image**_ - image path of the image.  By default it will look for avatar.jpg in the /assets/images. *Note:* All images can be servered from an alternative place by setting "imagespath" setting in config.toml
+* \*_**url**_ - a valid url to link the image to
 
 
 **examples in markdown:**  
 
-* ```{{</* avatar  */>}}```  loads avatar.jpg that must be in assets/images folder
-* ```{{</* avatar "myface.jpg" "http://me.myname.com" */>}}```   myface.jpg in assets/images folder
-* ```{{</* avatar "personal/myface.jpg" "http://me.myname.com" */>}}```   myface.jpg in assets/personal/images folder
-
-
-**rendered example:**
+```{{</* avatar  */>}}```  loads avatar.jpg that must be in assets/images folder
 
 {{< avatar >}}
 
-## For Experienced Hugo Coders
+```{{</* avatar "personal/dickf2.jgp" */>}}``` with `dickf2.jpg` in the `assets/images/personal/` subdirectory
+{{< avatar "personal/dickf2.jpg" >}}
 
+must use parameter names if a link is desired
+
+```{{</* avatar img="dickf.jpg" url="https://en.wikipedia.org/wiki/Richard_Feynman" */>}}```   
+
+with `dickf.jpg` in `assets/images` folder
+
+{{< avatar img="dickf.jpg" url="https://en.wikipedia.org/wiki/Richard_Feynman" >}}
+
+**rendered example:**
+
+### the shortcode for experienced hugo coders
 ```html
-{{ $numOfParams := ( len .Params ) }}
-{{ $avatar := "avatar.jpg" }}
-{{ if eq $numOfParams 1 }}{{ $avatar := .Get 1 }}{{ end }}
+{{ $path := "/images/" }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+{{ if .IsNamedParams }}
 <div class="box box--avatar">
-  {{ if eq $numOfParams 2 }}<a href="{{.Get 1 }}">{{ end }}
-  {{ $path := "/images/" }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
-	<img class="avatar" src="{{ $path }}{{ $avatar }}"/>
-  {{ if eq $numOfParams 2 }}</a>{{ end }}
+  {{ with .Get "url" }}<a href="{{.}}">{{ end }}
+	<img class="avatar" src="{{ $path }}{{ .Get "img" }}"/>
+  {{ with .Get "url" }}</a>{{ end }}
 </div>
+{{ else }}
+{{ $avatar := ( .Get 0 | default "avatar.jpg" ) }}
+<div class="box box--avatar">
+	<img class="avatar" src="{{ $path }}{{ $avatar }}"/>
+</div>
+{{ end }}
 ```
 
 ```css
-/* box creates a flexbox wrapper, row default */
-.box {
-  display: flex;
-  flex-flow: wrap;
-  align-content: center;
-  justify-content: center;
-  padding-bottom: 0.5em;
-}
-
+/* this makes the avatar circle form the square image */
 img.avatar {
   object-fit: cover;
   border-radius: 50%;

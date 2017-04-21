@@ -1,22 +1,31 @@
 +++
 Title = "Shortcode - JotForm"
 +++
-**Takes an image and...**
+**Makes a button link to a Jotform form**
 
-usage: ```{{</* bookmark "id" "text" "hide" */>}}```
+*Get Some Interaction from your "static" site by using Jotform*
 
-where:  \* = optional
+See the {{< link text="Jotform" url="https://www.jotform.com/" display="tab" >}} website to make a form.  
 
-* _**id**_ - the name of the bookmark used in a link, become #*id* for use in a link like
-* \*_**text**_ - is the text that will appear on the page, if missing *id* will be used as the text
-* \*_**hide**_ - if "hide" appears the anchor will be made invisible on the page.
+usage: ```{{</* jotform "id" "text"*/>}}```
 
-example in markdown:  
+where:
 
-```This is all {{</* bookmark "about" "about us" */>}}```
+* _**id**_ - *id* of Jotform created at Jotform website
+* _**text**_ - text of button
 
-```if I wanted to go to the new about us bookmark I'd click [here](#about)```
+currently creates a button that opens in a popup window
 
-This is all {{< bookmark "concerning" "about us" >}} and stuff
+but eventually it will be embedable in the content
 
-if I wanted to go to the about us bookmark I'd click [here](#concerning)
+```{{</* jotform "bogus#" "My Awesome Form - Fill It" */>}}```
+
+{{< jotform "bogus#" "My Awesome Form - Fill It" >}}
+
+### shortcode for the Hugo experienced
+
+```html
+<div class ="box box--btn">
+<a class="btn" href="javascript:void( window.open('https://form.jotform.com/{{ .Get 0 }}', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500') )">{{ .Get 1 }}</a>
+</div>
+```

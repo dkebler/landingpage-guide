@@ -36,24 +36,27 @@ where:  \* = optional
 
 example in markdown:  
 
-```{{</* youtube id="7G6TcT1liQw" start="60" maxwidth="150" title="A Title" caption="this is a caption" */>}}```
+```{{</* youtube id="7G6TcT1liQw" start="60" maxwidth="350" title="A Title" caption="this is a caption" */>}}```
 
 rendered:  
 
-{{< youtube id="7G6TcT1liQw" start="60" maxwidth="150" title="A Title" caption="this is a caption" >}}
+{{< youtube id="7G6TcT1liQw" start="60" maxwidth="350" title="A Title" caption="this is a caption" >}}
 
 ## Actual Short Code - For Experienced Hugo Coders
 
 ```html
+{{ $.Scratch.Set "maxwidth" ( $.Page.Site.Params.youtube.maxwidth )  }}
+{{ $.Scratch.Set "wpad" ( $.Page.Site.Params.youtube.wpad )  }}
+{{ $.Scratch.Set "nothumb" ( $.Page.Site.Params.youtube.disable_thumb )  }}
 {{ if .IsNamedParams }}
-{{ $.Scratch.Set "maxwidth" ( $.Page.Site.Params.youtube.maxwidth | .Get "maxwidth" )  }}
-{{ $.Scratch.Set "wpad" ( $.Page.Site.Params.youtube.wpad | .Get "wpad" )  }}
-{{ $.Scratch.Set "nothumb" ( $.Page.Site.Params.youtube.disable_thumb | .Get "nothumb" )  }}
-<div class="box box--column">
+{{ with .Get "maxwidth" }}{{ $.Scratch.Set "maxwidth" . }}{{ end }}
+{{ with .Get "wpad" }}{{ $.Scratch.Set "wpad" . }}{{ end }}
+{{ with .Get "nothumb" }}{{ $.Scratch.Set "nothumb" . }}{{ end }}
+<div class="box box--embed box--column box--youtube">
     {{ with .Get "title" }}
     <div class="box__title">{{ . }}</div>
     {{ end }}
-    <div class="box box--embed box--youtube"
+    <div
        youtube_id="{{ .Get "id" }}"
        {{ with .Get "start"}} start="{{ . }}"{{ end }}
        {{ with .Get "plist"}} list="{{ . }}"{{ end }}
@@ -72,9 +75,56 @@ rendered:
 <div class="box box--embed box--youtube"
        youtube_id="{{ .Get 0 }}"
        {{ if eq $numOfParams 2 }} start="{{ .Get 1 }}"{{ end }}
-       {{ with $.Page.Site.Params.youtube.disable_thumb }} nothumb="yes" {{ end }}
+       {{ with $.Scratch.Get "maxwidth"}} maxWidth="{{ . }}"{{ end }}
+       {{ with $.Scratch.Get "wpad"}} wPad="{{ . }}"{{ end }}
+       {{ with $.Scratch.Get "nothumb"}} nothumb="yes" {{ end }}
        >
       <!-- image or iframe injected here -->
 </div>
 {{ end }}
+```
+
+### and the javascript for the ninjas
+```javascript
+(function ($) {
+
+  $(document).bind("DOMContentLoaded",
+    function () {
+
+      var playBtn = '<i class="fa fa-play-circle-o play-button"></i>'
+      $('div[youtube_id]').each(function () {
+        if ($(this).attr('nothumb') !== "yes") {
+          var vid = $(this).attr('youtube_id');
+          var bgi = `style="background-image: url(https://i.ytimg.com/vi/${vid}/mqdefault.jpg)"`
+          var thumb = `<div class="thumb--yt" ${bgi} width="560" height="315">`
+          $(this).append(thumb).children().append(playBtn).click(insertIframe).fitToWindow()
+
+        } else { // if image thumbs turned off
+          insertIframe.call(this)
+        }
+
+      })
+    })
+
+  function insertIframe() {
+    var $box = $(this).parent()
+    var id = $box.attr('youtube_id')
+    var autoplay = "autoplay=1&"
+    if (!id) { // image thumb is off not called by thumb so don't need parent
+      $box = $(this)
+      id = $box.attr('youtube_id')
+      autoplay = ""
+    }
+    var mw = $box.attr('maxWidth');
+    var wp = $box.attr('wPad');
+    var start = $box.attr("start") || 1
+    var list = ""
+    if ($box.attr("list")) { list = `&list=${$box.attr("list")}` }
+    var url = `https://www.youtube.com/embed/${id}?${autoplay}start=${start}`
+    var vIframe = `<iframe width = "560" height = "315" src ="${url}${list}" frameborder = "0" allowfullscreen></iframe>`
+    $box.html(vIframe).children().fitToWindow($box.data("maxWidth") || mw, $box.data("wPad") || wp)
+  }
+
+}(jQuery));
+
 ```
