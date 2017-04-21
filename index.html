@@ -17,7 +17,7 @@
 
 <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
  
-<link href="//fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" type="text/css">
 
 
 
@@ -261,6 +261,8 @@
 
 
 
+<link rel="stylesheet" href="https://dkebler.github.io/landingpage-guide/css/custom.css"> 
+<link rel="stylesheet" href="https://dkebler.github.io/landingpage-guide/css/custom-responsive.css"> 
 
 </head>
 
@@ -1640,7 +1642,7 @@ img.avatar {
 		<div class="section__content section__content--modal"  >
 			
 
-<p><strong>Takes an image and&hellip;</strong></p>
+<p><strong>Wrap some content in a flexbox that can be styled</strong></p>
 
 <p>usage: <code>{{&lt; box &quot;list of css classes&quot; &gt;}}</code></p>
 
@@ -1650,9 +1652,11 @@ img.avatar {
 <li>*<em><strong>classes</strong></em> - A space delimited set of css classes for custom styling</li>
 </ul>
 
+<p>by default child element will be in a row with wrapping.  Use optional class <code>column</code> if you want to have all the elements be in a column regardless of viewport.  For custom styling add a class name in shortcode and a corresponding class in the custom.css file.  Be sure custom.css is enabled in the config.toml settings.</p>
+
 <p>examples in markdown:</p>
 
-<h2 id="example-1-including-markdown">Example 1 - Including Markdown</h2>
+<h2 id="example-markdown">Example Markdown</h2>
 
 <pre><code class="language-html">{{% box  demo %}}
 A paragraph I wrote blah...blah blah blah blah  blah blah blah blah
@@ -1664,6 +1668,25 @@ Another paragraph
 <p>rendered
 
 <div class="box box--demo ">
+<p>A paragraph I wrote blah blah blah blah  blah blah blah blah</p>
+
+<p>Another paragraph</p>
+
+</div>
+</p>
+
+<h2 id="example-column">Example Column</h2>
+
+<pre><code class="language-html">{{% box  demo column %}}
+A paragraph I wrote blah...blah blah blah blah  blah blah blah blah
+
+Another paragraph
+{{% /box %}}
+</code></pre>
+
+<p>rendered
+
+<div class="box box--demo box--column ">
 <p>A paragraph I wrote blah blah blah blah  blah blah blah blah</p>
 
 <p>Another paragraph</p>
@@ -1685,6 +1708,14 @@ Another paragraph
 }
 </code></pre>
 
+<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
+
+<pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
+&lt;div class=&quot;box {{ range .Params }}box--{{ . }} {{ end }}&quot;&gt;
+{{ .Inner }}
+&lt;/div&gt;
+</code></pre>
+
 		</div>
 	</div>
 </div>
@@ -1695,9 +1726,13 @@ Another paragraph
 			<h1>Shortcode - Contact</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<h1 id="draft">DRAFT</h1>
+
+<p><strong>Add a contact info box based on setting in config.toml</strong></p>
+
+<p>usage: <code>{{&lt; contact &gt;}}</code></p>
 
 <p>where:  * = optional</p>
 
@@ -1731,31 +1766,48 @@ Another paragraph
 			<h1>Shortcode - Disqus</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<p><strong>Embeds a Disqus Comments</strong></p>
 
-<p>where:  * = optional</p>
+<p>usage: <code>{{&lt; disqus &quot;shortname&quot; &gt;}}</code></p>
 
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
+<p>where:</p>
+
+<p><em><strong>shortname</strong></em> - the name of the disqus comments shortname from your disqus user account.</p>
 
 <p>example in markdown:</p>
 
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+<p><code>{{&lt; disqus &quot;mylandingpage&quot; &gt;}}</code></p>
 
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+<p>See the <a href="https://disqus.com">disqus</a> website</p>
 
-<p>This is all 
+<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
 
- <span name="concerning">about us</span> 
+<pre><code class="language-html">&lt;div class=&quot;box box--disqus&quot;&gt;
+    &lt;div id=&quot;disqus_thread&quot; class=&quot;box__embed box__embed--disqus&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
- and stuff</p>
+&lt;script type=&quot;text/javascript&quot;&gt;
 
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+(function() {
+    // Don't ever inject Disqus on localhost--it creates unwanted
+    // discussions from 'localhost:1313' on your Disqus account...
+    // if (window.location.hostname == &quot;localhost&quot;)
+    //     return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = '{{ .Get 0 | default .Site.DisqusShortname }}';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+&lt;/script&gt;
+
+&lt;noscript&gt;Please enable JavaScript to view the &lt;a href=&quot;http://disqus.com/?ref_noscript&quot;&gt;comments powered by Disqus.&lt;/a&gt;&lt;/noscript&gt;
+
+&lt;a href=&quot;http://disqus.com/&quot; class=&quot;dsq-brlink&quot;&gt;comments powered by &lt;span class=&quot;logo-disqus&quot;&gt;Disqus&lt;/span&gt;&lt;/a&gt;
+</code></pre>
 
 		</div>
 	</div>
@@ -2308,6 +2360,10 @@ cache_timeout = 0
 <script src="https://dkebler.github.io/landingpage-guide/js/docready.js"></script>
 
 
+
+   <script src="https://dkebler.github.io/landingpage-guide/js/custom.js"></script>
+
+   <script src="https://dkebler.github.io/landingpage-guide/js/custom-docready.js"></script>
 
 
 

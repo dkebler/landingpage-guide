@@ -41,11 +41,10 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/box/</guid>
-      <description>Takes an image and&amp;hellip;
+      <description>Wrap some content in a flexbox that can be styled
 usage: {{&amp;lt; box &amp;quot;list of css classes&amp;quot; &amp;gt;}}
 where: * = optional
- *classes - A space delimited set of css classes for custom styling  examples in markdown:
-Example 1 - Including Markdown {{% box demo %}} A paragraph I wrote blah...blah blah blah blah blah blah blah blah Another paragraph {{% /box %}}  rendered A paragraph I wrote blah blah blah blah blah blah blah blah</description>
+ *classes - A space delimited set of css classes for custom styling  by default child element will be in a row with wrapping. Use optional class column if you want to have all the elements be in a column regardless of viewport. For custom styling add a class name in shortcode and a corresponding class in the custom.</description>
     </item>
     
     <item>
@@ -54,10 +53,10 @@ Example 1 - Including Markdown {{% box demo %}} A paragraph I wrote blah...blah 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/contact/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+      <description>DRAFT Add a contact info box based on setting in config.toml
+usage: {{&amp;lt; contact &amp;gt;}}
 where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+ id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.</description>
     </item>
     
     <item>
@@ -66,10 +65,14 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/disqus/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description>Embeds a Disqus Comments
+usage: {{&amp;lt; disqus &amp;quot;shortname&amp;quot; &amp;gt;}}
+where:
+shortname - the name of the disqus comments shortname from your disqus user account.
+example in markdown:
+{{&amp;lt; disqus &amp;quot;mylandingpage&amp;quot; &amp;gt;}}
+See the disqus website
+For Experienced Hugo Coders &amp;lt;div class=&amp;quot;box box--disqus&amp;quot;&amp;gt; &amp;lt;div id=&amp;quot;disqus_thread&amp;quot; class=&amp;quot;box__embed box__embed--disqus&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt; (function() { // Don&#39;t ever inject Disqus on localhost--it creates unwanted // discussions from &#39;localhost:1313&#39; on your Disqus account... // if (window.</description>
     </item>
     
     <item>
