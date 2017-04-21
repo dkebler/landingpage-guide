@@ -536,13 +536,13 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
 		<div class="section__content section-content--install"  >
 			
 
-<p>This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the <a href="#quick">quick start - TL;DR </a>.</p>
+<p>First off&hellip;If you are an experienced Hugo user then go to the <a href="#quick">quick start - TL;DR </a>.</p>
 
 <h3 id="the-tools">The Tools</h3>
 
-<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of this guide&rsquo;s source respository to use as a starter. The absolute minimum tools you&rsquo;ll need to install are</p>
+<p>To be able to make your own cusomtized landing pages quickly and easily you&rsquo;ll need to install minimum of two tools and then grab a copy of this starter page&rsquo;s files to get you rolling. The absolute minimum tools you&rsquo;ll need to install are two</p>
 
-<p>
+<h3 id="1-hahahugoshortcode-1hbhb-a-static-site-generator">1. 
 
 
 
@@ -561,21 +561,30 @@ href="https://gohugo.io/overview/introduction/"
 Hugo
 
 </a>
-  - a static site Generator</p>
+  - a static site Generator</h3>
 
 
 
 
 
 
-<div class="box box--embed box--youtube"
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div
        youtube_id="7G6TcT1liQw"
        
        
        
        
+       
        >
-      
+  
+    </div>
+    
+    <div class="box__caption">Video - How to install Hugo on Windows</div>
+    
 </div>
 
 
@@ -648,7 +657,7 @@ href="javascript:void( window.open('https://github.com/spf13/hugo/releases/', 'b
 
 <p><strong>&ndash;AND&ndash;</strong></p>
 
-<p>
+<h3 id="2-hahahugoshortcode-4hbhb-a-text-ide-editor">2. 
 
 
 
@@ -667,7 +676,7 @@ href="https://atom.io"
 Atom
 
 </a>
- a text/IDE editor</p>
+ a text/IDE editor</h3>
 
 <p>The following button will take you to the Atom website and offer a download button for Atom for your operating system.  Install it as you would any application in your operating system</p>
 
@@ -720,28 +729,6 @@ href="javascript:void( window.open('https://atom.io', 'blank', 'scrollbars=yes, 
 
 
 
-   
-  
-
-
-
-
-<a
-
-
- class="box box--btn btn btn--regular"
-href="javascript:void( window.open('https://dkebler.github.io/landingpage-starter', 'blank', 'scrollbars=yes, toolbar=no, width=400 , height=600' ))"
->
-<i class="btn__icon fa fa-eye"></i>
-<div class="btn__text">See the Starter Site Mobile Device Sized</div>
-
-</a>
-
-
-
-
-
-
     
   
 
@@ -758,7 +745,7 @@ href="https://github.com/dkebler/landingpage-starter/releases/download/0.0.1/lan
 </a>
 
 
-<p>for the experienced</p>
+<p>for the Git experienced</p>
 
 
 
@@ -796,29 +783,40 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-start
 		<div class="section__content section-content--startup"  >
 			
 
-<p><strong>YEA!</strong> If you completed successfully the installation section you are finally ready to start editing <strong>YOUR</strong> own landing page.  You&rsquo;ll going find easy to edit an existing landing page than to start your own from scratch.  That&rsquo;s why you&rsquo;ll be using this guide&rsquo;s source files.</p>
+<p><strong>YEA!</strong> If you completed successfully the installation section you are ready to start editing <strong>YOUR</strong> own landing page.  You&rsquo;ll going find easy to edit an existing landing page than to start your own from scratch.  That&rsquo;s why you&rsquo;ll be using the starter site&rsquo;s files.</p>
 
 <h3 id="what-s-important">What&rsquo;s Important</h3>
 
-<p>In the folder you just made containing this guide&rsquo;s source files you need to concentrate on just three places.  The first is the <code>config.toml</code> file in the root of the folder.  The second is the <code>sections/</code> subfolder and the .md files inside.  md is short for Markdown the textual editing format you&rsquo;ll be using.  The third is the <code>assets/images/</code> folder. That&rsquo;s the only places you&rsquo;ll need to put your attention to create your own personalized landing page.  The rest of the directory&rsquo;s folders can be safely ignored until you are ready for more advanced topics like tweaking the styling.</p>
+<p>In the folder you just made containing the starter site&rsquo;s files you need to concentrate on just three places.  The first is the <code>config.toml</code> file in the root of the folder.  The second is the <code>content/sections</code> subfolder and the .md files inside.  md is short for Markdown the textual editing format you&rsquo;ll be using.  The third is the <code>assets/images</code> folder. That&rsquo;s the only places you&rsquo;ll need to put your attention to create your own personalized landing page.  The rest of the directory&rsquo;s folders can be safely ignored until you are ready for more advanced topics like tweaking the styling.</p>
 
 <h3 id="make-hugo-render-your-landing-page">Make Hugo Render Your Landing Page</h3>
 
-<p>To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the <em>Open Terminal Here</em> or <em>Open Terminal at Root</em> from the menu.  In the terminal window that opens type <code>hugo server</code>.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type <code>localhost:1313</code> into the address line and you be viewing the landing page that Hugo just rendered. But&hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&rsquo;ll see those changes immediately in the browser.  You can see this process in the video below</p>
+<p>To begin you need to bring up Atom with your working folder open.  Then right click on the root of the folder in the folder tree on the left.  Choose the <em>Open Terminal Here</em> or <em>Open Terminal at Root</em> from the menu.  In the terminal window that opens type <code>hugo server</code>.  Hugo will be now render your site and serve it so you can see the changes every time you save.  Open your favorite browser and type <code>localhost:1313</code> into the address line and you be viewing the starter site landing page that Hugo just rendered. But&hellip;Hugo is still working!  If you make changes and save Hugo will re-render your landing page automatically and you&rsquo;ll see those changes immediately in the browser.  You can see this process in the video below</p>
 
 
 
 
 
 
-<div class="box box--embed box--youtube"
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div class="box__title">Hugo Renders the Landing Page</div>
+    
+    <div
        youtube_id="puNKieFtJ3s"
         start="73"
        
        
        
+       
        >
-      
+  
+    </div>
+    
+    <div class="box__caption">you will be rendering the starter site</div>
+    
 </div>
 
 
@@ -837,15 +835,11 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-start
 		<div class="section__content section-content--configure"  >
 			
 
-<p>The heart and soul of your landing page is the configuration file <code>config.toml</code>.  So start the editing of the &ldquo;your&rdquo; site by bringing up the config.toml file in Atom.  You&rsquo;ll find it in the root of your starter directory.</p>
+<p>The heart and soul of your landing page is the configuration file <code>config.toml</code>.  So start the editing of the <em>your</em> site by bringing up the <code>config.toml</code> file in Atom.  You&rsquo;ll find it in the root of your starter directory.</p>
 
 <h3 id="the-layout">The Layout</h3>
 
-<p>It&rsquo;s pretty simple.  Eeach line in the config file is a setting.  You can turn the setting &ldquo;off&rdquo;  by simply putting a hashtag(#) before it. If you remove the hashtag the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is currently no documentation for all the settings in <code>config.toml</code> but there is some helpful comments in the file itself (they have double hashtag in front).  Take a bit of time to read them all.  At the end of this section you can see a bit of the config.toml file copied here.</p>
-
-<h3 id="what-to-edit-first">What to Edit First</h3>
-
-<p>Before you get started editing <code>config.toml</code> notice that there is a copy of the file <code>config.toml.bak</code>.  If you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  <strong>Watch the video below to get your feet wet editing</strong> <code>config.toml</code>.   For now don&rsquo;t worry about the content sections and navbar menu items that is covered below.  Note that if you do something small like forget a quote Hugo won&rsquo;t render your page, but Hugo will when you correct your mistake.  It&rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&rsquo;s an advanced topic.  So for now just make your own .bak copy of <code>config.toml</code> after you make major changes to it.</p>
+<p>It&rsquo;s pretty simple.  Each line in the config file is a setting.  You can turn a setting &ldquo;off&rdquo;  by simply putting a hashtag(#) before it. If you remove the hashtag the value for that setting will be used.  There are a LOT of settings and they all have defaults so you only need to enable and change the ones you want.  There is no separate documentation for all the settings in <code>config.toml</code> but each setting is commented in the file itself (they have double hashtag in front).  Take a bit of time to read them all.  Take a look now at a sample config.toml file</p>
 
 
 
@@ -862,24 +856,37 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-start
 href="#modal-toml"
 >
 <i class="btn__icon fa fa-eye"></i>
-<div class="btn__text">View a copy of the settings file config.toml</div>
+<div class="btn__text">View a sample config.toml file</div>
 
 </a>
 
 
+<h3 id="what-to-edit-first">What to Edit First</h3>
+
+<p>Before you get started editing <code>config.toml</code> right click on it (in Atom) and choose <em>duplicate</em>.  Then enter <code>config.toml.bak</code>.  If you totally mess the file up you can revert to the backup copy by simply removing the .bak.  What you&rsquo;ll probably want to do first is personalize the colors, then maybe the fonts, add your own &ldquo;Hero&rdquo; image and change the text in the &ldquo;Hero&rdquo; (top) section.  <strong>Watch the video below to get your feet wet editing</strong> <code>config.toml</code>.   For now don&rsquo;t worry about the content sections and navbar menu items that is covered below.  Note that if you do something small like forget a quote Hugo won&rsquo;t render your page, but Hugo will when you correct your mistake.  It&rsquo;s a good idea to use a versioning system like Git to save your versions of your work but that&rsquo;s an advanced topic.  So for now just make your own .bak copy of <code>config.toml</code> after you make major changes to it.</p>
 
 
 
 
 
-<div class="box box--embed box--youtube"
+
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div class="box__title">Editing the Settings File</div>
+    
+    <div
        youtube_id="gfOs432LW8Y"
        
        
        
        
+       
        >
-      
+  
+    </div>
+    
 </div>
 
 
@@ -900,9 +907,9 @@ href="#modal-toml"
 
 <h3 id="about">About</h3>
 
-<p>Adding a section to the landing page is as easy as adding a md file in the <code>content/sections/</code> directory.  Each md file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.  The <em>frontmatter</em> must be proceeded and followed by <code>+++</code></p>
+<p>Adding a section to the landing page is as easy as adding a <em><strong>.md</strong></em> (markdown) file in the <code>content/sections/</code> directory.  Each <em><strong>.md</strong></em> file you create in that directory will need some settings at the top of the page called <em>frontmatter</em>.  The settings work the same as in <code>config.toml</code>, use a hashtag in front to turn one off.  The <em>frontmatter</em> must be proceeded and followed by <code>+++</code></p>
 
-<p>Here is an example <em>frontmatter</em> you can copy into your new md file.  It&rsquo;s easier though to just duplicate existing section md file and then edit instead.</p>
+<p>Here is an example <em>frontmatter</em> you can copy into your new <em><strong>.md</strong></em> file.  It&rsquo;s easier though to just duplicate (right click in Atom) an existing section&rsquo;s <em><strong>.md</strong></em> file and then edit it instead.</p>
 
 <pre><code class="language-toml">+++
 weight = 10 # weight determines the order of sections.  Lower weights are first
@@ -916,21 +923,30 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
 
 <h3 id="hero-a-special-section">Hero - a special section</h3>
 
-<p>The very first section of a landing page is traditionally called a &ldquo;Hero&rdquo; and has a covering photo and large headline text.  This template allows you to easily do that in the <code>config.toml</code> file.  Alternatively if you want more control you can turn off the built in Hero section by enabling (removing the hashtage) of the  <code>custom_hero = true</code> setting.  Then you can simply create your own <code>hero.md</code> section file for the Hero or if you want none at all.</p>
+<p>The very first section of a landing page is traditionally called a &ldquo;Hero&rdquo; and has a covering photo and large headline text.  This template allows you to easily do that in the <code>config.toml</code> file.  Alternatively if you want more control you can turn off the built in Hero section by enabling (removing the hashtage) of the  <code>custom_hero = true</code> setting.  Then you can simply create your own <code>hero.md</code> section file for the Hero or if you want none at all.  Crop and resize your image to about <strong>2000 wide x 800 high</strong> and save as a jpg at 90% jpg quality and it will work well as a hero image.</p>
 
 
 
 
 
 
-<div class="box box--embed box--youtube"
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div
        youtube_id="apsPpim4XE4"
        
        
        
        
+       
        >
-      
+  
+    </div>
+    
+    <div class="box__caption">Editing the Hero Section</div>
+    
 </div>
 
 
@@ -944,14 +960,23 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
 
 
 
-<div class="box box--embed box--youtube"
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div
        youtube_id="DnGJsCBB-eE"
        
        
        
        
+       
        >
-      
+  
+    </div>
+    
+    <div class="box__caption">Creating and Editing Regular Sections</div>
+    
 </div>
 
 
@@ -972,7 +997,29 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
 
 <h3 id="learn-it">Learn it</h3>
 
-<p>Teaching you the details about writing markdown is beyond the scope of this guide.  He are two links to get you started, a markdown <a href="http://www.markdowntutorial.com/">tutorial</a>, and a markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a>.  If you prefer here is video to get you going.</p>
+<p>Teaching you the details about writing markdown is beyond the scope of this guide.  He are two links to get you started, a markdown <a href="http://www.markdowntutorial.com/">tutorial</a>, and a markdown <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet</a>.  Also the starter site has a section on using markdown as well to help you get&hellip;.well..started</p>
+
+
+
+
+
+    
+  
+
+
+<a
+ target="_blank"
+
+ class="box box--btn btn btn--small"
+href="https://dkebler.github.io/landingpage-starter/#kitchen"
+>
+<i class="btn__icon fa fa-eye"></i>
+<div class="btn__text">Kitchen Sink of Markdown at Starter Site</div>
+
+</a>
+
+
+<p>If you prefer here is video to get you going.</p>
 
 
 
@@ -991,18 +1038,40 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
 
 
 
-<p>Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using as a starter is chock full of markdown in the <code>content/sections/</code> directory.  It&rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Use Atom now to open the  <code>content/sections/markdown.md</code> file that is used to make this section you are reading.  In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things</p>
+<p>Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using and the starter site are chock full of markdown in the <code>content/sections/</code> directory.  It&rsquo;s probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Look now at <code>content/sections/markdown.md</code>`` file that is used to make this section you are reading!</p>
+
+
+
+
+
+    
+  
+
+
+<a
+
+ modal
+ class="box box--btn btn btn--small"
+href="#modal-markdown"
+>
+<i class="btn__icon fa fa-eye"></i>
+<div class="btn__text">Markdown of the section you are reading</div>
+
+</a>
+
+
+<p>In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things</p>
 
 <ol>
 <li>Consistency of styling across a document.<br /></li>
 <li>A simple one line change to a style can change that style for all or part of a page.</li>
 </ol>
 
-<p>This theme was set up for you to easily make a limited number of those styling changes without knowing Hugo/CSS/HTML.  For example you can change the font for the entire site in by simply changing the &ldquo;font=&rdquo; setting in the main <code>[.params]</code> section in <code>config.toml</code> to any valid Google font name. You need not do <em>anything</em> to the individual markdown files to make that happen nor know how to edit cascading style sheets!</p>
+<p>This theme was set up for you to easily make a limited number of those styling changes without knowing Hugo/CSS/HTML.  For example you can change the font for the entire site in by simply changing the <code>font=&quot;&quot;</code> setting in the main <code>[params]</code> section in <code>config.toml</code> to any valid Google font name. You need not do <em>anything</em> to the individual markdown files to make that happen nor know how to edit cascading style sheets!</p>
 
 <h3 id="what-are-the-and-about">What are the <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code> about</h3>
 
-<p>In the markdown tutorial, video and cheatsheet there was never any mention of these symbols <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code>.  That&rsquo;s because they are <strong>NOT</strong> markdown.  They are special delimiters that Hugo uses to identify plugins called <a href="#plugins">shortcodes</a>.  Shortcodes are custom pieces of code that coders write for your benefit.  They allow you to extend markdown to do things it could never do, for example <em>plugin</em> a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the <a href="#plugins">plugins/shortcode</a> section below for an explanation of their use and what shortcodes are currently available in this landing page generator.</p>
+<p>In the markdown tutorial, video and cheatsheet there was never any mention of these symbols <code>{{%  %}}</code> and <code>{{&lt;  &gt;}}</code>.  That&rsquo;s because they are <strong>NOT</strong> markdown.  They are special delimiters that Hugo uses to identify plugins called <a href="#plugins">shortcodes</a>.  Shortcodes are custom pieces of code that coders write for your benefit.  They allow you to extend markdown to do things it could never do, for example <em>plug in</em> a button link, or a video or photo with a caption.  So when you see them know that they are not markdown.  Take a look at the <a href="#plugins">plugins/shortcode</a> section below for an explanation of their use and what shortcodes are currently available in this landing page generator.</p>
 
 		</div>
 	</div>
@@ -1020,13 +1089,15 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
 
 <h3 id="what-are-they">What are they</h3>
 
-<p>As explained in the <a href="#what-are-the-and-about">markdown section</a> above shortcodes can be <em>plugged</em> into the middle of your markdown files to give them added functionality.  Each shortcode is invoked with either a {{&lt; <em>name</em> &gt;}} or {{% <em>name</em> %}} and possibly a closing {{&lt; /<em>name</em> &gt;}} if they enclose some more content.   It all depends on the nature of the shortcode.</p>
+<p>As explained in the <a href="#what-are-the-and-about">markdown section</a> above shortcodes can be <em>plugged</em> into the middle of your markdown files to give them added functionality.</p>
+
+<p>Each shortcode is invoked with either a <code>{{&lt; name &quot;parameters&quot; &gt;}}</code> or <code>{{% name &quot;parameters&quot; %}}</code> and possibly a closing <code>{{% /name %}}</code> if they enclose some more content. It all depends on the nature of the shortcode.</p>
 
 <p>
 
  <span name="test">This</span> 
 
- landing page theme currently has 12 shortcodes that you might <em>plugin</em> and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the <em>name</em>.  The shortcodes are listed below with an explanation use case and are linked to a documentation page with details of how to use them.  But many times the easist way is just to see them in action in the markdown and copy, paste and edit to suit.</p>
+ landing page theme currently has 12 shortcodes that you might <em>plugin</em> and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the <em>name</em>.  The shortcodes are listed below with an explanation of what they do and are linked to a modal documentation with details of how to use them.  But many times the easiest way is just to see them in action in the markdown and copy, paste and edit to suit.</p>
 
 <ul>
 <li>
@@ -1341,7 +1412,7 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
 
 <h3 id="where-to-host">Where to host</h3>
 
-<p>Because of the numerous choices you&rsquo;ll have this guide can&rsquo;t cover all the options and how to do the deployments.  The one thing to keep in mind about your options is that your site you <strong>generate</strong> only requires the simpliest of servers. It does <strong>not</strong> require any <em>server-side</em> processing and as such is not &ldquo;hackable&rdquo;.</p>
+<p>Because of the numerous choices you&rsquo;ll have this guide can&rsquo;t cover all the options nor details on how to do the deployments :-(.  The one thing to keep in mind about your options is that your site you <strong>generate</strong> only requires the simpliest of servers. It does <strong>not</strong> require any <em>server-side</em> processing and as such is not &ldquo;hackable&rdquo;.  Once you have a place to publish and know how to do it repeatition will be easy and can be automated even.  In the future deployement to selected services will be supported.</p>
 
 <p>Some simple options are</p>
 
@@ -1350,6 +1421,7 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
 <li>A web hosting service (if you already have and account at one use it)</li>
 <li>In a folder from a cloud service such as Dropbox that supports static page serving.</li>
 <li>A Github Account</li>
+<li>Firebase - a google service</li>
 </ul>
 
 <p>One good option is an Amazon Web Services (AWS) S3 bucket.  It&rsquo;s way cheap to store your site and images and they can be served right from there with their built in simple &ldquo;static&rdquo; page server.  Unlike A cloud hosting service you can point any domain or subdomain to a bucket so it&rsquo;s easy to use your custom domain.  Further AWS has a free tier for your first year which includes plenty of storage on S3.</p>
@@ -1363,14 +1435,23 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
 
 
 
-<div class="box box--embed box--youtube"
+
+
+<div class="box box--embed box--column box--youtube">
+    
+    <div
        youtube_id="2xd_fdx5IyI"
        
        
        
        
+       
        >
-      
+  
+    </div>
+    
+    <div class="box__caption">Generating and then Deploying to an S3 Bucket</div>
+    
 </div>
 
 
@@ -1391,7 +1472,7 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
 
  <span name="quick">Hugo experienced</span> 
 
- and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the starter repo, sync the theme submodule and then edit the markdown files in the conent/sections directory and settings in config.toml.</p>
+ and know what they are doing and are able to &ldquo;figure out&rdquo; the details simply clone the guide or starter repo, sync the theme submodule and then edit the markdown files in the <code>content/sections</code> directory and settings in <code>config.toml</code>.</p>
 
 <p>If you really know what you are doing and prefer to start from scratch by all means just clone (or submodule) the theme into an existing Hugo project&rsquo;s themes folder</p>
 
@@ -1416,6 +1497,27 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-guide
 >
 
 <div class="btn__text">guide repo</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href="javascript:void( window.open('https://github.com/dkebler/landingpage-starter.git', 'blank', 'scrollbars=yes, toolbar=no, width=1000 ' ))"
+>
+
+<div class="btn__text">starter repo</div>
 
 </a>
 
@@ -1518,6 +1620,51 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 </section>
 
 
+
+<div id="modal-markdown" class="section section--modal">
+	<div class="section__container	section__container--modal">
+		<div class="section__headline section__headline--modal">
+			<h1>Markdown of the &#39;Markdown&#39; Section</h1>
+		</div>
+		<div class="section__content section__content--modal"  >
+			<p>Below is the actual markdown used to generate this section you are reading on learning markdown&hellip;another circular reference ha ha.</p>
+
+<p>It&rsquo;s a bit hard to read because the paragrahs don&rsquo;t soft wrap but they will in the Atom Editor.</p>
+
+<pre><code>+++
+weight = 26
+title = &quot;Markdown&quot;
+# link_text = &quot;&quot;
++++
+### Learn it
+
+Teaching you the details about writing markdown is beyond the scope of this guide.  He are two links to get you started, a markdown [tutorial](http://www.markdowntutorial.com/), and a markdown [cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).  Also the starter site has a section on using markdown as well to help you get....well..started  
+
+{{&lt; link type=&quot;btn&quot; size=&quot;small&quot; url=&quot;https://dkebler.github.io/landingpage-starter/#kitchen&quot; text=&quot;Kitchen Sink of Markdown at Starter Site&quot; icon=&quot;eye&quot; display=&quot;tab&quot; &gt;}}
+
+If you prefer here is video to get you going.
+
+{{&lt; youtube HndN6P9ke6U &gt;}}
+
+Honestly though the best way to learn markdown is to examine some examples. Luckily this guide you are using and the starter site are chock full of markdown in the `content/sections/` directory.  It's probably just easier to edit an existing markdown file as it is to start from scratch at least when you are first learning.   Look now at `content/sections/markdown.md` file that is used to make this section you are reading!  
+
+{{&lt; link type=&quot;btn&quot; size=&quot;small&quot; url=&quot;#modal-markdown&quot; text=&quot;Markdown of the section you are reading&quot; icon=&quot;eye&quot; display=&quot;modal&quot; &gt;}}
+
+In this way you can relate the simplicity of the markdown with what is actually seen.  The power of markdown is that the style and formatting are not part of the document.  They are set separately.  This allows two things
+
+1.  Consistency of styling across a document.  
+2.  A simple one line change to a style can change that style for all or part of a page.
+
+This theme was set up for you to easily make a limited number of those styling changes without knowing Hugo/CSS/HTML.  For example you can change the font for the entire site in by simply changing the `font=&quot;&quot;` setting in the main `[.params]` section in `config.toml` to any valid Google font name. You need not do *anything* to the individual markdown files to make that happen nor know how to edit cascading style sheets!
+
+### What are the `{{%  %}}` and `{{&lt;  &gt;}}` about
+
+In the markdown tutorial, video and cheatsheet there was never any mention of these symbols `{{%  %}}` and `{{&lt;  &gt;}}`.  That's because they are **NOT** markdown.  They are special delimiters that Hugo uses to identify plugins called [shortcodes](#plugins).  Shortcodes are custom pieces of code that coders write for your benefit.  They allow you to extend markdown to do things it could never do, for example *plugin* a button link, or a video, or a photo gallery.  So when you see them know that they are not markdown.  Take a look at the [plugins/shortcode](#plugins) section below for an explanation of their use and what shortcodes are currently available in this landing page generator.
+</code></pre>
+
+		</div>
+	</div>
+</div>
 
 <div id="modal-avatar" class="section section--modal">
 	<div class="section__container	section__container--modal">
@@ -2362,16 +2509,18 @@ Jotform
 		<div class="section__content section__content--modal"  >
 			<p>Below is an example of the page settings file named <code>config.toml</code>.  You can find it in the root of the project folder.  By editing the values in this file you can control the style, content or appearance of certain elements of the page.</p>
 
-<p>In the file&hellip;
-Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &ldquo;off&rdquo; rather than deleting it. Therefore never delete any lines of this file</p>
-
 <p>[ ] indicates a settings section never turn those off or delete them</p>
 
-<p>Set <code>baseurl</code> before rendering for deloyment of your finished page otherwise leave it turned off</p>
+<pre><code>## Double Hashtag indicates a comment
+## Use a Single Proceeding hashtag to turn a setting &quot;off&quot; rather than deleting it
+## Therefore never delete any line of this file
+## [ ] indicates a setting section never turn those off
+##
 
-<pre><code class="language-toml">#baseURL = &quot;https://mysite.com/mylandingpage&quot;
+## set a baseurl before rendering for deloyment otherwise leave it turned off
+#baseURL = &quot;https://mysite.com/mylandingpage&quot;
 languageCode = &quot;en-us&quot;
-title = &quot;Landing Page User Guide&quot; ## required used for tab title and navbar
+title = &quot;My Landing Page Starter&quot; ## required used for tab title and navbar
 canonifyUrls = &quot;true&quot; ## don't change this
 staticDir =&quot;assets&quot; ## don't change this
 # publishDir = &quot;dist&quot;  ## default is public/
@@ -2379,89 +2528,96 @@ staticDir =&quot;assets&quot; ## don't change this
 layoutDir = &quot;plugins&quot; ## don't change this
 theme = &quot;landingpage-flex-hugo-theme&quot; ## don't change this
 # disqusShortname = &quot;landingpage-guide&quot;
-# disableLiveReload = true
+#disableLiveReload = true
 
 [params]
-custom_css = [&quot;custom.css&quot;]  ## can add other files in array, make corresponding file in assets/css/
-custom_js = [&quot;custom.js&quot;,&quot;custom-docready.js&quot;]  ## can add other files in array, make corresponding file in assets/css/
-galleries = [&quot;photos&quot;] ## array of galleries names created
-## You can redirect your images location to another external place like an s3 bucket. default is assets/images =&gt; /images
-# imagespath = &quot;https://mybuckettld/afolder/&quot;  ## full url must end with /
-lightbox = &quot;lightgallery&quot; ## must match the lightbox function name
-## Possible font setting choices in this config file must be a google font name
+## Possible font setting choices throughout this config file must be a google font name with at least the 4 standard styles
 ## see  https://fonts.google.com/
 ## This applies to all font= settings in this file
-font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be specifically overridden below
-cache_timeout = 0
+# font = &quot;Open Sans&quot;  ## default Roboto, sets for entire site, can be specifically overridden below
+font = &quot;Rubik&quot;  ## alternative just uncomment
+# custom_css = [&quot;custom.css&quot;, &quot;custom-responsive.css&quot;]   ## can add other files in array, make corresponding file in assets/css/
+# custom_js = [&quot;custom.js&quot;,&quot;custom-docready.js&quot;]  ## can add other files in array, make corresponding file in assets/css/
+## array of gallery names created
+## each one should have a corresponding images folder and gallery-&lt;name&gt;.html shortcode in plugins/shortcodes
+## This manual system for photo galleries will be replaced in future releases
+galleries = [&quot;photos&quot;]
+## You can store your images in an external place like an s3 bucket. default is within at assets/images =&gt; /images
+# imagespath = &quot;https://mybuckettld/afolder/&quot;  ## full url must end with
+lightbox = &quot;lightgallery&quot; ## must match a lightbox function that has been loaded in javascript, only &quot;lightgallery&quot; available currently
+# cache_timeout = 0  default is 3600 seconds = 1 hour
 
 [params.navbar]
-  # hidden = true
+  # hidden = true  ## turn off for simple page with no navigation topbar
   # logo_text = &quot;Will override site title&quot;  ## default is to use the site Title above
-  logo_text_short = &quot;Landing Page&quot; ## helps to fit on small screens without wrapping
+  logo_text_short = &quot;My Landing Page&quot; ## alternate logo text that helps to fit on small screens without wrapping
   # logo_text_size=&quot;1&quot; ## unit is em, 2em is default
-  # font = &quot;&quot;
-  ##  For List of html colors see either
+  # font = &quot;&quot;  ## a valid google font name - overrrides the site font above
+  ##  All color options can use an html color name or a hex color code.  See either
   ## http://www.quackit.com/css/color/charts/css_color_names_chart.cfm
   ## https://www.colorcodehex.com/html-color-names.html
   color = &quot;ivory&quot;
-  bg_color = &quot;coral&quot;
+  bg_color = &quot;darkgreen&quot;
 
 [params.hero]
-  # custom_hero = true  ## All the hero settings below are ignored and hero is just a normal section if wanted
-  # img = &quot;hero.jpg&quot;  # default is images/hero.jpg, must provide the full path or url
-  font = &quot;Acme&quot;  # a valid google font name, default Roboto for all hero text
+  # custom_hero = true  ## All the hero settings below are ignored and the hero is turned off.  You can add then a hero section as hero.md or not.
+  img = &quot;green-landscape-hero.jpg&quot;  # default is hero.jpg,  put assets/images or other location set by imagespath above
+  font = &quot;Open Sans&quot;  # a valid google font name, default Roboto for all hero text
   color = &quot;ivory&quot;
-  bg_color = &quot;&quot;
+  # bg_color = &quot;&quot;  ## only needed if you are not using a hero image
   text_outline = &quot;black&quot;
   # text_shadow = &quot;black&quot;
-  # headlines_font = &quot;Gloria Hallelujah&quot;  # a valid google font name, defaults to intro font
-  ## H1
-  headline = &quot;Landing Page Generator&quot;
-  headline_color = &quot;firebrick&quot;
+  headlines_font = &quot;Righteous&quot;  # a valid google font name, defaults to page font or hero font above
+  ## H1 -
+  headline = &quot;Landing Page Starter&quot;
+  headline_color = &quot;darkgreen&quot;
   headline_size = &quot;3.5&quot;
   ## H2
-  subheadline = &quot;Users Guide&quot;
-  subheadline_color = &quot;pink&quot;
+  subheadline = &quot;Generated From&quot;
+  subheadline_color = &quot;springgreen&quot;
   subheadline_size = &quot;3&quot;
   ## H3
-  subsubheadline = &quot;Hugo Powered!&quot;
-  subsubheadline_color = &quot;brown&quot;
+  subsubheadline = &quot;Hugo Flex Theme&quot;
+  subsubheadline_color = &quot;seagreen&quot;
   subsubheadline_size = &quot;2&quot;
   ## H4
-  lines = [&quot;Customizable&quot;, &quot;Add Your Sections&quot;, &quot;Insert Your Content&quot;,&quot;Super Noob Friendly&quot;]
-  # lines_color = &quot;ivory&quot;
+  lines = [&quot;Customizable&quot;, &quot;Add Your Sections&quot;, &quot;Insert Your Content&quot;,&quot;Super Noob Friendly&quot;,&quot;See the Guide!&quot;]
+  lines_color = &quot;lightgreen&quot;
   lines_size = &quot;1.5&quot;
   divider = true
-  # divider_color = &quot;seagreen&quot;
-  # divider_thickness = &quot;3&quot;
+  divider_color = &quot;darkgreen&quot;
+  divider_thickness = &quot;3&quot;
 
+## Parameters used for every section of the page
 [params.sections]
     #font = &quot;Acme&quot;
-    bullet_icon = &quot;\uF069&quot;   # font awesome unicode value
+    bullet_icon = &quot;\uF069&quot;   # font awesome unicode value default to font awesome asterisk
     # headline_font = &quot;Lato&quot;
     # headline_size = &quot;3&quot;
-    [params.sections.odd]
-    bg_color = &quot;bisque&quot;
-    color = &quot;firebrick&quot;
     [params.sections.even]
     color = &quot;bisque&quot;
-    bg_color = &quot;firebrick&quot;
-    [params.sections.footer]
-    # color = &quot;ivory&quot;
-    # bg_color = &quot;darksalmon&quot;
-    [params.sections.comments]
-    color = &quot;black&quot;
+    bg_color = &quot;seagreen&quot;
+    [params.sections.odd]
     bg_color = &quot;ivory&quot;
+    color = &quot;seagreen&quot;
+    [params.sections.footer]
+    color = &quot;darkolivegreen&quot;
+    bg_color = &quot;lightgreen&quot;
+    [params.sections.comments]
+    color = &quot;darkolivegreen&quot;
+    bg_color = &quot;palegreen&quot;
 
+##  any markdown file in content/modals will be available as a modally displayed content
+##  Use the link shortcode with the url #modal-&lt;filename&gt;
+##  example  {{&lt; link url=&quot;#modal-test text=&quot;A test modal&quot; display=&quot;modal&quot; &gt;}}
+##  where there is a file test.md   in the content/modals directory.
 [params.modal]
-    #font = &quot;Acme&quot;
-    color = &quot;ivory&quot;
-    bg_color = &quot;coral&quot;
-    #text_size = &quot;1.5&quot;
-    # headline_size = &quot;2&quot;
+  #font = &quot;Acme&quot;
+  color = &quot;ivory&quot;
+  bg_color = &quot;seagreen&quot;
+  #text_size = &quot;1.5&quot;
 
-# these will overide the default which is even section button scheme comes from odd section scheme and vice versa
-# default hover is simply
+# these will override the default which is even section button scheme comes from odd section scheme and vice versa
 [params.buttons.even]
   # color = &quot;blue&quot;
   # bg_color = &quot;red&quot;
@@ -2475,9 +2631,16 @@ cache_timeout = 0
 
 # TODO enable via shortcode
 [[params.social]]
-    #title = &quot;email&quot;
-    #icon = &quot;envelope-o&quot;
-    #url = &quot;mailto:4005@kebler.net&quot;
+  #title = &quot;email&quot;
+  #icon = &quot;envelope-o&quot;
+  #url = &quot;mailto:4005@kebler.net&quot;
+
+[params.youtube]
+  # maxwidth = &quot;800&quot;  ## default maximum width for all youtubes 450px.  You can override each individually in shortcode
+  #  wpad = &quot;50&quot;  ## padding on both left and right when view width is &lt; maxwidth  default is 5
+  ## on mobile devices autoplay is disabled so having a fast loading thumb image requires two clicks
+  ## to start video.  Disable thumbs only if you have just one or two videos on your page
+  # disable_thumb = &quot;yes&quot; ## display video thumbs and not thumb image  -- SLOWer to load.
 </code></pre>
 
 		</div>

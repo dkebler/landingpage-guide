@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>Markdown of the &#39;Markdown&#39; Section</title>
+      <link>https://dkebler.github.io/landingpage-guide/modals/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dkebler.github.io/landingpage-guide/modals/markdown/</guid>
+      <description>Below is the actual markdown used to generate this section you are reading on learning markdown&amp;hellip;another circular reference ha ha.
+It&amp;rsquo;s a bit hard to read because the paragrahs don&amp;rsquo;t soft wrap but they will in the Atom Editor.
++++ weight = 26 title = &amp;quot;Markdown&amp;quot; # link_text = &amp;quot;&amp;quot; +++ ### Learn it Teaching you the details about writing markdown is beyond the scope of this guide. He are two links to get you started, a markdown [tutorial](http://www.</description>
+    </item>
+    
+    <item>
       <title>Shortcode - Avatar</title>
       <link>https://dkebler.github.io/landingpage-guide/modals/avatar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -179,7 +190,8 @@ where: * = optional
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/toml/</guid>
       <description>Below is an example of the page settings file named config.toml. You can find it in the root of the project folder. By editing the values in this file you can control the style, content or appearance of certain elements of the page.
-In the file&amp;hellip; Double hashtag ## indicates a comment. Use a single proceeding hashtag # to turn a setting &amp;ldquo;off&amp;rdquo; rather than deleting it. Therefore never delete any lines of this file</description>
+[ ] indicates a settings section never turn those off or delete them
+## Double Hashtag indicates a comment ## Use a Single Proceeding hashtag to turn a setting &amp;quot;off&amp;quot; rather than deleting it ## Therefore never delete any line of this file ## [ ] indicates a setting section never turn those off ## ## set a baseurl before rendering for deloyment otherwise leave it turned off #baseURL = &amp;quot;https://mysite.</description>
     </item>
     
   </channel>
