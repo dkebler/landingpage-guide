@@ -1990,31 +1990,49 @@ copy and paste your iframe code here
 			<h1>Shortcode - Format</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<p><strong>Wrap some content so it can be custom styled</strong></p>
+
+<p>usage:</p>
+
+<pre><code>{{% format &quot;list of css classes&quot; %}}
+Stuff to Wrap
+{{% /box %}}
+</code></pre>
 
 <p>where:  * = optional</p>
 
 <ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+<li>*<em><strong>classes</strong></em> - A space delimited set of css classes for custom styling</li>
 </ul>
 
-<p>example in markdown:</p>
+<p>examples in markdown:</p>
 
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+<h2 id="example-markdown">Example Markdown</h2>
 
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+<pre><code class="language-html">Here is some normally formatted text. {{% format  red %}}Here I need a sentence to be in red{{% /format %}}.  This sentence is normal again.  
+</code></pre>
 
-<p>This is all 
+<p>Here is some normally formatted text. 
+<span class="red ">
+Here I need a sentence to be in red
+</span>
+. This sentence is normal again.</p>
 
- <span name="concerning">about us</span> 
+<p>with this css in <code>css/custom.css</code> and the setting in <code>config.toml</code> accordingly</p>
 
- and stuff</p>
+<pre><code class="language-css">.red {
+  color: red;
+}
+</code></pre>
 
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<h3 id="the-shortcode-for-hugo-experienced">the shortcode for Hugo experienced</h3>
+
+<pre><code class="language-html">&lt;span class=&quot;{{ range .Params }}{{ . }} {{ end }}&quot;&gt;
+{{ .Inner }}
+&lt;/span&gt;
+</code></pre>
 
 		</div>
 	</div>
@@ -2026,31 +2044,11 @@ copy and paste your iframe code here
 			<h1>Shortcode - Image</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<p><strong>Displays an image with many settings</strong></p>
 
-<p>where:  * = optional</p>
-
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
-
-<p>example in markdown:</p>
-
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
-
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
-
-<p>This is all 
-
- <span name="concerning">about us</span> 
-
- and stuff</p>
-
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<h1 id="draft">DRAFT</h1>
 
 		</div>
 	</div>
@@ -2129,6 +2127,8 @@ Jotform
 		<div class="section__content section__content--modal"  >
 			
 
+<p><strong>Makes a button styled or plain link icons and different display modes</strong></p>
+
 <h3 id="draft">draft</h3>
 
 		</div>
@@ -2141,31 +2141,13 @@ Jotform
 			<h1>Shortcode - Lorem</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<h1 id="draft">DRAFT</h1>
 
-<p>where:  * = optional</p>
+<p><strong>Generate a bunch of dummy text for prototyping</strong></p>
 
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
-
-<p>example in markdown:</p>
-
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
-
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
-
-<p>This is all 
-
- <span name="concerning">about us</span> 
-
- and stuff</p>
-
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<p>usage: <code>{{&lt; lorem &quot;&lt;command&gt;&quot; &gt;}}</code></p>
 
 		</div>
 	</div>
@@ -2177,31 +2159,11 @@ Jotform
 			<h1>Shortcode - Social</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<p><strong>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml</strong></p>
 
-<p>where:  * = optional</p>
-
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
-
-<p>example in markdown:</p>
-
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
-
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
-
-<p>This is all 
-
- <span name="concerning">about us</span> 
-
- and stuff</p>
-
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<h2 id="draft-coding-still-in-progress">DRAFT - coding still in progress</h2>
 
 		</div>
 	</div>
@@ -2270,7 +2232,7 @@ Jotform
 
 <p>example in markdown:</p>
 
-<p><code>{{&lt; youtube id=&quot;7G6TcT1liQw&quot; start=&quot;60&quot; maxwidth=&quot;150&quot; title=&quot;A Title&quot; caption=&quot;this is a caption&quot; &gt;}}</code></p>
+<p><code>{{&lt; youtube id=&quot;7G6TcT1liQw&quot; start=&quot;60&quot; maxwidth=&quot;350&quot; title=&quot;A Title&quot; caption=&quot;this is a caption&quot; &gt;}}</code></p>
 
 <p>rendered:</p>
 
@@ -2289,7 +2251,7 @@ Jotform
        youtube_id="7G6TcT1liQw"
         start="60"
        
-        maxWidth="150"
+        maxWidth="350"
        
        
        >
@@ -2304,15 +2266,18 @@ Jotform
 
 <h2 id="actual-short-code-for-experienced-hugo-coders">Actual Short Code - For Experienced Hugo Coders</h2>
 
-<pre><code class="language-html">{{ if .IsNamedParams }}
-{{ $.Scratch.Set &quot;maxwidth&quot; ( $.Page.Site.Params.youtube.maxwidth | .Get &quot;maxwidth&quot; )  }}
-{{ $.Scratch.Set &quot;wpad&quot; ( $.Page.Site.Params.youtube.wpad | .Get &quot;wpad&quot; )  }}
-{{ $.Scratch.Set &quot;nothumb&quot; ( $.Page.Site.Params.youtube.disable_thumb | .Get &quot;nothumb&quot; )  }}
-&lt;div class=&quot;box box--column&quot;&gt;
+<pre><code class="language-html">{{ $.Scratch.Set &quot;maxwidth&quot; ( $.Page.Site.Params.youtube.maxwidth )  }}
+{{ $.Scratch.Set &quot;wpad&quot; ( $.Page.Site.Params.youtube.wpad )  }}
+{{ $.Scratch.Set &quot;nothumb&quot; ( $.Page.Site.Params.youtube.disable_thumb )  }}
+{{ if .IsNamedParams }}
+{{ with .Get &quot;maxwidth&quot; }}{{ $.Scratch.Set &quot;maxwidth&quot; . }}{{ end }}
+{{ with .Get &quot;wpad&quot; }}{{ $.Scratch.Set &quot;wpad&quot; . }}{{ end }}
+{{ with .Get &quot;nothumb&quot; }}{{ $.Scratch.Set &quot;nothumb&quot; . }}{{ end }}
+&lt;div class=&quot;box box--embed box--column box--youtube&quot;&gt;
     {{ with .Get &quot;title&quot; }}
     &lt;div class=&quot;box__title&quot;&gt;{{ . }}&lt;/div&gt;
     {{ end }}
-    &lt;div class=&quot;box box--embed box--youtube&quot;
+    &lt;div
        youtube_id=&quot;{{ .Get &quot;id&quot; }}&quot;
        {{ with .Get &quot;start&quot;}} start=&quot;{{ . }}&quot;{{ end }}
        {{ with .Get &quot;plist&quot;}} list=&quot;{{ . }}&quot;{{ end }}
@@ -2331,11 +2296,58 @@ Jotform
 &lt;div class=&quot;box box--embed box--youtube&quot;
        youtube_id=&quot;{{ .Get 0 }}&quot;
        {{ if eq $numOfParams 2 }} start=&quot;{{ .Get 1 }}&quot;{{ end }}
-       {{ with $.Page.Site.Params.youtube.disable_thumb }} nothumb=&quot;yes&quot; {{ end }}
+       {{ with $.Scratch.Get &quot;maxwidth&quot;}} maxWidth=&quot;{{ . }}&quot;{{ end }}
+       {{ with $.Scratch.Get &quot;wpad&quot;}} wPad=&quot;{{ . }}&quot;{{ end }}
+       {{ with $.Scratch.Get &quot;nothumb&quot;}} nothumb=&quot;yes&quot; {{ end }}
        &gt;
       &lt;!-- image or iframe injected here --&gt;
 &lt;/div&gt;
 {{ end }}
+</code></pre>
+
+<h3 id="and-the-javascript-for-the-ninjas">and the javascript for the ninjas</h3>
+
+<pre><code class="language-javascript">(function ($) {
+
+  $(document).bind(&quot;DOMContentLoaded&quot;,
+    function () {
+
+      var playBtn = '&lt;i class=&quot;fa fa-play-circle-o play-button&quot;&gt;&lt;/i&gt;'
+      $('div[youtube_id]').each(function () {
+        if ($(this).attr('nothumb') !== &quot;yes&quot;) {
+          var vid = $(this).attr('youtube_id');
+          var bgi = `style=&quot;background-image: url(https://i.ytimg.com/vi/${vid}/mqdefault.jpg)&quot;`
+          var thumb = `&lt;div class=&quot;thumb--yt&quot; ${bgi} width=&quot;560&quot; height=&quot;315&quot;&gt;`
+          $(this).append(thumb).children().append(playBtn).click(insertIframe).fitToWindow()
+
+        } else { // if image thumbs turned off
+          insertIframe.call(this)
+        }
+
+      })
+    })
+
+  function insertIframe() {
+    var $box = $(this).parent()
+    var id = $box.attr('youtube_id')
+    var autoplay = &quot;autoplay=1&amp;&quot;
+    if (!id) { // image thumb is off not called by thumb so don't need parent
+      $box = $(this)
+      id = $box.attr('youtube_id')
+      autoplay = &quot;&quot;
+    }
+    var mw = $box.attr('maxWidth');
+    var wp = $box.attr('wPad');
+    var start = $box.attr(&quot;start&quot;) || 1
+    var list = &quot;&quot;
+    if ($box.attr(&quot;list&quot;)) { list = `&amp;list=${$box.attr(&quot;list&quot;)}` }
+    var url = `https://www.youtube.com/embed/${id}?${autoplay}start=${start}`
+    var vIframe = `&lt;iframe width = &quot;560&quot; height = &quot;315&quot; src =&quot;${url}${list}&quot; frameborder = &quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;`
+    $box.html(vIframe).children().fitToWindow($box.data(&quot;maxWidth&quot;) || mw, $box.data(&quot;wPad&quot;) || wp)
+  }
+
+}(jQuery));
+
 </code></pre>
 
 		</div>

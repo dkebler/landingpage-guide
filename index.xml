@@ -216,10 +216,11 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/format/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description>Wrap some content so it can be custom styled
+usage:
+{{% format &amp;quot;list of css classes&amp;quot; %}} Stuff to Wrap {{% /box %}}  where: * = optional
+ *classes - A space delimited set of css classes for custom styling  examples in markdown:
+Example Markdown Here is some normally formatted text. {{% format red %}}Here I need a sentence to be in red{{% /format %}}. This sentence is normal again.</description>
     </item>
     
     <item>
@@ -228,10 +229,8 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/image/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description> Displays an image with many settings
+DRAFT </description>
     </item>
     
     <item>
@@ -256,7 +255,8 @@ but eventually it will be embedable in the content
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/link/</guid>
-      <description> draft </description>
+      <description> Makes a button styled or plain link icons and different display modes
+draft </description>
     </item>
     
     <item>
@@ -265,10 +265,8 @@ but eventually it will be embedable in the content
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/lorem/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description>DRAFT Generate a bunch of dummy text for prototyping
+usage: {{&amp;lt; lorem &amp;quot;&amp;lt;command&amp;gt;&amp;quot; &amp;gt;}}</description>
     </item>
     
     <item>
@@ -277,10 +275,8 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/social/</guid>
-      <description>Creates a bar of Social Icons based on the [Params.Social] settings in config.toml
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.</description>
+      <description> Creates a bar of Social Icons based on the [Params.Social] settings in config.toml
+DRAFT - coding still in progress </description>
     </item>
     
     <item>
