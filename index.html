@@ -1088,7 +1088,7 @@ href="#modal-box"
 box
 
 </a>
- - wraps content in a flex box.  Useful for things like groups of buttons</li>
+ - wraps content in a flex box that can be styled.  Useful for things like groups of buttons</li>
 <li>
 
 
@@ -1582,31 +1582,22 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 
 <h3 id="the-shortcode-for-experienced-hugo-coders">the shortcode for experienced hugo coders</h3>
 
-<pre><code class="language-html">{{ if .IsNamedParams }}
+<pre><code class="language-html">{{ $path := &quot;/images/&quot; }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+{{ if .IsNamedParams }}
 &lt;div class=&quot;box box--avatar&quot;&gt;
   {{ with .Get &quot;url&quot; }}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
-  {{ $path := &quot;/images/&quot; }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
 	&lt;img class=&quot;avatar&quot; src=&quot;{{ $path }}{{ .Get &quot;img&quot; }}&quot;/&gt;
-  {{ with .Get &quot;url&quot; }}&lt;/a&gt;{{ en
+  {{ with .Get &quot;url&quot; }}&lt;/a&gt;{{ end }}
 &lt;/div&gt;
 {{ else }}
-{{ $numOfParams := ( len .Params ) }}
+{{ $avatar := ( .Get 0 | default &quot;avatar.jpg&quot; ) }}
 &lt;div class=&quot;box box--avatar&quot;&gt;
-  {{ $path := &quot;/images/&quot; }} {{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
-	&lt;img class=&quot;avatar&quot; src=&quot;{{ $path }}{{ ( .Get 0 | &quot;avatar.jpg&quot; }}&quot;/&gt;
+	&lt;img class=&quot;avatar&quot; src=&quot;{{ $path }}{{ $avatar }}&quot;/&gt;
 &lt;/div&gt;
 {{ end }}
 </code></pre>
 
-<pre><code class="language-css">/* box creates a flexbox wrapper, row default */
-.box {
-  display: flex;
-  flex-flow: wrap;
-  align-content: center;
-  justify-content: center;
-  padding-bottom: 0.5em;
-}
-
+<pre><code class="language-css">/* this makes the avatar circle form the square image */
 img.avatar {
   object-fit: cover;
   border-radius: 50%;
@@ -1670,7 +1661,12 @@ img.avatar {
 
 <p><strong>Wrap some content in a flexbox that can be styled</strong></p>
 
-<p>usage: <code>{{&lt; box &quot;list of css classes&quot; &gt;}}</code></p>
+<p>usage:</p>
+
+<pre><code>{{% box &quot;list of css classes&quot; %}}
+Stuff to Wrap
+{{% /box %}}
+</code></pre>
 
 <p>where:  * = optional</p>
 
@@ -1736,6 +1732,81 @@ Another paragraph
 
 <hr />
 
+<h3 id="make-a-button-bar-by-using-btn-bar">make a button bar by using <code>btn--bar</code></h3>
+
+<pre><code class="language-html">{{% box btn--bar %}}
+{{&lt; link type=&quot;btn&quot; icon=&quot;download&quot; url=&quot;&quot; text=&quot;One&quot; &gt;}}
+{{&lt; link type=&quot;btn&quot; icon=&quot;download&quot; url=&quot;&quot; text=&quot;Two&quot; &gt;}}
+{{&lt; link type=&quot;btn&quot; icon=&quot;download&quot; url=&quot;&quot; text=&quot;Three&quot; &gt;}}
+{{% /box %}}
+</code></pre>
+
+
+<div class="box box--btn--bar ">
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href=""
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">One</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href=""
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Two</div>
+
+</a>
+
+
+
+
+
+    
+  
+
+
+<a
+
+
+ class="box box--btn btn btn--regular"
+href=""
+>
+<i class="btn__icon fa fa-download"></i>
+<div class="btn__text">Three</div>
+
+</a>
+
+
+</div>
+
+
+<hr />
+
 <h3 id="the-shortcode-for-experienced-hugo-coders">The shortcode for experienced hugo coders</h3>
 
 <pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
@@ -1761,18 +1832,6 @@ Another paragraph
 <p><strong>Add a contact info box based on setting in config.toml</strong></p>
 
 <p>usage: <code>{{&lt; contact &gt;}}</code></p>
-
-<p>where:  * = optional</p>
-
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
-
-<p>example in markdown:</p>
-
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
 
 		</div>
 	</div>
@@ -1837,31 +1896,89 @@ Another paragraph
 			<h1>Shortcode - Embed</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<hr />
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<h1 id="draft">DRAFT</h1>
+
+<p><strong>embed your iframes from other sites like google map</strong></p>
+
+<p><em>Note: use the youtube shortcode for embedding youtube videos</em></p>
+
+<p>usage:</p>
+
+<pre><code>{{&lt; embed &quot;type&quot; &gt;}}
+copy and paste your iframe code here
+{{&lt; /embed &gt;}}
+</code></pre>
+
+<p>or with named parameters</p>
+
+<p><code>{{&lt; embed type=&quot;&quot; title=&quot;&quot; caption=&quot;&quot; maxwidth=&quot;&quot; wpad=&quot;&quot; &gt;}}</code> &hellip;.</p>
 
 <p>where:  * = optional</p>
 
 <ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+<li>*<em><strong>type</strong></em> - a one word descriptor of your iframe used to custom class styling <code>.embed--&lt;type&gt;</code></li>
+<li>*<em><strong>title</strong></em></li>
+<li>*<em><strong>caption</strong></em></li>
+<li>*<em><strong>maxwidth</strong></em></li>
+<li>*<em><strong>wpad</strong></em></li>
 </ul>
 
-<p>example in markdown:</p>
+<p>example:</p>
 
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+<pre><code class="language-html">{{&lt; embed type=&quot;google-map&quot; title=&quot;Iceland&quot; caption=&quot;Hot Place in A Cold Land&quot; maxwidth=&quot;300&quot; &gt;}}
+&lt;iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1732165.9399742798!2d-21.255978827180424!3d64.9144351116168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d22b52a3eb6043%3A0x6f8a0434e5c1459a!2sIceland!5e0!3m2!1sen!2sus!4v1492742579633&quot; width=&quot;600&quot; height=&quot;450&quot; frameborder=&quot;0&quot; style=&quot;border:0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+{{&lt; /embed &gt;}}
+</code></pre>
 
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
 
-<p>This is all 
 
- <span name="concerning">about us</span> 
+<div class="box box--embed box--google-map">
+    
+    <div class="box__title">Iceland</div>
+    
+    <div
+        class="embed--google-map"
+       
+        maxWidth="300"
+       
+       >
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1732165.9399742798!2d-21.255978827180424!3d64.9144351116168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d22b52a3eb6043%3A0x6f8a0434e5c1459a!2sIceland!5e0!3m2!1sen!2sus!4v1492742579633" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
- and stuff</p>
+    </div>
+    
+    <div class="box__caption">Hot Place in A Cold Land</div>
+    
+</div>
 
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+
+
+<h3 id="the-shortcode-for-the-hugo-experienced">the shortcode for the Hugo experienced</h3>
+
+<pre><code class="language-html">{{ if .IsNamedParams }}
+&lt;div class=&quot;box box--embed box--{{ .Get &quot;type&quot; }}&quot;&gt;
+    {{ with .Get &quot;title&quot; }}
+    &lt;div class=&quot;box__title&quot;&gt;{{ . }}&lt;/div&gt;
+    {{ end }}
+    &lt;div
+       {{ with .Get &quot;type&quot; }} class=&quot;embed--{{ . }}&quot;{{end}}
+       {{ with .Get &quot;maxwidth&quot;}} maxWidth=&quot;{{ . }}&quot;{{ end }}
+       {{ with .Get &quot;wpad&quot;}} wPad=&quot;{{ . }}&quot;{{ end }}
+       &gt;
+    {{ .Inner }}
+    &lt;/div&gt;
+    {{ with .Get &quot;caption&quot;}}
+    &lt;div class=&quot;box__caption&quot;&gt;{{ . }}&lt;/div&gt;
+    {{ end }}
+&lt;/div&gt;
+{{ else }}
+&lt;div class=&quot;box box--embed {{ with .Get 0 }}embed--{{ . }}{{ end }}&quot;&gt;
+    {{ .Inner }}
+&lt;/div&gt;
+{{ end }}
+</code></pre>
 
 		</div>
 	</div>
@@ -1945,31 +2062,60 @@ Another paragraph
 			<h1>Shortcode - JotForm</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
+<p><strong>Makes a button link to a Jotform form</strong></p>
 
-<p>where:  * = optional</p>
+<p><em>Get Some Interaction from your &ldquo;static&rdquo; site by using Jotform</em></p>
+
+<p>See the 
+
+
+
+    
+  
+
+
+<a
+ target="_blank"
+
+
+href="https://www.jotform.com/"
+>
+
+
+Jotform
+
+</a>
+ website to make a form.</p>
+
+<p>usage: <code>{{&lt; jotform &quot;id&quot; &quot;text&quot;&gt;}}</code></p>
+
+<p>where:</p>
 
 <ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
+<li><em><strong>id</strong></em> - <em>id</em> of Jotform created at Jotform website</li>
+<li><em><strong>text</strong></em> - text of button</li>
 </ul>
 
-<p>example in markdown:</p>
+<p>currently creates a button that opens in a popup window</p>
 
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
+<p>but eventually it will be embedable in the content</p>
 
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
+<p><code>{{&lt; jotform &quot;bogus#&quot; &quot;My Awesome Form - Fill It&quot; &gt;}}</code></p>
 
-<p>This is all 
 
- <span name="concerning">about us</span> 
+<div class ="box box--btn">
+<a class="btn" href="javascript:void( window.open('https://form.jotform.com/bogus#', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500') )">My Awesome Form - Fill It</a>
+</div>
 
- and stuff</p>
 
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<h3 id="shortcode-for-the-hugo-experienced">shortcode for the Hugo experienced</h3>
+
+<pre><code class="language-html">&lt;div class =&quot;box box--btn&quot;&gt;
+&lt;a class=&quot;btn&quot; href=&quot;javascript:void( window.open('https://form.jotform.com/{{ .Get 0 }}', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500') )&quot;&gt;{{ .Get 1 }}&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
 
 		</div>
 	</div>
@@ -1981,31 +2127,9 @@ Another paragraph
 			<h1>Shortcode - Link</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			<p><strong>Takes an image and&hellip;</strong></p>
+			
 
-<p>usage: <code>{{&lt; bookmark &quot;id&quot; &quot;text&quot; &quot;hide&quot; &gt;}}</code></p>
-
-<p>where:  * = optional</p>
-
-<ul>
-<li><em><strong>id</strong></em> - the name of the bookmark used in a link, become #<em>id</em> for use in a link like</li>
-<li>*<em><strong>text</strong></em> - is the text that will appear on the page, if missing <em>id</em> will be used as the text</li>
-<li>*<em><strong>hide</strong></em> - if &ldquo;hide&rdquo; appears the anchor will be made invisible on the page.</li>
-</ul>
-
-<p>example in markdown:</p>
-
-<p><code>This is all {{&lt; bookmark &quot;about&quot; &quot;about us&quot; &gt;}}</code></p>
-
-<p><code>if I wanted to go to the new about us bookmark I'd click [here](#about)</code></p>
-
-<p>This is all 
-
- <span name="concerning">about us</span> 
-
- and stuff</p>
-
-<p>if I wanted to go to the about us bookmark I&rsquo;d click <a href="#concerning">here</a></p>
+<h3 id="draft">draft</h3>
 
 		</div>
 	</div>

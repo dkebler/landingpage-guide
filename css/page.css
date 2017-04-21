@@ -181,6 +181,14 @@
   padding-right: 0.5em;
 }
 
+.box--embed {
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding-bottom: 0;
+  justify-content: center;
+  align-items: center;
+}
+
 .box--embed::before {
   content: "";
   height: 0.5em;
@@ -264,22 +272,6 @@
 
 .box--avatar > a {
   opacity: 1;
-}
-
-/*may get rid of this after fixing embed shortcode */
-.box__embed {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.box--embed {
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding-bottom: 0;
 }
 
 .thumb--yt {

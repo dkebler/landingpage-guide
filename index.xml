@@ -164,9 +164,9 @@ where: * = optional
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/box/</guid>
       <description>Wrap some content in a flexbox that can be styled
-usage: {{&amp;lt; box &amp;quot;list of css classes&amp;quot; &amp;gt;}}
-where: * = optional
- *classes - A space delimited set of css classes for custom styling  by default child element will be in a row with wrapping. Use optional class column if you want to have all the elements be in a column regardless of viewport. For custom styling add a class name in shortcode and a corresponding class in the custom.</description>
+usage:
+{{% box &amp;quot;list of css classes&amp;quot; %}} Stuff to Wrap {{% /box %}}  where: * = optional
+ *classes - A space delimited set of css classes for custom styling  by default child element will be in a row with wrapping. Use optional class column if you want to have all the elements be in a column regardless of viewport.</description>
     </item>
     
     <item>
@@ -176,9 +176,7 @@ where: * = optional
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/contact/</guid>
       <description>DRAFT Add a contact info box based on setting in config.toml
-usage: {{&amp;lt; contact &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.</description>
+usage: {{&amp;lt; contact &amp;gt;}}</description>
     </item>
     
     <item>
@@ -203,10 +201,13 @@ For Experienced Hugo Coders &amp;lt;div class=&amp;quot;box box--disqus&amp;quot
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/embed/</guid>
-      <description>usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
+      <description>DRAFT embed your iframes from other sites like google map
+Note: use the youtube shortcode for embedding youtube videos
+usage:
+{{&amp;lt; embed &amp;quot;type&amp;quot; &amp;gt;}} copy and paste your iframe code here {{&amp;lt; /embed &amp;gt;}}  or with named parameters
+{{&amp;lt; embed type=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; caption=&amp;quot;&amp;quot; maxwidth=&amp;quot;&amp;quot; wpad=&amp;quot;&amp;quot; &amp;gt;}} &amp;hellip;.
 where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:
-This is all {{&amp;lt; bookmark &amp;quot;about&amp;quot; &amp;quot;about us&amp;quot; &amp;gt;}}</description>
+ *type - a one word descriptor of your iframe used to custom class styling .embed--&amp;lt;type&amp;gt; *title *caption *maxwidth *wpad  example:</description>
     </item>
     
     <item>
@@ -239,10 +240,14 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/jotform/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description>Makes a button link to a Jotform form
+Get Some Interaction from your &amp;ldquo;static&amp;rdquo; site by using Jotform
+See the Jotform  website to make a form.
+usage: {{&amp;lt; jotform &amp;quot;id&amp;quot; &amp;quot;text&amp;quot;&amp;gt;}}
+where:
+ id - id of Jotform created at Jotform website text - text of button  currently creates a button that opens in a popup window
+but eventually it will be embedable in the content
+{{&amp;lt; jotform &amp;quot;bogus#&amp;quot; &amp;quot;My Awesome Form - Fill It&amp;quot; &amp;gt;}}</description>
     </item>
     
     <item>
@@ -251,10 +256,7 @@ where: * = optional
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/link/</guid>
-      <description>Takes an image and&amp;hellip;
-usage: {{&amp;lt; bookmark &amp;quot;id&amp;quot; &amp;quot;text&amp;quot; &amp;quot;hide&amp;quot; &amp;gt;}}
-where: * = optional
- id - the name of the bookmark used in a link, become #id for use in a link like *text - is the text that will appear on the page, if missing id will be used as the text *hide - if &amp;ldquo;hide&amp;rdquo; appears the anchor will be made invisible on the page.  example in markdown:</description>
+      <description> draft </description>
     </item>
     
     <item>
