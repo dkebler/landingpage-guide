@@ -1048,7 +1048,7 @@ href="#modal-avatar"
 avatar
 
 </a>
-  - creates a large circle icon from an image<br /></li>
+  - creates a large circle icon from an image with a link</li>
 <li>
 
 
@@ -1542,7 +1542,7 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 
 <ul>
 <li><code>{{&lt; avatar  &gt;}}</code>  loads avatar.jpg that must be in assets/images folder</li>
-<li><code>{{&lt; avatar &quot;myface.jpg&quot; &quot;http://me.myname.com&quot; &gt;}}</code>   myface.jpg in assets/images folder</li>
+<li><code>{{&lt; avatar &quot;dickf.jpg&quot; &quot;https://en.wikipedia.org/wiki/Richard_Feynman&quot; &gt;}}</code>   dickf.jpg in assets/images folder</li>
 <li><code>{{&lt; avatar &quot;personal/myface.jpg&quot; &quot;http://me.myname.com&quot; &gt;}}</code>   myface.jpg in assets/personal/images folder</li>
 </ul>
 
@@ -1552,14 +1552,14 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
 
 
 <div class="box box--avatar">
-  
+  <a href="https://en.wikipedia.org/wiki/Richard_Feynman">
    
 	<img class="avatar" src="https://dkebler.github.io/landingpage-guide/images/avatar.jpg"/>
-  
+  </a>
 </div>
 
 
-<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
+<h3 id="the-shortcode-for-experienced-hugo-coders">the shortcode for experienced hugo coders</h3>
 
 <pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
 {{ $avatar := &quot;avatar.jpg&quot; }}
@@ -1675,7 +1675,7 @@ Another paragraph
 </div>
 </p>
 
-<h2 id="example-column">Example Column</h2>
+<h3 id="example-column">Example Column</h3>
 
 <pre><code class="language-html">{{% box  demo column %}}
 A paragraph I wrote blah...blah blah blah blah  blah blah blah blah
@@ -1708,7 +1708,9 @@ Another paragraph
 }
 </code></pre>
 
-<h2 id="for-experienced-hugo-coders">For Experienced Hugo Coders</h2>
+<hr />
+
+<h3 id="the-shortcode-for-experienced-hugo-coders">The shortcode for experienced hugo coders</h3>
 
 <pre><code class="language-html">{{ $numOfParams := ( len .Params ) }}
 &lt;div class=&quot;box {{ range .Params }}box--{{ . }} {{ end }}&quot;&gt;
