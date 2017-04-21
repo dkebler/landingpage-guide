@@ -17,10 +17,9 @@
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/avatar/</guid>
       <description>creates a large circle icon from an image
-usage: {{&amp;lt; avatar &amp;quot;image-path&amp;quot; &amp;quot;link&amp;quot; &amp;gt;}}
+usage: {{&amp;lt; avatar &amp;quot;image&amp;quot; &amp;gt;}} {{&amp;lt; avatar img=&amp;quot;image&amp;quot; url=&amp;quot;link&amp;quot; &amp;gt;}}
 parameters: * = optional
- *image-path - image path of the image. By default it will look for avatar.jpg in the /assets/images. Note: All images can be servered from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *url - a page the image will link to when clicked  examples in markdown:
- {{&amp;lt; avatar &amp;gt;}} loads avatar.</description>
+ *image - image path of the image. By default it will look for avatar.jpg in the /assets/images. Note: All images can be servered from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *url - a valid url to link the image to  examples in markdown:</description>
     </item>
     
     <item>
