@@ -7,9 +7,11 @@ link_text = "Plugins"
 
 ### What are they
 
-As explained in the [markdown section](#what-are-the-and-about) above shortcodes can be *plugged* into the middle of your markdown files to give them added functionality.  Each shortcode is invoked with either a {{</* *name* */>}} or {{%/* *name* */%}} and possibly a closing {{</* /*name* */>}} if they enclose some more content.   It all depends on the nature of the shortcode.
+As explained in the [markdown section](#what-are-the-and-about) above shortcodes can be *plugged* into the middle of your markdown files to give them added functionality.  
 
-{{< bookmark "test" "This" >}} landing page theme currently has 12 shortcodes that you might *plugin* and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the *name*.  The shortcodes are listed below with an explanation use case and are linked to a documentation page with details of how to use them.  But many times the easist way is just to see them in action in the markdown and copy, paste and edit to suit.
+Each shortcode is invoked with either a `{{</* name "parameters" */>}}` or `{{%/* name "parameters" */%}}` and possibly a closing `{{%/* /name */%}}` if they enclose some more content. It all depends on the nature of the shortcode.
+
+{{< bookmark "test" "This" >}} landing page theme currently has 12 shortcodes that you might *plugin* and will likely have more in the future (make your requests).  Below they are documented.  Most shortcodes have one or more parameters that follow the *name*.  The shortcodes are listed below with an explanation of what they do and are linked to a modal documentation with details of how to use them.  But many times the easiest way is just to see them in action in the markdown and copy, paste and edit to suit.
 
 * {{< link url="#modal-avatar" text="avatar" display="modal" >}}  - creates a large circle icon from an image with a link
 * {{< link url="#modal-bookmark" text="bookmark" display="modal" >}}  places a bookmark on the page that to be linked to

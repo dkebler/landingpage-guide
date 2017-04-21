@@ -4,7 +4,7 @@ title = "Deploy"
 # link_text = ""
 +++
 
-SOME CHANGES 
+SOME CHANGES
 
 After all that work getting **your** new landing page site looking the way you want it it's time to "Deploy" your landing page out somewhere on the Internet where everyone can see it.
 
@@ -16,7 +16,7 @@ Now you are just going to run just the command ```hugo``` and it will generate a
 
 ### Where to host
 
-Because of the numerous choices you'll have this guide can't cover all the options and how to do the deployments.  The one thing to keep in mind about your options is that your site you **generate** only requires the simpliest of servers. It does **not** require any *server-side* processing and as such is not "hackable".
+Because of the numerous choices you'll have this guide can't cover all the options nor details on how to do the deployments :-(.  The one thing to keep in mind about your options is that your site you **generate** only requires the simpliest of servers. It does **not** require any *server-side* processing and as such is not "hackable".  Once you have a place to publish and know how to do it repeatition will be easy and can be automated even.  In the future deployement to selected services will be supported.
 
 Some simple options are
 
@@ -24,6 +24,7 @@ Some simple options are
 * A web hosting service (if you already have and account at one use it)
 * In a folder from a cloud service such as Dropbox that supports static page serving.
 * A Github Account
+* Firebase - a google service
 
 One good option is an Amazon Web Services (AWS) S3 bucket.  It's way cheap to store your site and images and they can be served right from there with their built in simple "static" page server.  Unlike A cloud hosting service you can point any domain or subdomain to a bucket so it's easy to use your custom domain.  Further AWS has a free tier for your first year which includes plenty of storage on S3.    
 
@@ -31,4 +32,4 @@ One good option is an Amazon Web Services (AWS) S3 bucket.  It's way cheap to st
 
 As you how you move your generated site from your ```publishDir``` directory to where it will be served is again beyond the scope of this guide.  But the basic ideas is you just copy this ```publishDir``` directory to the folder from will be served. That involves getting them from your local machine out to the location. This could be done manually with some "file manager" program or could be automated (set your cloud service to sync the ```publishDir``` directory).  The following video shows some options.  You can ask in the comments below for help.  In the future the landing page generator will include some automated options for getting your site out on the Internet easier.
 
-{{< youtube 2xd_fdx5IyI >}}
+{{< youtube id="2xd_fdx5IyI" caption="Generating and then Deploying to an S3 Bucket" >}}

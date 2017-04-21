@@ -5,16 +5,15 @@ title = "What to Install"
 link_text = "Install"
 # align = "left"
 +++
-This guide was written for someone with little or no experience using Hugo or with (CSS/Javascript/HTML).  If you are experienced then go to the [quick start - TL;DR ](#quick).
+First off...If you are an experienced Hugo user then go to the [quick start - TL;DR ](#quick).
 
 ### The Tools
 
-To be able to make your own cusomtized landing pages quickly and easily you'll need to install minimum of two tools and then grab a copy of this guide's source respository to use as a starter. The absolute minimum tools you'll need to install are
+To be able to make your own cusomtized landing pages quickly and easily you'll need to install minimum of two tools and then grab a copy of this starter page's files to get you rolling. The absolute minimum tools you'll need to install are two
 
-{{< link url="https://gohugo.io/overview/introduction/" text="Hugo" display="tab" >}}  - a static site Generator
+### 1. {{< link url="https://gohugo.io/overview/introduction/" text="Hugo" display="tab" >}}  - a static site Generator
 
-
-{{< youtube 7G6TcT1liQw >}}
+{{< youtube id="7G6TcT1liQw" caption="Video - How to install Hugo on Windows" >}}
 
 {{< box btn-bar >}}
 {{< link type="btn" icon="download" url="https://github.com/spf13/hugo/releases/download/v0.19/hugo_0.19_Windows-64bit.zip" text="Hugo for Windows" >}}
@@ -24,7 +23,7 @@ To be able to make your own cusomtized landing pages quickly and easily you'll n
 
 **--AND--**
 
-{{< link url="https://atom.io" text="Atom" display="tab" >}} a text/IDE editor
+### 2. {{< link url="https://atom.io" text="Atom" display="tab" >}} a text/IDE editor
 
 The following button will take you to the Atom website and offer a download button for Atom for your operating system.  Install it as you would any application in your operating system
 
@@ -38,10 +37,8 @@ Once you have Hugo and Atom installed you are ready to get a copy of the starter
 
 {{< youtube puNKieFtJ3s >}}
 
-{{< link type="btn" icon="eye" url="https://dkebler.github.io/landingpage-starter" text="See the Starter Site Mobile Device Sized" display="window" width="400" height="600">}}
-
 {{< link type="btn" icon="download" url="https://github.com/dkebler/landingpage-starter/releases/download/0.0.1/landingpage-starter.zip" text="Download The Landing Page Starter Files" >}}
 
-for the experienced
+for the Git experienced
 
 {{< link type="btn" display="window" icon="clone" url="https://github.com/dkebler/landingpage-starter" text="Clone The Landing Page Starter Repo" >}}
