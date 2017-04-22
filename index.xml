@@ -243,8 +243,9 @@ Example Markdown Here is some normally formatted text. {{% format red %}}Here I 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/image/</guid>
-      <description> Displays an image with many settings
-DRAFT </description>
+      <description>Displays an image with many settings
+where: * = optional
+ *filename: image path of the image. By default it will look for file in the /assets/images. Note: All images can be served from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *title: on top of image *caption: on bottom of image *link: put in the url to link to, opens in new tab (still working on a ligtbox link for viewing at full screen) *maxwidth: maximum width when max-width is great than viewport width.</description>
     </item>
     
     <item>

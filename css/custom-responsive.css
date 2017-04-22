@@ -21,6 +21,18 @@
 /* desktop */
 
 @media only screen and (min-width: 1200px) {
+
+/*this left justifies the individual elements left*/
+  /*.section__content--hero {
+    align-items: flex-start;
+  }*/
+
+/*this moves all the elements together left and down*/
+  /*.section--hero {
+      align-items: flex-start;
+      justify-content: flex-end;
+  }*/
+
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1800px) {

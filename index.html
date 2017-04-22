@@ -2191,11 +2191,75 @@ Here I need a sentence to be in red
 			<h1>Shortcode - Image</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			
+			<p><strong>Displays an image with many settings</strong></p>
 
-<p><strong>Displays an image with many settings</strong></p>
+<p>where:  * = optional</p>
 
-<h1 id="draft">DRAFT</h1>
+<ul>
+<li>*<em><strong>filename</strong></em>: image path of the image.  By default it will look for file in the /assets/images. <em>Note:</em> All images can be served from an alternative place by setting &ldquo;imagespath&rdquo; setting in config.toml</li>
+<li>*<em><strong>title</strong></em>: on top of image</li>
+<li>*<em><strong>caption</strong></em>: on bottom of image</li>
+<li>*<em><strong>link</strong></em>: put in the url to link to, opens in new tab  (still working on a ligtbox link for viewing at full screen)</li>
+<li>*<em><strong>maxwidth</strong></em>: maximum width when max-width is great than viewport width.  default is 450</li>
+<li>*<em><strong>wpad</strong></em>: width padding when max-width &lt; viewport - default is 5</li>
+<li>*<em><strong>style</strong></em>: add extra css class for custom styling <code>.box--image-&quot;style&quot;</code>.  Note: <code>.box--image</code> is available to style all images</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>{{&lt; image filename=&quot;hero.jpg&quot; maxwidth=&quot;200&quot;  title=&quot;A Title&quot; caption=&quot;this is a caption&quot; link=&quot;http://www.utahscanyoncountry.com/index.html&quot; &gt;}}</code></p>
+
+<p>rendered:</p>
+
+
+
+
+<div class="box box--column box--image
+
+"
+ maxWidth="400"
+
+>
+
+  <div class="box__title">A Title</div>
+  
+
+<a href="http://www.utahscanyoncountry.com/index.html" target="_blank" >
+
+<img src="https://dkebler.github.io/landingpage-guide/images/hero.jpg" />
+</a>
+
+<div class="box__caption">this is a caption</div>
+
+</div>
+
+
+<p>example in markdown:</p>
+
+<p><code>{{&lt; image filename=&quot;personal/dickfeynman.jpg&quot; maxwidth=&quot;200&quot;  title=&quot;Dick Feynaman&quot; caption=&quot;One Crazy Smart Dude&quot; &gt;}}</code></p>
+
+<p>rendered:</p>
+
+
+
+
+<div class="box box--column box--image
+
+"
+ maxWidth="200"
+
+>
+
+  <div class="box__title">Dick Feynaman</div>
+  
+
+<img src="https://dkebler.github.io/landingpage-guide/images/personal/dickfeynman.jpg" />
+
+
+<div class="box__caption">One Crazy Smart Dude</div>
+
+</div>
+
 
 		</div>
 	</div>
@@ -2696,7 +2760,7 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function () {
-  lightgallery('.box--image')
+  lightgallery('.box--image-lightbox')
 });
 </script>
 
