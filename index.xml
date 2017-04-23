@@ -133,7 +133,7 @@ If you really know what you are doing and prefer to start from scratch by all me
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/sections/comments/</guid>
-      <description>  (function() { var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true; var disqus_shortname = &#39;landingpage-guide&#39;; dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;; (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq); })();  Please enable JavaScript to view the comments powered by Disqus. comments powered by Disqus </description>
+      <description>  (function() { var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true; var disqus_shortname = &#39;landingpage-guide&#39;; dsq.src = &#39;https://&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;; (document.getElementsByTagName(&#39;head&#39;)[0] || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(dsq); })();  Please enable JavaScript to view the comments powered by Disqus. comments powered by Disqus </description>
     </item>
     
     <item>
