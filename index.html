@@ -2850,12 +2850,21 @@ lightbox = &quot;lightgallery&quot; ## must match a lightbox function that has b
 
 </main>
 
+<script>
+if (!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) {
+  window.location.protocol = "https";
+  document.location = "https:" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
+}
+</script>
 
-<script src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/js/perfect-scrollbar.jquery.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/g/lightgallery,lg-autoplay,lg-pager,lg-thumbnail,lg-video"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.16/js/perfect-scrollbar.jquery.min.js"></script>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js"></script>
 
@@ -2877,10 +2886,6 @@ lightbox = &quot;lightgallery&quot; ## must match a lightbox function that has b
 <script src="https://dkebler.github.io/landingpage-guide/js/docready.js"></script>
 
 
-
-   <script src="https://dkebler.github.io/landingpage-guide/js/custom.js"></script>
-
-   <script src="https://dkebler.github.io/landingpage-guide/js/custom-docready.js"></script>
 
 
 
