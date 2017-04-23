@@ -118,8 +118,9 @@ Example Markdown Here is some normally formatted text. {{% format red %}}Here I 
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/image/</guid>
       <description>Displays an image with many settings
+{{&amp;lt; image filename=&amp;quot;&amp;quot; maxwidth=&amp;quot;&amp;quot; wpad=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; caption=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; style=&amp;quot;&amp;quot; &amp;gt;}}
 where: * = optional
- *filename: image path of the image. By default it will look for file in the /assets/images. Note: All images can be served from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *title: on top of image *caption: on bottom of image *link: put in the url to link to, opens in new tab (still working on a ligtbox link for viewing at full screen) *maxwidth: maximum width when max-width is great than viewport width.</description>
+ filename: image path of the image. By default it will look for file in the /assets/images. Note: All images can be served from an alternative place by setting &amp;ldquo;imagespath&amp;rdquo; setting in config.toml *title: on top of image *caption: on bottom of image *link: put in the url to link to, opens in new tab (still working on a ligtbox link for viewing at full screen) *maxwidth: maximum width when max-width is great than viewport width.</description>
     </item>
     
     <item>
@@ -144,8 +145,10 @@ but eventually it will be embedable in the content
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://dkebler.github.io/landingpage-guide/modals/link/</guid>
-      <description> Makes a button styled or plain link icons and different display modes
-draft </description>
+      <description>Makes a button styled or plain link with icons and different display modes
+{{&amp;lt; link filename=&amp;quot;&amp;quot; maxwidth=&amp;quot;&amp;quot; wpad=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot; caption=&amp;quot;&amp;quot; link=&amp;quot;&amp;quot; style=&amp;quot;&amp;quot; &amp;gt;}}
+where: * = optional
+ url: url/address of the link *text: the text of the link *icon: any font awesome font by name without the fa-. see http://fontawesome.io/cheatsheet/. If you only want the font then just don&amp;rsquo;t use the text parameter. *maxwidth: maximum width when max-width is great than viewport width.</description>
     </item>
     
     <item>

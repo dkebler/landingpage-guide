@@ -1,6 +1,3 @@
-// // css that can't be done in .css files
-// $('img').parent().css('opacity', '1');
-
 // Smooth Scroll Init - Register click handler for ID anchors
 $('a[href*="#"]:not(a[modal])').click(function () {
   if (location.pathname.replace(/\/$/, "") == this.pathname.replace(/\/$/, "") && location.hostname == this.hostname) {

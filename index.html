@@ -579,6 +579,7 @@ Hugo
        
        
        
+       
        >
   
     </div>
@@ -811,6 +812,7 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-start
        
        
        
+       
        >
   
     </div>
@@ -883,6 +885,7 @@ href="#modal-toml"
        
        
        
+       
        >
   
     </div>
@@ -941,6 +944,7 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
        
        
        
+       
        >
   
     </div>
@@ -966,6 +970,7 @@ link_text = &quot;About&quot;  ## will override the Title setting for use as the
     
     <div
        youtube_id="DnGJsCBB-eE"
+       
        
        
        
@@ -1446,6 +1451,7 @@ href="javascript:void( window.open('http://4005.kebler.net', 'blank', 'scrollbar
        
        
        
+       
        >
   
     </div>
@@ -1559,6 +1565,7 @@ href="javascript:void( window.open('https://github.com/dkebler/landingpage-flex-
     
     <div
        youtube_id="7G6TcT1liQw"
+       
        
         list="PLyNjf2CCbLvkfJ29-Xak4qNxot7q8ItOb"
         maxWidth="600"
@@ -2193,10 +2200,12 @@ Here I need a sentence to be in red
 		<div class="section__content section__content--modal"  >
 			<p><strong>Displays an image with many settings</strong></p>
 
+<p><code>{{&lt; image filename=&quot;&quot; maxwidth=&quot;&quot; wpad=&quot;&quot; title=&quot;&quot; caption=&quot;&quot; link=&quot;&quot; style=&quot;&quot; &gt;}}</code></p>
+
 <p>where:  * = optional</p>
 
 <ul>
-<li>*<em><strong>filename</strong></em>: image path of the image.  By default it will look for file in the /assets/images. <em>Note:</em> All images can be served from an alternative place by setting &ldquo;imagespath&rdquo; setting in config.toml</li>
+<li><em><strong>filename</strong></em>: image path of the image.  By default it will look for file in the /assets/images. <em>Note:</em> All images can be served from an alternative place by setting &ldquo;imagespath&rdquo; setting in config.toml</li>
 <li>*<em><strong>title</strong></em>: on top of image</li>
 <li>*<em><strong>caption</strong></em>: on bottom of image</li>
 <li>*<em><strong>link</strong></em>: put in the url to link to, opens in new tab  (still working on a ligtbox link for viewing at full screen)</li>
@@ -2215,6 +2224,7 @@ Here I need a sentence to be in red
 
 
 <div class="box box--column box--image
+
 
 "
  maxWidth="400"
@@ -2245,6 +2255,7 @@ Here I need a sentence to be in red
 
 <div class="box box--column box--image
 
+
 "
  maxWidth="200"
 
@@ -2260,6 +2271,32 @@ Here I need a sentence to be in red
 
 </div>
 
+
+<p>shortcode code for the Hugo experienced</p>
+
+<pre><code>{{ $path := &quot;/images/&quot; }}
+{{ $filename := .Get &quot;filename&quot; }}
+{{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+&lt;div class=&quot;box box--column box--image
+{{ with .Get &quot;style&quot;}} box--image-{{ . }}{{ end }}
+{{ with .Get &quot;link&quot;}}{{ if eq . &quot;lightbox&quot; }} box--image-lightbox{{ end }}{{ end }}
+&quot;
+{{ with .Get &quot;maxwidth&quot;}} maxWidth=&quot;{{ . }}&quot;{{ end }}
+{{ with .Get &quot;wpad&quot;}} wPad=&quot;{{ . }}&quot;{{ end }}
+&gt;
+{{ with .Get &quot;title&quot; }}
+  &lt;div class=&quot;box__title&quot;&gt;{{ . }}&lt;/div&gt;
+  {{ end }}
+{{ with .Get &quot;link&quot;}}
+{{ if eq . &quot;lightbox&quot; }}&lt;a href=&quot;{{ $path }}{{ $filename }}&quot;&gt;{{ else }}&lt;a href=&quot;{{.}}&quot; target=&quot;_blank&quot; &gt;{{ end }}
+{{ end }}
+&lt;img src=&quot;{{ $path }}{{ .Get &quot;filename&quot; }}&quot; /&gt;
+{{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+{{ with .Get &quot;caption&quot;}}
+&lt;div class=&quot;box__caption&quot;&gt;{{ . }}&lt;/div&gt;
+{{ end }}
+&lt;/div&gt;
+</code></pre>
 
 		</div>
 	</div>
@@ -2336,11 +2373,109 @@ Jotform
 			<h1>Shortcode - Link</h1>
 		</div>
 		<div class="section__content section__content--modal"  >
-			
+			<p><strong>Makes a button styled or plain link with icons and different display modes</strong></p>
 
-<p><strong>Makes a button styled or plain link icons and different display modes</strong></p>
+<p><code>{{&lt; link filename=&quot;&quot; maxwidth=&quot;&quot; wpad=&quot;&quot; title=&quot;&quot; caption=&quot;&quot; link=&quot;&quot; style=&quot;&quot; &gt;}}</code></p>
 
-<h3 id="draft">draft</h3>
+<p>where:  * = optional</p>
+
+<ul>
+<li><em><strong>url</strong></em>: url/address of the link</li>
+<li>*<em><strong>text</strong></em>: the text of the link</li>
+<li>*<em><strong>icon</strong></em>: any font awesome font by name without the fa-.  see <a href="http://fontawesome.io/cheatsheet/">http://fontawesome.io/cheatsheet/</a>.  If you only want the font then just don&rsquo;t use the <em>text</em> parameter.</li>
+<li>*<em><strong>maxwidth</strong></em>: maximum width when max-width is great than viewport width.  default is 450</li>
+<li>*<em><strong>type</strong></em>: use &ldquo;btn&rdquo; for a button link otherwise leave out for simple text.</li>
+<li>*<em><strong>size</strong></em>: only used with type=&ldquo;btn&rdquo;, currently only &ldquo;small&rdquo; and &ldquo;large&rdquo; supported but you can use your own custom css with <code>.btn--&lt;size&gt;</code></li>
+<li>*<em><strong>display</strong></em>: values are &ldquo;tab&rdquo;, &ldquo;window&rdquo;, &ldquo;modal&rdquo;.  Modal can only be used for a relative url within your site.</li>
+<li>*<em><strong>height</strong></em>: only applies to type=&ldquo;window&rdquo;</li>
+<li>*<em><strong>width</strong></em>: only applies to type=&ldquo;window&rdquo;</li>
+</ul>
+
+<p>example in markdown:</p>
+
+<p><code>{{&lt; link url=&quot;http://google.com&quot; type=&quot;btn&quot; icon=&quot;eye&quot; text=&quot; See Stater Popup window&quot; display=&quot;window&quot; height=&quot;500&quot; width=&quot;500&quot; &gt;}}</code></p>
+
+<p>rendered:</p>
+
+
+
+
+
+   
+  
+
+
+
+
+<a
+
+
+ class="box box--btn btn btn--small"
+href="javascript:void( window.open('http://dkebler.github.io/landingpage-starter', 'blank', 'scrollbars=yes, toolbar=no, width=500 , height=500' ))"
+>
+<i class="btn__icon fa fa-eye"></i>
+<div class="btn__text"> starter in a popup window</div>
+
+</a>
+
+
+<p>example in markdown:</p>
+
+<pre><code>Click and you will be taken to {{&lt; link url=&quot;http://google.com&quot; text=&quot;Google&quot; display=&quot;tab&quot; &gt;}} in a new tab
+</code></pre>
+
+<p>rendered:</p>
+
+<p>Click and you will be taken to 
+
+
+
+    
+  
+
+
+<a
+ target="_blank"
+
+
+href="http://google.com"
+>
+
+
+Google
+
+</a>
+ in a new tab</p>
+
+<hr />
+
+<p><strong>Shortcode for the Hugo Experienced</strong></p>
+
+<pre><code>{{ .Scratch.Set &quot;url&quot; (.Get &quot;url&quot;) }}
+{{ .Scratch.Set &quot;height&quot; (.Get &quot;height&quot;) }}
+{{ .Scratch.Set &quot;width&quot; (.Get &quot;width&quot; | default &quot;1000&quot;) }}
+{{ if .Get &quot;height&quot; }}
+   {{ .Scratch.Set &quot;height&quot; ( printf &quot;, height=%s&quot; ( .Scratch.Get &quot;height&quot; ) ) }}
+  {{else}}
+    {{ .Scratch.Set &quot;height&quot; &quot;&quot; }}
+  {{ end }}
+
+{{ if eq (.Get &quot;display&quot;) &quot;window&quot; }}
+{{ .Scratch.Set &quot;url&quot; ( printf &quot;javascript:void( window.open('%s', 'blank', 'scrollbars=yes, toolbar=no, width=%s %s' ))&quot; (.Scratch.Get &quot;url&quot;) (.Scratch.Get &quot;width&quot;) (.Scratch.Get &quot;height&quot;) ) }}
+{{ end }}
+&lt;a
+{{ if eq (.Get &quot;display&quot;) &quot;tab&quot; }} target=&quot;_blank&quot;{{ end }}
+{{ if eq (.Get &quot;display&quot;) &quot;modal&quot; }} modal{{ end }}
+{{ if eq (.Get &quot;type&quot;) &quot;btn&quot; }} class=&quot;box box--btn btn btn--{{ .Get &quot;size&quot; | default &quot;regular&quot; }}&quot;{{ end }}
+{{ printf &quot;href=%q&quot; (.Scratch.Get &quot;url&quot;) | safeHTMLAttr }}
+&gt;
+{{ with .Get &quot;icon&quot; }}&lt;i class=&quot;btn__icon fa fa-{{ . }}&quot;&gt;&lt;/i&gt;{{ end }}
+{{ if eq (.Get &quot;type&quot;) &quot;btn&quot; }}&lt;div class=&quot;btn__text&quot;&gt;{{ .Get &quot;text&quot; }}&lt;/div&gt;
+{{ else }}
+{{ .Get &quot;text&quot; }}
+{{ end }}
+&lt;/a&gt;
+</code></pre>
 
 		</div>
 	</div>
@@ -2461,6 +2596,7 @@ Jotform
     <div
        youtube_id="7G6TcT1liQw"
         start="60"
+       
        
         maxWidth="350"
        
