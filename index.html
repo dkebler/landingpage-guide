@@ -12,6 +12,13 @@
     <base href="https://dkebler.github.io/landingpage-guide">
 
     
+    <script>
+    if (!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) {
+      window.location.protocol = "https";
+      document.location = "https:" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
+    }
+    </script>
+    
 
     
 <link href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -2851,6 +2858,13 @@ lightbox = &quot;lightgallery&quot; ## must match a lightbox function that has b
 
 
 </main>
+
+<script>
+if (!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:")) {
+  window.location.protocol = "https";
+  document.location = "https:" + window.location.href.substring(window.location.protocol.length, window.location.href.length);
+}
+</script>
 
 
 
