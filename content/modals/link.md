@@ -20,7 +20,7 @@ where:  \* = optional
 
 example in markdown:  
 
-```{{</* link url="http://google.com" type="btn" icon="eye" text=" See Stater Popup window" display="window" height="500" width="500" */>}}```
+```{{</* link url="http://dkebler.github.io/landingpage-starter" type="btn" icon="eye" text=" See Stater Popup window" display="window" height="500" width="500" */>}}```
 
 rendered:  
 

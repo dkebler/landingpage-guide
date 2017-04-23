@@ -20,12 +20,13 @@ theme = "landingpage-flex-hugo-theme" ## don't change this
 ## This applies to all font= settings in this file
 font = "Open Sans"  ## default Roboto, sets for entire site, can be specifically overridden below
 custom_css = ["custom.css", "custom-responsive.css"]   ## can add other files in array, make corresponding file in assets/css/
-custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
+# custom_js = ["custom.js","custom-docready.js"]  ## can add other files in array, make corresponding file in assets/css/
 galleries = ["photos"] ## array of galleries names created
 ## You can store your images in an external place like an s3 bucket. default is within at assets/images => /images
 # imagespath = "https://mybuckettld/afolder/"  ## full url must end with /
 lightbox = "lightgallery" ## must match a lightbox function that has been loaded currently only lightgallery available
 # cache_timeout = 0  ## don't change this
+force_https=true #  for deployment to hosts that use https but don't automatically force it - forces page to redirect to https except for localhost
 
 [params.navbar]
   # hidden = true
