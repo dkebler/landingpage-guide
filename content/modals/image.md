@@ -3,9 +3,12 @@ Title = "Shortcode - Image"
 +++
 **Displays an image with many settings**
 
+```{{</* image filename="" maxwidth="" wpad="" title="" caption="" link="" style="" */>}}```
+
+
 where:  \* = optional
 
-* \*_**filename**_: image path of the image.  By default it will look for file in the /assets/images. *Note:* All images can be served from an alternative place by setting "imagespath" setting in config.toml
+* _**filename**_: image path of the image.  By default it will look for file in the /assets/images. *Note:* All images can be served from an alternative place by setting "imagespath" setting in config.toml
 * \*_**title**_: on top of image
 * \*_**caption**_: on bottom of image
 * \*_**link**_: put in the url to link to, opens in new tab  (still working on a ligtbox link for viewing at full screen)
@@ -29,3 +32,30 @@ example in markdown:
 rendered:  
 
 {{< image filename="personal/dickfeynman.jpg" maxwidth="200"  title="Dick Feynaman" caption="One Crazy Smart Dude" >}}
+
+shortcode code for the Hugo experienced
+
+```
+{{ $path := "/images/" }}
+{{ $filename := .Get "filename" }}
+{{ with $.Site.Params.imagespath }} {{ $path := ( . ) }}{{ end }}
+<div class="box box--column box--image
+{{ with .Get "style"}} box--image-{{ . }}{{ end }}
+{{ with .Get "link"}}{{ if eq . "lightbox" }} box--image-lightbox{{ end }}{{ end }}
+"
+{{ with .Get "maxwidth"}} maxWidth="{{ . }}"{{ end }}
+{{ with .Get "wpad"}} wPad="{{ . }}"{{ end }}
+>
+{{ with .Get "title" }}
+  <div class="box__title">{{ . }}</div>
+  {{ end }}
+{{ with .Get "link"}}
+{{ if eq . "lightbox" }}<a href="{{ $path }}{{ $filename }}">{{ else }}<a href="{{.}}" target="_blank" >{{ end }}
+{{ end }}
+<img src="{{ $path }}{{ .Get "filename" }}" />
+{{ if .Get "link"}}</a>{{ end }}
+{{ with .Get "caption"}}
+<div class="box__caption">{{ . }}</div>
+{{ end }}
+</div>
+```
