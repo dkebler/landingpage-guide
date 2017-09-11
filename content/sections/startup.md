@@ -4,7 +4,7 @@ title = "Getting Started"
 link_text = "Startup"
 +++
 
-**YEA!** If you completed successfully the installation section you are ready to start editing **YOUR** own landing page.  You'll going find easy to edit an existing landing page than to start your own from scratch.  That's why you'll be using the starter site's files.
+**YEA!** If you completed successfully the installation section you are ready to start editing **YOUR** own landing page.  You'll going find easy to edit an existing landing page then to start your own from scratch.  That's why you'll be using the starter site's files.
 
 ### What's Important
 

@@ -13,9 +13,9 @@ building an attractive, mobile device ready, responsive, custom website/landing 
 
 This generator was written for someone with little or no experience using site generators (i.e. Hugo) or with (CSS/Javascript/HTML).  If you are experienced then go to the [quick start - TL;DR ](#quick).
 
-**This generator built this site your are readying now!**
+**This generator built this site you are reading now!**
 
-It has all kinds of cool plugins called shortcodes that allow you to easily toss in things like a youtube video with just knowing it's ID.  The navbar at the top builds automagically from the content files you create...and...and..Enough said!
+It has all kinds of cool plugins called shortcodes that allow you to easily toss in things like a youtube video with just knowing its ID.  The navbar at the top builds automagically from the content files you create...and...and..Enough said!
 
 Let's see it in action.  
 
@@ -33,4 +33,4 @@ It's not a toy.
 
 Are you on board?  Then read on!  See how easy it is.  In a few minutes you'll have the starter site being built for you on your computer.  In half and hour you'll have it customized.  Add your content and you'll be ready to deploy.
 
-## Best Part?  It's 100% Free
+## Best Part?  It's 100% Free and open source
